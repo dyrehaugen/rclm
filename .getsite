@@ -1,0 +1,4 @@
+cd ~/zwww/rbd/rclm
+# rm -rf *
+find . -not -path '*/\.*' -delete
+cp -rp ~/zrbd/rclm/_book/* .
