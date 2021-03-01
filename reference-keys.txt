@@ -60,9 +60,10 @@ stern-stiglitz-carbon-pricing-commission
 impacts
 water-availability
 human-health
-morbidity-andmortality
+morbidity-and-mortality
 humid-heat-bulbs
 covid
+metabolism
 action-strategy
 societal-impact-lack-of
 legal-action
