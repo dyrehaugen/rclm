@@ -86,7 +86,7 @@
 
 \title{Climate Change}
 \author{Dyrehaugen Web Notebook}
-\date{2021-05-14}
+\date{2021-06-27}
 
 \begin{document}
 \maketitle
@@ -146,6 +146,40 @@ is compensated by tropospheric overturning activity.
 
 \href{https://link.springer.com/article/10.1007/s00704-016-1732-y}{Benestad (2017)}
 \href{pdf/Benestad_2017_Mental_Picture_of_Greenhouse_Effect.pdf}{(pdf)}
+
+\hypertarget{political-iams}{%
+\section{Political IAMs}\label{political-iams}}
+
+\emph{Peng Memo}
+
+Similar to many economic tools developed decades ago, IAMs are built on an oversimplified logic: that people are rational optimizers of scarce resources. `Agents' make decisions that maximize the benefits to a country or society2. Price adjustments --- for example, a carbon tax --- or constraints on polluting technologies alter the agents' incentives, yielding changes in behaviour that alter economies and emissions4.
+
+In reality, human choice is a darker brew of misperception and missed opportunity, constrained by others' decisions. Researchers in sociology, psychology and organizational behaviour have long studied human behaviours. They explore why people stick with old, familiar technologies even when new ones are much superior, for example. This kind of research can also explain why the passion of mass movements, such as the global climate-strike movement, Fridays for Future, is hard to understand based on just individual costs and benefits, yet it can have powerful effects on policy.
+
+To get IAMs to reflect social realities and possibilities, one should look to the field of political economy.
+Eight political economy insights
+
+Data improve models' relevance to policy and investment choices.
+
+• Access to capital can be constrained by risk-averse investors who fear unpredictable changes in policy, hampering low-carbon energy transitions.
+
+• The design and type of a policy instrument, such as whether to subsidize green technologies or tax polluting industries, can be influenced by which interest groups are mobilized.
+
+• Carbon lock-in and stranding of fossil-based energy assets might limit the degree to which emissions can deviate from their previous trajectory, without interventions that can weaken the power of incumbent polluters.
+
+• Unequal costs and benefits of climate policies accrue to different economic, racial and religious groups, which can affect policies' moral and political acceptability.
+
+• Public opinion might facilitate stronger action to tackle climate change.
+
+• Confidence in political institutions or lack of it can influence the public's willingness to support actions that reduce emissions.
+
+• Trade and investment policies can expand the markets for new green technology, leading to lower costs and more political support.
+
+• Competence of government influences a state's ability to intervene in markets, make choices and alter the cost of deploying capital.
+
+\includegraphics{fig/political_IAM.jpg}
+
+\href{https://www.nature.com/articles/d41586-021-01500-2}{Peng (2021) Climate policy models need to get real about people --- here's how}
 
 \hypertarget{dice-climate-model}{%
 \section{DICE Climate Model}\label{dice-climate-model}}
@@ -211,6 +245,142 @@ Used by Kuhnhenn - STS - Heinrch Böll Stiftung
 \section{Monash Climate Model}\label{monash-climate-model}}
 
 Some text on Monash Model
+
+\hypertarget{bern-simple-climate-model-bernscm}{%
+\section{Bern Simple Climate Model (BernSCM)}\label{bern-simple-climate-model-bernscm}}
+
+\emph{Bern SCM Github README.md}
+
+The Bern Simple Climate Model (BernSCM) is a free open source reimplementation of a reduced form carbon cycle-climate model which has been used widely in previous scientific work and IPCC assessments.
+BernSCM represents the carbon cycle and climate system with a small set of equations for the heat and carbon budget, the parametrization of major nonlinearities, and the substitution of complex component systems with impulse response functions (IRF). The IRF approach allows cost-efficient yet accurate substitution of detailed parent models of climate system components with near linear behaviour. Illustrative simulations of scenarios from previous multi-model studies show that BernSCM is broadly representative of the range of the climate-carbon cycle response simulated by more complex and detailed models. Model code (in Fortran) was written from scratch with transparency and extensibility in mind, and is provided as open source. BernSCM makes scientifically sound carbon cycle-climate modeling available for many applications. Supporting up to decadal timesteps with high accuracy, it is suitable for studies with high computational load, and for coupling with, e.g., Integrated Assessment Models (IAM). Further applications include climate risk assessment in a business, public, or educational context, and the estimation of CO2 and climate benefits of emission mitigation options.
+
+See the file BernSCM\_manual(.pdf) for instructions on the use of the program.
+
+\href{https://www.researchgate.net/publication/320808211_The_Bern_Simple_Climate_Model_BernSCM_v10_an_extensible_and_fully_documented_open_source_reimplementation_of_the_Bern_reduced_form_model_for_global_carbon_cycle-climate_simulations}{Strassmann 2017 The BernSCM}
+\href{https://doi.org/10.5281/zenodo.1038117}{Bern SCM}
+\href{pdf/Strassmann_2017_BernSCM.pdf}{(pdf)}
+\href{https://github.com/bernSCM/bernSCM}{Bern SCM Github Code}
+
+\emph{Parameters for tuning Bern}
+
+\href{https://unfccc.int/resource/brazil/carbon.html}{UNFCCC}
+
+\textbf{Critics of Bern Model}
+
+Y'know, it's hard to figure out what the Bern model says about anything. This is because, as far as I can see, the Bern model proposes an impossibility. It says that the CO2 in the air is somehow partitioned, and that the different partitions are sequestered at different rates.
+
+For example, in the IPCC Second Assessment Report (SAR), the atmospheric CO2 was divided into six partitions, containing respectively 14\%, 13\%, 19\%, 25\%, 21\%, and 8\% of the atmospheric CO2.
+
+Each of these partitions is said to decay at different rates given by a characteristic time constant ``tau'' in years. (See Appendix for definitions). The first partition is said to be sequestered immediately. For the SAR, the ``tau'' time constant values for the five other partitions were taken to be 371.6 years, 55.7 years, 17.01 years, 4.16 years, and 1.33 years respectively.
+
+Now let me stop here to discuss, not the numbers, but the underlying concept. The part of the Bern model that I've never understood is, what is the physical mechanism that is partitioning the CO2 so that some of it is sequestered quickly, and some is sequestered slowly?
+
+I don't get how that is supposed to work. The reference given above says:
+
+CO2 concentration approximation
+
+The CO2 concentration is approximated by a sum of exponentially decaying functions, one for each fraction of the additional concentrations, which should reflect the time scales of different sinks.
+
+So theoretically, the different time constants (ranging from 371.6 years down to 1.33 years) are supposed to represent the different sinks. Here's a graphic showing those sinks, along with approximations of the storage in each of the sinks as well as the fluxes in and out of the sinks:
+
+(Carbon Cycle Picture)
+
+Now, I understand that some of those sinks will operate quite quickly, and some will operate much more slowly.
+
+But the Bern model reminds me of the old joke about the thermos bottle (Dewar flask), that poses this question:
+
+The thermos bottle keeps cold things cold, and hot things hot \ldots{} but how does it know the difference?
+
+So my question is, how do the sinks know the difference?
+
+Why don't the fast-acting sinks just soak up the excess CO2, leaving nothing for the long-term, slow-acting sinks? I mean, if some 13\% of the CO2 excess is supposed to hang around in the atmosphere for 371.3 years \ldots{} how do the fast-acting sinks know to not just absorb it before the slow sinks get to it?
+
+Anyhow, that's my problem with the Bern model---I can't figure out how it is supposed to work physically.
+
+Finally, note that there is no experimental evidence that will allow us to distinguish between plain old exponential decay (which is what I would expect) and the complexities of the Bern model. We simply don't have enough years of accurate data to distinguish between the two.
+
+Nor do we have any kind of evidence to distinguish between the various sets of parameters used in the Bern Model. As I mentioned above, in the IPCC SAR they used five time constants ranging from 1.33 years to 371.6 years (gotta love the accuracy, to six-tenths of a year).
+
+But in the IPCC Third Assessment Report (TAR), they used only three constants, and those ranged from 2.57 years to 171 years.
+
+However, there is nothing that I know of that allows us to establish any of those numbers. Once again, it seems to me that the authors are just picking parameters.
+
+So \ldots{} does anyone understand how 13\% of the atmospheric CO2 is supposed to hang around for 371.6 years without being sequestered by the faster sinks?
+
+All ideas welcome, I have no answers at all for this one. I'll return to the observational evidence regarding the question of whether the global CO2 sinks are ``rapidly diminishing'', and how I calculate the e-folding time of CO2 in a future post.
+
+Best to all,
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\setcounter{enumi}{22}
+\tightlist
+\item
+\end{enumerate}
+
+APPENDIX: Many people confuse two ideas, the residence time of CO2, and the ``e-folding time'' of a pulse of CO2 emitted to the atmosphere.
+
+The residence time is how long a typical CO2 molecule stays in the atmosphere. We can get an approximate answer from Figure 2. If the atmosphere contains 750 gigatonnes of carbon (GtC), and about 220 GtC are added each year (and removed each year), then the average residence time of a molecule of carbon is something on the order of four years. Of course those numbers are only approximations, but that's the order of magnitude.
+
+The ``e-folding time'' of a pulse, on the other hand, which they call ``tau'' or the time constant, is how long it would take for the atmospheric CO2 levels to drop to 1/e (37\%) of the atmospheric CO2 level after the addition of a pulse of CO2. It's like the ``half-life'', the time it takes for something radioactive to decay to half its original value. The e-folding time is what the Bern Model is supposed to calculate. The IPCC, using the Bern Model, says that the e-folding time ranges from 50 to 200 years.
+
+On the other hand, assuming normal exponential decay, I calculate the e-folding time to be about 35 years or so based on the evolution of the atmospheric concentration given the known rates of emission of CO2. Again, this is perforce an approximation because few of the numbers involved in the calculation are known to high accuracy. However, my calculations are generally confirmed by those of Mark Jacobson as published \href{http://www.stanford.edu/group/efmh/jacobson/Articles/VIII/fossil/ClimRespUpdJGR\%201.pdf}{here} in the Journal of Geophysical Research.
+
+\href{https://climateilluminated.com/CO2_facts/carbon_cycle/CO2_residence_Bern_model.html}{Eschenbach}
+
+\textbf{CO2 Lifetime}
+
+The overall lifetime of CO 2 is updated to range from 30 to 95 years
+
+Any emission reduction of fossil-fuel particulate BC {[}Black Carbon{]} plus
+associated OM {[}Organic Matter{]} may slow global warming more
+than may any emission reduction of CO 2 or CH 4 for a specific period,
+
+\emph{Jacobsen Abstract}
+
+This document describes two updates and a correction that affect two figures
+(Figures 1 and 14) in ``Control of fossil-fuel particulate black carbon and organic matter,
+possibly the most effective method of slowing global warming'' by Mark Z. Jacobson
+(Journal of Geophysical Research, 107(D19), 4410, \url{doi:10.1029/2001JD001376}, 2002).
+The modifications have no effect on the numerical simulations in the paper, only on the
+postsimulation analysis. The changes include the following: (1) The overall lifetime of
+CO 2 is updated to range from 30 to 95 years instead of 50 to 200 years, (2) the
+assumption that the anthropogenic emission rate of CO 2 is in equilibrium with its
+atmospheric mixing ratio is corrected, and (3) data for high-mileage vehicles available in
+the U.S. are used to update the range of mileage differences (15--30\% better for diesel) in
+comparison with one difference previously (30\% better mileage for diesel). The
+modifications do not change the main conclusions in J2002, namely, (1) ``any emission
+reduction of fossil-fuel particulate BC plus associated OM may slow global warming more
+than may any emission reduction of CO 2 or CH 4 for a specific period,'' and (2) diesel
+cars emitting continuously under the most recent U.S. and E.U. particulate standards
+(0.08 g/mi; 0.05 g/km) may warm climate per distance driven over the next 100+ years
+more than equivalent gasoline cars. Toughening vehicle particulate emission standards by
+a factor of 8 (0.01 g/mi; 0.006 g/km) does not change this conclusion, although it
+shortens the period over which diesel cars warm to 13--54 years,'\,' except as follows: for
+conclusion 1, the period in Figure 1 of J2002 during which eliminating all fossil-fuel
+black carbon plus organic matter (f.f. BC + OM) has an advantage over all anthropogenic
+CO 2 decreases from 25--100 years to about 11--13 years and for conclusion 2 the period in
+Figure 14 of J2002 during which gasoline vehicles may have an advantage broadens
+from 13 to 54 years to 10 to \textgreater100 years. On the basis of the revised analysis, the ratio of
+the 100-year climate response per unit mass emission of f.f. BC + OM relative to that of
+CO 2 -C is estimated to be about 90--190.
+
+\href{http://www.stanford.edu/group/efmh/jacobson/Articles/VIII/fossil/ClimRespUpdJGR\%201.pdf}{Jacobsen (2002)}
+\href{pdf/Jacobsen_2002_CO2_Lifetime.pdf}{(pdf)}
+
+\emph{What's Up with the Bern Model}
+
+\emph{Mearns}
+
+In modelling the growth of CO2 in the atmosphere from emissions data it is standard practice to model what remains in the atmosphere since after all it is the residual CO2 that is of concern in climate studies. In this post I turn that approach on its head and look at what is sequestered. This gives a very different picture showing that the Bern T1.2 and T18.5 time constants account for virtually all of the sequestration of CO2 from the atmosphere on human timescales (see chart below). The much longer T173 and T∞ processes are doing virtually nothing. Their principle action is to remove CO2 from the fast sinks, not from the atmosphere, in a two stage process that should not be modelled as a single stage. Given time, the slow sinks will eventually sequester 100\% of human emissions and not 48\% as the Bern model implies.
+
+\includegraphics{fig/bern_sequestered.png}
+
+\emph{Figure: The chart shows the amount of annual emissions removed by the various components of the Bern model. Unsurprisingly the T∞ component with a decline rate of 0\% removes zero emissions and the T173 slow sink is not much better. Arguably, these components should not be in the model at all. The fast T1.2 and T18.5 sinks are doing all the work. The model does not handle the pre-1965 emissions decline perfectly, shown as underlying, but these too will be removed by the fast sinks and should also be coloured yellow and blue. Note that year on year the amount of CO2 removed has risen as partial P of CO2 has gone up. The gap between the coloured slices and the black line is that portion of emissions that remained in the atmosphere.}
+
+The Bern Model for sequestration of CO2 from Earth's atmosphere imagines the participation of a multitude of processes that are summarised into four time constants of 1.2, 18.5 and 173 years and one constant with infinity (Figure 1). I described it at length in this earlier post \href{http://euanmearns.com/?p=4490}{The Half Life of CO2 in Earth's Atmosphere}.
+
+\href{https://euanmearns.com/whats-up-with-the-bern-model/}{Mearns}
 
 \hypertarget{noresm}{%
 \section{NorESM}\label{noresm}}
@@ -389,43 +559,6 @@ droplet number concentrations.
 
 \href{https://www.cesm.ucar.edu/}{Community Earth System Model CESM}
 
-\hypertarget{convection}{%
-\chapter{Convection}\label{convection}}
-
-\emph{Zhang}
-
-\includegraphics{fig/mesoscale_convection.png}
-
-\emph{Figure: For the first time mesoscale convective systems (MCSs) in both the tropics and midlatitudes and all seasons can be tracked over many years by a new algorithm jointly using satellite observed cloud-top temperature and surface precipitation features at hourly and 10-km resolution globally (top panel). Results show that MCSs account for over 50\% of the annual rainfall across the tropics and many regions of the subtropics and midlatitudes (bottom panel).}
-
-Mesoscale convective systems (MCSs) are a key component in the Earth's energy and hydrological cycles. They can grow to hundreds of kilometers in size, last for more than a day, and produce a majority of the annual rainfall in many regions of the world.
-
-Past efforts to develop MCS databases have been limited to the tropics and used methodologies not well tested in the midlatitudes. Feng et al.~{[}2021{]} developed a new methodology to track MCSs globally using high-resolution satellite observations of both cloud and precipitation. The new method significantly improves the detection of MCSs in the midlatitudes. This new storm tracking database is the first to cover both the tropics and midlatitudes for all seasons.
-
-The study shows that MCSs account for over 50 per cent of the annual rainfall across the tropics and many regions of the subtropics and midlatitudes. Storms over land have more intense convection, while those over oceans produce heavier rainfall and last longer.
-
-This global MCS database supports a broad range of research such as understanding the role of MCSs in global extreme rainfall and circulation, and evaluation of global weather and climate model simulations.
-
-\href{https://eos.org/editor-highlights/new-global-mesoscale-convective-system-tracking-database}{Zhang}
-
-Convective storms of mesoscale dimension are a key component
-in the Earth's energy and hydrological cycle. Mesoscale storms grow to hundreds of kilometers in size
-and can last for more than a day, and produce a majority of the annual rainfall in many regions of the
-world. Past studies of mesoscale storms have been limited to the tropics and used methodologies not well
-tested in the midlatitudes. Here, we develop a new methodology to track mesoscale storms globally using
-high-resolution satellite observations of both cloud and precipitation. The satellite-based storm tracking
-reproduces important storm statistics derived from ground-based radar observations. Our new method
-significantly improves the detection of mesoscale storms in the midlatitudes. This new storm tracking
-database is the first to cover both the tropics and midlatitudes for all seasons. Results show that mesoscale
-convective storms account for over 50\% of annual rainfall across the tropics and many regions of the
-subtropics and midlatitudes. Storms over land have more intense convection, while those over ocean
-produce heavier rainfall and last longer. This global mesoscale storms tracking database supports a broad
-range of applications, such as understanding their role in global extreme rainfall and circulation and
-evaluation of global weather and climate model simulations.
-
-\href{https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020JD034202}{Feng (2021) Mesoscale Convective System}
-\href{pdf/Feng_2021_Mesoscale_Convective_System.pdf}{(pdf)}
-
 \hypertarget{goal-index}{%
 \section{Goal Index}\label{goal-index}}
 
@@ -555,6 +688,100 @@ in climate response or sensitivity experiments.
 
 \href{pdf/Barthel_1988_Coupled_ocean_atmosphere_models_with_flux_corection.pdf}{Sausen (1988) Coupled Ocean-Atmosphere Model Drift Flux Correction (pdf)}
 
+\hypertarget{model-evaluation}{%
+\section{Model-evaluation}\label{model-evaluation}}
+
+\emph{GCMeval: a tool for climate model ensemble evaluation}
+
+\includegraphics{fig/GCMevalNorthEuropeBestModels.png}
+
+The global climate models indicate quite a range of future outcomes in terms of
+precipitation and temperature.
+To account for that, regional scenarios need to use fairly large multi-model ensembles.
+
+\href{https://gcmeval.met.no/}{GCM-eval}
+
+\hypertarget{measuering-forcings}{%
+\subsection{Measuering Forcings}\label{measuering-forcings}}
+
+Earth is on a budget -- an energy budget. Our planet is constantly trying to balance the flow of energy in and out of Earth's system. But human activities are throwing that off balance, causing our planet to warm in response.
+
+Adding more components that absorb radiation -- like greenhouse gases -- or removing those that reflect it -- like aerosols -- throws off Earth's energy balance, and causes more energy to be absorbed by Earth instead of escaping into space. This is called a radiative forcing, and it's the dominant way human activities are affecting the climate.
+
+limate modelling predicts that human activities are causing the release of greenhouse gases and aerosols that are affecting Earth's energy budget. Now, a NASA study has confirmed these predictions with direct observations for the first time: radiative forcings are increasing due to human actions, affecting the planet's energy balance and ultimately causing climate change.
+The \href{https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL091585}{paper} was published online March 25, 2021, in the journal Geophysical Research Letters.
+
+NASA's Clouds and the Earth's Radiant Energy System (CERES) project studies the flow of radiation at the top of Earth's atmosphere. A series of CERES instruments have continuously flown on satellites since 1997. Each measures how much energy enters Earth's system and how much leaves, giving the overall net change in radiation. That data, in combination with other data sources such as ocean heat measurements, shows that there's an energy imbalance on our planet.
+But it doesn't tell us what factors are causing changes in the energy balance.
+
+This study used a new technique to parse out how much of the total energy change is caused by humans. The researchers calculated how much of the imbalance was caused by fluctuations in factors that are often naturally occurring, such as water vapor, clouds, temperature and surface albedo (essentially the brightness or reflectivity of Earth's surface).
+The researchers calculated the energy change caused by each of these natural factors, then subtracted the values from the total. The portion leftover is the radiative forcing.
+
+The team found that human activities have caused the radiative forcing on Earth to increase by about 0.5 Watts per square meter from 2003 to 2018. The increase is mostly from greenhouse gases emissions from things like power generation, transport and industrial manufacturing. Reduced reflective aerosols are also contributing to the imbalance.
+
+\href{https://www.nasa.gov/feature/goddard/2021/direct-observations-confirm-that-humans-are-throwing-earth-s-energy-budget-off-balance}{NASA Goddard Direct Observations of Forcings}
+
+\hypertarget{part-climate-system}{%
+\part{Climate System}\label{part-climate-system}}
+
+\hypertarget{climate-system}{%
+\chapter{Climate System}\label{climate-system}}
+
+\hypertarget{convection}{%
+\section{Convection}\label{convection}}
+
+\emph{Zhang}
+
+\includegraphics{fig/mesoscale_convection.png}
+
+\emph{Figure: For the first time mesoscale convective systems (MCSs) in both the tropics and midlatitudes and all seasons can be tracked over many years by a new algorithm jointly using satellite observed cloud-top temperature and surface precipitation features at hourly and 10-km resolution globally (top panel). Results show that MCSs account for over 50\% of the annual rainfall across the tropics and many regions of the subtropics and midlatitudes (bottom panel).}
+
+Mesoscale convective systems (MCSs) are a key component in the Earth's energy and hydrological cycles. They can grow to hundreds of kilometers in size, last for more than a day, and produce a majority of the annual rainfall in many regions of the world.
+
+Past efforts to develop MCS databases have been limited to the tropics and used methodologies not well tested in the midlatitudes. Feng et al.~{[}2021{]} developed a new methodology to track MCSs globally using high-resolution satellite observations of both cloud and precipitation. The new method significantly improves the detection of MCSs in the midlatitudes. This new storm tracking database is the first to cover both the tropics and midlatitudes for all seasons.
+
+The study shows that MCSs account for over 50 per cent of the annual rainfall across the tropics and many regions of the subtropics and midlatitudes. Storms over land have more intense convection, while those over oceans produce heavier rainfall and last longer.
+
+This global MCS database supports a broad range of research such as understanding the role of MCSs in global extreme rainfall and circulation, and evaluation of global weather and climate model simulations.
+
+\href{https://eos.org/editor-highlights/new-global-mesoscale-convective-system-tracking-database}{Zhang}
+
+Convective storms of mesoscale dimension are a key component
+in the Earth's energy and hydrological cycle. Mesoscale storms grow to hundreds of kilometers in size
+and can last for more than a day, and produce a majority of the annual rainfall in many regions of the
+world. Past studies of mesoscale storms have been limited to the tropics and used methodologies not well
+tested in the midlatitudes. Here, we develop a new methodology to track mesoscale storms globally using
+high-resolution satellite observations of both cloud and precipitation. The satellite-based storm tracking
+reproduces important storm statistics derived from ground-based radar observations. Our new method
+significantly improves the detection of mesoscale storms in the midlatitudes. This new storm tracking
+database is the first to cover both the tropics and midlatitudes for all seasons. Results show that mesoscale
+convective storms account for over 50\% of annual rainfall across the tropics and many regions of the
+subtropics and midlatitudes. Storms over land have more intense convection, while those over ocean
+produce heavier rainfall and last longer. This global mesoscale storms tracking database supports a broad
+range of applications, such as understanding their role in global extreme rainfall and circulation and
+evaluation of global weather and climate model simulations.
+
+\href{https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020JD034202}{Feng (2021) Mesoscale Convective System}
+\href{pdf/Feng_2021_Mesoscale_Convective_System.pdf}{(pdf)}
+
+\hypertarget{earth-energy-imbalance-eei}{%
+\section{Earth Energy Imbalance (EEI)}\label{earth-energy-imbalance-eei}}
+
+\emph{Loeb Abstarct}
+
+Earth's Energy Imbalance (EEI) is a relatively small (presently ∼0.3\%) difference between global mean solar radiation absorbed and thermal infrared radiation emitted to space. EEI is set by natural and anthropogenic climate forcings and the climate system's response to those forcings. It is also influenced by internal variations within the climate system. Most of EEI warms the ocean; the remainder heats the land, melts ice, and warms the atmosphere. We show that independent satellite and in situ observations each yield statistically indistinguishable decadal increases in EEI from mid-2005 to mid-2019 of 0.50±0.47 W m-2 decade-1 (5\%-95\% confidence interval). This trend is primarily due to an increase in absorbed solar radiation associated with decreased reflection by clouds and sea-ice and a decrease in outgoing longwave radiation (OLR) due to increases in trace gases and water vapor. These changes combined exceed a positive trend in OLR due to increasing global mean temperatures.
+
+\includegraphics{fig/earth_energy_imbalance.png}
+
+\emph{Figure: Comparison of overlapping one-year estimates at 6-month intervals of net top-of-the-atmosphere annual
+energy flux from the CERES EBAF Ed4.1 product (solid red line) and an in situ observational estimate of uptake of
+energy by Earth climate system (solid blue line). Dashed lines correspond to least squares linear regression fits to the data}
+
+\href{https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021GL093047}{Loeb (2021) Satellite and Ocean Data Reveal Marked Increase in Earth's Heating Rate}
+\href{pdf/Loeb_2021_Earths_Heating_Rate.pdf}{(pdf)}
+\href{https://www.nasa.gov/feature/langley/joint-nasa-noaa-study-finds-earths-energy-imbalance-has-doubled}{NASA}
+\href{https://www.theguardian.com/science/2021/jun/17/earth-trapping-heat-study-nasa-noaa}{Guardian}
+
 \hypertarget{spatial-shock}{%
 \section{Spatial Shock}\label{spatial-shock}}
 
@@ -589,41 +816,40 @@ We find large losses in coastal areas of south and east Asia, with countries suc
 
 \href{https://www.aeaweb.org/research/klaus-desmet-migration-climate-change}{Desmet}
 
-\hypertarget{model-evaluation}{%
-\section{Model-evaluation}\label{model-evaluation}}
+\hypertarget{climate-stability}{%
+\chapter{Climate Stability}\label{climate-stability}}
 
-\emph{GCMeval: a tool for climate model ensemble evaluation}
+\emph{Crona}
 
-\includegraphics{fig/GCMevalNorthEuropeBestModels.png}
+Climate stability is a service provided by a healthy biosphere,
+through complex interconnections between land, water, and
+atmosphere.
 
-The global climate models indicate quite a range of future outcomes in terms of
-precipitation and temperature.
-To account for that, regional scenarios need to use fairly large multi-model ensembles.
+\href{https://www.sciencedirect.com/science\%20/article/pii/S2590332221002359\#undfig1}{Crona (2021) The Anthropocene reality of financial risk}
+\href{pdf/Crona_2021_Anthropocene_reality_of\%20Financial_Risk.pdf}{(pdf)}
+\href{pdf/Crona_2021_Anthropocene_reality_of\%20Financial_Risk_SI.pdf}{(pdf SI)}
+\href{https://www.cell.com/one-earth/fulltext/S2590-3322(21)00235-9?_returnURL=\%20https\%3A\%2F\%2Flinkinghub.elsevier.com\%2Fretrieve\%2Fpii\%2FS2590332221002359\%3Fshowall\%3Dtrue}{Alt link: One Earth}
 
-\href{https://gcmeval.met.no/}{GCM-eval}
+\hypertarget{tipping}{%
+\chapter{Tipping}\label{tipping}}
 
-\hypertarget{measuering-forcings}{%
-\subsection{Measuering Forcings}\label{measuering-forcings}}
+\emph{Wunderling Abstract}
 
-Earth is on a budget -- an energy budget. Our planet is constantly trying to balance the flow of energy in and out of Earth's system. But human activities are throwing that off balance, causing our planet to warm in response.
+With progressing global warming, there is an increased risk that one or several tipping elements in the climate system might cross a critical threshold, resulting in severe consequences for the global climate, ecosystems and human societies. While the underlying processes are fairly well-understood, it is unclear how their interactions might impact the overall stability of the Earth's climate system. As of yet, this cannot be fully analysed with state-of-the-art Earth system models due to computational constraints as well as some missing and uncertain process representations of certain tipping elements. Here, we explicitly study the effects of known physical interactions among the Greenland and West Antarctic ice sheets, the Atlantic Meridional Overturning Circulation (AMOC) and the Amazon rainforest using a conceptual network approach. We analyse the risk of domino effects being triggered by each of the individual tipping elements under global warming in equilibrium experiments. In these experiments, we propagate the uncertainties in critical temperature thresholds, interaction strengths and interaction structure via large ensembles of simulations in a Monte Carlo approach. Overall, we find that the interactions tend to destabilise the network of tipping elements. Furthermore, our analysis reveals the qualitative role of each of the four tipping elements within the network, showing that the polar ice sheets on Greenland and West Antarctica are oftentimes the initiators of tipping cascades, while the AMOC acts as a mediator transmitting cascades. This indicates that the ice sheets, which are already at risk of transgressing their temperature thresholds within the Paris range of 1.5 to 2 ∘C, are of particular importance for the stability of the climate system as a whole.
 
-Adding more components that absorb radiation -- like greenhouse gases -- or removing those that reflect it -- like aerosols -- throws off Earth's energy balance, and causes more energy to be absorbed by Earth instead of escaping into space. This is called a radiative forcing, and it's the dominant way human activities are affecting the climate.
+\includegraphics{fig/tipping_elements.png}
 
-limate modelling predicts that human activities are causing the release of greenhouse gases and aerosols that are affecting Earth's energy budget. Now, a NASA study has confirmed these predictions with direct observations for the first time: radiative forcings are increasing due to human actions, affecting the planet's energy balance and ultimately causing climate change.
-The \href{https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL091585}{paper} was published online March 25, 2021, in the journal Geophysical Research Letters.
+Risk increases significantly when considering interactions between these climate tipping elements and that these interactions tend to have an overall destabilising effect. Altogether, with the exception of the Greenland Ice Sheet, interactions effectively push the critical threshold temperatures to lower warming levels, thereby reducing the overall stability of the climate system. The domino-like interactions also foster cascading, non-linear responses. Under these circumstances, our model indicates that cascades are predominantly initiated by the polar ice sheets and mediated by the AMOC. Therefore, our results also imply that the negative feedback loop connecting the Greenland Ice Sheet and the AMOC might not be able to stabilise the climate system as a whole.
 
-NASA's Clouds and the Earth's Radiant Energy System (CERES) project studies the flow of radiation at the top of Earth's atmosphere. A series of CERES instruments have continuously flown on satellites since 1997. Each measures how much energy enters Earth's system and how much leaves, giving the overall net change in radiation. That data, in combination with other data sources such as ocean heat measurements, shows that there's an energy imbalance on our planet.
-But it doesn't tell us what factors are causing changes in the energy balance.
+\href{https://esd.copernicus.org/articles/12/601/2021/}{Wunderling (2021) Interacting tipping elements increase risk of climate domino effects under global warming}
 
-This study used a new technique to parse out how much of the total energy change is caused by humans. The researchers calculated how much of the imbalance was caused by fluctuations in factors that are often naturally occurring, such as water vapor, clouds, temperature and surface albedo (essentially the brightness or reflectivity of Earth's surface).
-The researchers calculated the energy change caused by each of these natural factors, then subtracted the values from the total. The portion leftover is the radiative forcing.
-
-The team found that human activities have caused the radiative forcing on Earth to increase by about 0.5 Watts per square meter from 2003 to 2018. The increase is mostly from greenhouse gases emissions from things like power generation, transport and industrial manufacturing. Reduced reflective aerosols are also contributing to the imbalance.
-
-\href{https://www.nasa.gov/feature/goddard/2021/direct-observations-confirm-that-humans-are-throwing-earth-s-energy-budget-off-balance}{NASA Goddard Direct Observations of Forcings}
+\href{https://www.theguardian.com/environment/2021/jun/03/climate-tipping-points-could-topple-like-dominoes-warn-scientists}{Guardian}
 
 \hypertarget{climate-change-indicators}{%
 \chapter{Climate Change Indicators}\label{climate-change-indicators}}
+
+\hypertarget{epa}{%
+\section{EPA}\label{epa}}
 
 EPA partners with more than 50 data contributors from various government agencies, academic institutions, and other U.S and international organizations to compile a key set of indicators related to the causes and effects of climate change.
 
@@ -640,6 +866,13 @@ EPA's climate change indicators are grouped into six categories:
 [Health and Society](https://www.epa.gov/climate-indicators/health-society)
 [Ecosystems](https://www.epa.gov/climate-indicators/ecosystems)
 \end{verbatim}
+
+\hypertarget{guardian}{%
+\section{Guardian}\label{guardian}}
+
+This page will track a selection of the planet's vital signs, from carbon dioxide levels to Arctic sea ice, and act as a reference point. The graphs are fed from data sources including Nasa, the US National Snow and Ice Data Center and the National Oceanic and Atmospheric Administration. They will automatically update and follow the Earth's climate trajectory, providing a visual representation of the climate crisis.
+
+\href{https://www.theguardian.com/environment/ng-interactive/2020/oct/05/climate-data-dashboard-carbon-atmosphere-sea-level-arctic-ice}{Guardian Environment Interactive}
 
 \hypertarget{ipcc}{%
 \chapter{IPCC}\label{ipcc}}
@@ -1224,6 +1457,18 @@ Automatic detection of extreme events and abrupt shifts in climate datasets usin
 
 \href{https://futureearth.org/2021/02/22/remote-sensing-of-tipping-points-in-the-climate-system/}{futureearth}
 
+\hypertarget{exxons-1980s-scenario}{%
+\section{Exxon's 1980s Scenario}\label{exxons-1980s-scenario}}
+
+Exxon's research warned of the risks of climate change from human-cause greenhouse gas emissions 40 years ago. Then came the `sea change' at the energy company.
+
+\includegraphics{fig/Exxon_Paths_Chart.jpeg}
+
+After deepening the company's understanding of an environmental problem it suspected could harm its business, Exxon put its muscle behind efforts to manufacture doubt about the reality of global warming.
+They deliberately created doubt when their internal research confirmed how serious a threat it was.
+
+\href{https://insideclimatenews.org/news/24102019/exxon-scientists-climate-research-testify-congess-denial/}{Lavelle (2019) Former Exxon Scientists Tell Congress of Oil Giant's Climate Research Before Exxon Turned to Denial}
+
 \hypertarget{decoupling}{%
 \chapter{Decoupling}\label{decoupling}}
 
@@ -1295,7 +1540,8 @@ Some text on Albedo
 
 \begin{verbatim}
 - Emissions
-    - CO2    
+    - CO2
+    - NO2   
     - Methane
     -
 - Attributing Emissions
@@ -1314,6 +1560,13 @@ The UK (like the US) is 5X more responsible for global warming than the average 
 \hypertarget{co2}{%
 \subsection{CO2}\label{co2}}
 
+\emph{NOAA Global Monitoring Center}
+
+\includegraphics{fig/co2_trend_all_gl_may21.png}
+\includegraphics{fig/co2_trend_gl_may21.png}
+
+\href{https://gml.noaa.gov/ccgg/trends/global.html}{NOAA Global Monitoring Center}
+
 \emph{James Hansen}
 
 \includegraphics{fig/CO2_Annual_Increase.png}
@@ -1322,14 +1575,179 @@ The CO2 growth rate (Fig. 5) is now a bit below the peaks that occur in conjunct
 
 \href{https://mailchi.mp/caa/the-world-has-cooled-off-whats-the-significance}{James Hansen 13 May 2021}
 
-\hypertarget{n2o}{%
-\subsection{N2O}\label{n2o}}
+\hypertarget{measurement-of-co2}{%
+\subsubsection{Measurement of CO2}\label{measurement-of-co2}}
 
-The growth rate of the third strongest greenhouse gas, N2O, does not provide any good news. Its growth rate continues to increase.
+\textbf{Mauna Loa}
 
-\includegraphics{fig/N2O_Abundance.png}
+\emph{Ryan Abstract}
 
-\href{https://mailchi.mp/caa/the-world-has-cooled-off-whats-the-significance}{James Hansen 13 May 2021}
+A continuous 37 year record of the quiescent CO2 outgassing of Mauna Loa volcano was derived from atmospheric measurements made 6 km downslope of the summit caldera at Mauna Loa Observatory. The volcanic plume is sometimes trapped in the temperature inversion near the ground at night and transported downslope to the observatory. The amount of volcanic CO2 was greatest shortly after the 1975 and 1984 eruptions and then decreased exponentially with decay constants of 6.5 and 1.6 years respectively. Between 1959 and 1973 the decay constant was 6.1 years. The total reservoir mass of CO2 during each of the three quiescent periods was similar and estimated to be between 2 X 108 kg and 5 X 108 kg (0.2 Mt to 0.5 Mt). The 1975 eruption may have been preceded by a small increase in CO2 emissions. A similar increase has occurred since early 1993. Condensation nuclei (CN), presumably consisting of sulfate aerosol, were measured in the volcanic plume throughout the 1974 to 1994 record. The post-1975 period had consistently high levels of CN. Between 1977 and 1980, light-scattering aerosols were detected, coincident with a period of visible fuming at the summit. CN levels after the 1984 eruption were greatly reduced. Two brief periods of low CN emissions during this time correlate with temporary halts or reductions in the rate of summit expansion. These temporary reversals in the inflation of the mountain did not affect the steady exponential decline of the CO2 emissions rate. Upper limits were set on the amounts of H2O, O3, CH4, SO2, aerosol carbon, radon, CO, and H2 present in the plume at various periods between 1974 and 1993. The ratio of SO2 to CO2 was less than 1.8 X 10-3 between 1988 and 1992.
+
+\href{https://web.archive.org/web/19980114152259/http://mloserv.mlo.hawaii.gov/publish/steve/VolcCO2.htm}{Ryan (1995) Quiescent Outgassing of Mauna Loa Volcano 1958-1994}
+
+\href{https://gml.noaa.gov/obop/mlo/}{NOAA Mauna Loa Observatory}
+\href{https://gml.noaa.gov/ccgg/about/co2_measurements.html}{dto. Measurement Methods}
+
+\textbf{Wet Chemical Analysis}
+
+\emph{Beck Abstract}
+
+More than 90,000 accurate chemical analyses of CO2 in air since 1812 are summarised. The historic chemical data reveal that changes in CO2 track changes in temperature, and therefore climate in contrast to the simple, monotonically increasing CO2 trend depicted in the post-1990 literature on climate-change. Since 1812, the CO2 concentration in northern hemispheric air has fluctuated exhibiting three high level maxima around 1825, 1857 and 1942 the latter showing more than 400 ppm.
+
+Between 1857 and 1958, the Pettenkofer process was the standard analytical method for determining atmospheric carbon dioxide levels, and usually achieved an accuracy better than 3\%. These determinations were made by several scientists of Nobel Prize level distinction. Following Callendar (1938), modern climatologists have generally ignored the historic determinations of CO2, despite the techniques being standard text book procedures in several different disciplines. Chemical methods were discredited as unreliable choosing only few which fit the assumption of a climate CO2 connection.
+
+\href{https://journals.sagepub.com/doi/10.1260/095830507780682147}{Beck (2007) ``180 years of CO2 analysis by chemical methods'' (paywall)}
+
+\href{pdf/Beck_CO2_Chemical.pdf}{Beck (pdf)}
+
+\emph{Keeling on Beck}
+
+Beck questions whether the rise in atmospheric CO2 over the past 50 years
+is truly unprecedented, citing observations that appear to indicate much
+higher variability inj the 19th and 20th centuries.
+If Beck's contentions were true, they would overthrow 50 years of scientific advance
+and discovery.
+Unfortunately for Beck - as well as for humanity - yhe claim's don't stand up.
+
+As Keeling grasped already in 1957 - before ha had shown that CO2 was increasing -
+the earlier chemical measurements exhibit far too much geographic and short-term variability to plausibly be reprenstaive of the background.
+The variablility of these early measurements must therefore be attributed to ``local or regional'' factors or poor measurement practice.
+
+\href{https://www.jstor.org/stable/44397310?seq=1}{Keeling on Beck ``180 years of CO2 analysis by chemical methods''}
+
+\hypertarget{antropogenic-co2}{%
+\subsubsection{Antropogenic CO2}\label{antropogenic-co2}}
+
+\includegraphics{fig/CO2_emissions_vs_concentrations_1751-2019.png}
+
+\href{https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide}{Figure Source}
+
+\textbf{How do we know that recent CO2 increases are due to human activities?}
+
+\href{https://www.realclimate.org/index.php/archives/2004/12/how-do-we-know-that-recent-cosub2sub-increases-are-due-to-human-activities-updated/}{RealClimate}
+
+\href{https://www.realclimate.org/index.php/archives/2005/06/how-much-of-the-recent-cosub2sub-increase-is-due-to-human-activities/}{RealClimate Simple Explanation}
+
+\href{https://www.realclimate.org/index.php/archives/2004/12/how-do-we-know-that-recent-co2-increases-are-due-to-human-activities/}{realClimate Technical}
+
+\href{https://gml.noaa.gov/ccgg/isotopes/mixing.html}{NOAA Isotopes Measurement}
+
+\emph{O'Connor}
+
+Abstract: In this work, a semi-empirical relationship of carbon dioxide emissions with atmospheric
+CO 2 concentrations has been developed that is capable of closely replicating observations from 1751
+to 2018. The analysis was completed using data from fossil-fuel-based and land-use change based
+CO 2 emissions, both singly and together. Evaluation of emissions data from 1750 to 1890 yields a
+linear CO 2 concentration component that may be attributed to the net flux from land-use changes
+combined with a rapidly varying component of the terrestrial sink. This linear component is then
+coupled across the full-time period with a CO 2 concentration calculation using fossil-fuel
+combustion/cement production emissions with a single, fixed fossil-fuel combustion airborne
+fraction {[}AF FF {]} value that is determined by the ocean sink coupled with the remaining slowly
+varying component of the land sink. The analysis of the data shows that AF FF has remained constant
+at 51.3\% over the past 268 years. However, considering the broad range of variables including
+emission and sink processes influencing the climate, it may not be expected that a single value for
+AF FF would accurately reproduce the measured changes in CO 2 concentrations during the industrial
+era.
+
+\href{https://www.researchgate.net/publication/341129655_Modeling_of_Atmospheric_Carbon_Dioxide_CO2_Concentrations_as_a_Function_of_Fossil-Fuel_and_Land-Use_Change_CO2_Emissions_Coupled_with_Oceanic_and_Terrestrial_Sequestration}{O'Connor (2020) Modeling of Atmospheric Carbon Dioxide (CO2) Concentrations as a Function of Fossil-Fuel and Land-Use Change CO2 Emissions Coupled with Oceanic and Terrestrial Sequestration}
+\href{pdf/OConner_2020_Fossil_CO2_Measurement.pdf}{(pdf)}
+\href{pdf/OConner_2020_Fossil_CO2_Measurement_SI.pdf}{(pdf SI)}
+
+\hypertarget{c14-measurement}{%
+\subsubsection{C14 Measurement}\label{c14-measurement}}
+
+\emph{Basu}
+
+We report national scale estimates of CO2 emissions from fossil-fuel combustion and cement production in the United States based directly on atmospheric observations, using a dual-tracer inverse modeling framework and CO2 and Δ14CO2 measurements obtained primarily from the North American portion of the National Oceanic and Atmospheric Administration's Global Greenhouse Gas Reference Network. The derived US national total for 2010 is 1,653 ± 30 TgC yr−1 with an uncertainty (1σ) that takes into account random errors associated with atmospheric transport, atmospheric measurements, and specified prior CO2 and 14C fluxes. The atmosphere-derived estimate is significantly larger (\textgreater3σ) than US national emissions for 2010 from three global inventories widely used for CO2 accounting, even after adjustments for emissions that might be sensed by the atmospheric network, but which are not included in inventory totals. It is also larger (\textgreater2σ) than a similarly adjusted total from the US Environmental Protection Agency (EPA), but overlaps EPA's reported upper 95\% confidence limit. In contrast, the atmosphere-derived estimate is within 1σ of the adjusted 2010 annual total and nine of 12 adjusted monthly totals aggregated from the latest version of the high-resolution, US-specific ``Vulcan'' emission data product. Derived emissions appear to be robust to a range of assumed prior emissions and other parameters of the inversion framework. While we cannot rule out a possible bias from assumed prior Net Ecosystem Exchange over North America, we show that this can be overcome with additional Δ14CO2 measurements. These results indicate the strong potential for quantification of US emissions and their multiyear trends from atmospheric observations.
+
+\href{https://www.pnas.org/content/117/24/13300}{Basu (2020) Estimating US fossil fuel CO2 emissions from measurements of C14 in atmospheric CO2}
+
+\hypertarget{globale-co2-rise}{%
+\subsubsection{Globale CO2 Rise}\label{globale-co2-rise}}
+
+\textbf{The global CO2 rise: Facts and Denial Tricks}
+
+\href{https://www.realclimate.org/index.php/archives/2018/01/the-global-co2-rise-the-facts-exxon-and-the-favorite-denial-tricks/}{RealClimate}
+
+\hypertarget{turnover-time}{%
+\subsubsection{Turnover time}\label{turnover-time}}
+
+\textbf{Climate Myth: CO2 has a short residence time}
+
+``{[}T{]}he overwhelming majority of peer-reviewed studies {[}find{]} that CO2 in the atmosphere remained there a short time.''
+
+The claim goes like this:
+
+\begin{quote}
+\begin{enumerate}
+\def\labelenumi{(\Alph{enumi})}
+\tightlist
+\item
+  Predictions for the Global Warming Potential (GWP) by the IPCC express the warming effect CO2 has over several time scales; 20, 100 and 500 years.\\
+\item
+  But CO2 has only a 5 year life time in the atmosphere.\\
+\item
+  Therefore CO2 cannot cause the long term warming predicted by the IPCC.
+\end{enumerate}
+\end{quote}
+
+This claim is false. (A) is true. (B) is also true. But B is irrelevant and misleading so it does not follow that C is therefore true.
+
+The claim hinges on what life time means. To understand this, we have to first understand what a box model is: In an environmental context, systems are often described by simplified box models. A simple example (from school days) of the water cycle would have just 3 boxes: clouds, rivers, and the ocean.
+
+A representation of the carbon cycle (ignore the numbers for now) would look like this one from NASA.
+
+\includegraphics{fig/carbon_cycle_NASA.jpg}
+
+In the IPCC 4th Assessment Report glossary, ``lifetime'' has several related meanings. The most relevant one is:
+
+\begin{quote}
+``Turnover time (T) (also called global atmospheric lifetime) is the ratio of the mass M of a reservoir (e.g., a gaseous compound in the atmosphere) and the total rate of removal S from the reservoir: T = M / S. For each removal process, separate turnover times can be defined. In soil carbon biology, this is referred to as Mean Residence Time.''
+\end{quote}
+
+In other words, life time is the average time an individual particle spends in a given box. It is calculated as the size of box (reservoir) divided by the overall rate of flow into (or out of) a box. The IPCC Third Assessment Report 4.1.4 gives more details.
+
+In the carbon cycle diagram above, there are two sets of numbers. The black numbers are the size, in gigatonnes of carbon (GtC), of the box. The purple numbers are the fluxes (or rate of flow) to and from a box in gigatonnes of carbon per year (Gt/y).
+
+A little quick counting shows that about 200 Gt C leaves and enters the atmosphere each year. As a first approximation then, given the reservoir size of 750 Gt, we can work out that the residence time of a given molecule of CO2 is 750 Gt C / 200 Gt C y-1 = about 3-4 years. (However, careful counting up of the sources (supply) and sinks (removal) shows that there is a net imbalance; carbon in the atmosphere is increasing by about 3.3 Gt per year).
+
+It is true that an individual molecule of CO2 has a short residence time in the atmosphere. However, in most cases when a molecule of CO2 leaves the atmosphere it is simply swapping places with one in the ocean. Thus, the warming potential of CO2 has very little to do with the residence time of CO2.
+
+What really governs the warming potential is how long the extra CO2 remains in the atmosphere. CO2 is essentially chemically inert in the atmosphere and is only removed by biological uptake and by dissolving into the ocean. Biological uptake (with the exception of fossil fuel formation) is carbon neutral: Every tree that grows will eventually die and decompose, thereby releasing CO2. (Yes, there are maybe some gains to be made from reforestation but they are probably minor compared to fossil fuel releases).
+
+Dissolution of CO2 into the oceans is fast but the problem is that the top of the ocean is ``getting full'' and the bottleneck is thus the transfer of carbon from surface waters to the deep ocean. This transfer largely occurs by the slow ocean basin circulation and turn over (*3). This turnover takes 500-1000ish years. Therefore a time scale for CO2 warming potential out as far as 500 years is entirely reasonable (See IPCC 4th Assessment Report Section 2.10).
+
+\href{https://skepticalscience.com/argument.php?p=3\&t=154\&\&a=80}{SkepticalScience}
+
+\hypertarget{carbon-cycle}{%
+\subsection{Carbon Cycle}\label{carbon-cycle}}
+
+\includegraphics{fig/carbon_cycle_WG1AR5ch6.jpg}
+
+\emph{Figure: Simplified schematic of the global carbon cycle. Numbers represent reservoir mass, also called `carbon stocks' in PgC (1 PgC = 10 15 gC) and annual carbon exchange
+fluxes (in PgC yr --1 ). Black numbers and arrows indicate reservoir mass and exchange fluxes estimated for the time prior to the Industrial Era, about 1750 (see Section 6.1.1.1 for
+references). Fossil fuel reserves are from GEA (2006) and are consistent with numbers used by IPCC WGIII for future scenarios. The sediment storage is a sum of 150 PgC of the
+organic carbon in the mixed layer (Emerson and Hedges, 1988) and 1600 PgC of the deep-sea CaCO 3 sediments available to neutralize fossil fuel CO 2 (Archer et al., 1998). Red
+arrows and numbers indicate annual `anthropogenic' fluxes averaged over the 2000--2009 time period. These fluxes are a perturbation of the carbon cycle during Industrial Era
+post 1750. These fluxes (red arrows) are: Fossil fuel and cement emissions of CO 2 (Section 6.3.1), Net land use change (Section 6.3.2), and the Average atmospheric increase of
+CO 2 in the atmosphere, also called `CO 2 growth rate' (Section 6.3). The uptake of anthropogenic CO 2 by the ocean and by terrestrial ecosystems, often called `carbon sinks' are
+the red arrows part of Net land flux and Net ocean flux. Red numbers in the reservoirs denote cumulative changes of anthropogenic carbon over the Industrial Period 1750--2011
+(column 2 in Table 6.1). By convention, a positive cumulative change means that a reservoir has gained carbon since 1750. The cumulative change of anthropogenic carbon in the
+terrestrial reservoir is the sum of carbon cumulatively lost through land use change and carbon accumulated since 1750 in other ecosystems (Table 6.1). Note that the mass balance
+of the two ocean carbon stocks Surface ocean and Intermediate and deep ocean includes a yearly accumulation of anthropogenic carbon (not shown). Uncertainties are reported
+as 90\% confidence intervals. Emission estimates and land and ocean sinks (in red) are from Table 6.1 in Section 6.3. The change of gross terrestrial fluxes (red arrows of Gross
+photosynthesis and Total respiration and fires) has been estimated from CMIP5 model results (Section 6.4). The change in air--sea exchange fluxes (red arrows of ocean atmosphere
+gas exchange) have been estimated from the difference in atmospheric partial pressure of CO 2 since 1750 (Sarmiento and Gruber, 2006). Individual gross fluxes and their changes
+since the beginning of the Industrial Era have typical uncertainties of more than 20\%, while their differences (Net land flux and Net ocean flux in the figure) are determined from
+independent measurements with a much higher accuracy (see Section 6.3). Therefore, to achieve an overall balance, the values of the more uncertain gross fluxes have been adjusted
+so that their difference matches the Net land flux and Net ocean flux estimates. Fluxes from volcanic eruptions, rock weathering (silicates and carbonates weathering reactions
+resulting into a small uptake of atmospheric CO 2 ), export of carbon from soils to rivers, burial of carbon in freshwater lakes and reservoirs and transport of carbon by rivers to the
+ocean are all assumed to be pre-industrial fluxes, that is, unchanged during 1750--2011. Some recent studies (Section 6.3) indicate that this assumption is likely not verified, but
+global estimates of the Industrial Era perturbation of all these fluxes was not available from peer-reviewed literature. The atmospheric inventories have been calculated using a
+conversion factor of 2.12 PgC per ppm (Prather et al., 2012).}
+
+\href{pdf/WG1AR5_Chapter06_FINAL.pdf}{WG1AR5ch6 (pdf)}
 
 \hypertarget{methane}{%
 \subsection{Methane}\label{methane}}
@@ -1421,6 +1839,43 @@ The permafrost is a closed lid over the seafloor that's keeping everything in pl
 
 \href{https://eos.org/articles/a-massive-methane-reservoir-is-lurking-beneath-the-sea\#.YJUr2-3rTRI.twitter}{Eos}
 
+\hypertarget{methane-other}{%
+\subsection{Methane (other)}\label{methane-other}}
+
+\emph{Guardian}
+
+Another setback has arisen in the attempt to neutralise methane as it escapes from beneath melting Arctic ice. Methane bubble plumes are increasingly being seen in the Arctic, and Wadhams is frustrated that the Intergovernmental Panel on Climate Change (IPCC) has not yet accepted his theory that, as the ice melts, we could face a catastrophic escape of methane that has been stored for 20,000 years. Estimates, he says, range from 50 to 700 gigatonnes, which could ``cause maybe a degree {[}centigrade{]} of warming, more or less instantly'', bringing forward by 15--35 years the average date at which the global mean temperature rise exceeds 2°C above pre-industrial levels.
+
+The best geoengineering prevention for that relies, again, on the ocean. ``If you blow a fine powder, or aerosol, of an iron salt called ferric chloride over the sea surface in the place where methane is bubbling out, it reacts with the methane, producing ferric hydroxide, which dissolves in the water,'' he says.
+
+Frustratingly for the theory's backers, a test voyage this year by the University of Copenhagen found no evidence that it could work efficiently enough to remove the required amounts of the gas.
+
+Guardian{]}(\url{https://www.theguardian.com/environment/2021/jun/23/cloud-spraying-and-hurricane-slaying-could-geoengineering-fix-the-climate-crisis})
+
+\hypertarget{ozone-layer}{%
+\section{Ozone Layer}\label{ozone-layer}}
+
+\hypertarget{artic-ozone-hole}{%
+\subsection{Artic Ozone Hole}\label{artic-ozone-hole}}
+
+\emph{Berwyn}
+
+The ozone layer, Earth's protection against intense ultraviolet radiation, is at risk, despite the progress made in protecting atmospheric ozone by the 1987 Montreal Protocol.
+
+Warming of the surface of the Arctic is matched by a colder polar vortex high in the atmosphere, which is speeding the breakdown of the Earth's shield against ultraviolet rays.
+
+As greenhouse gases heated the surface of the planet, the researchers said, they have also, during the past 50 years, cooled the upper layers of the atmosphere over the Arctic. In the colder stratosphere, long-lived pollutants like chlorofluorocarbons and halons from refrigerants and industrial solvents break down and release chlorine and bromine, which react with sunlight to destroy ozone.
+
+Concentrations of those pollutants in the atmosphere have decreased by about 10 percent since the ban, allowing the ozone layer above Antarctica to heal over the past 20 years, but progressively colder temperatures in the stratosphere above the Arctic are increasing the destruction of ozone in that region
+
+\href{https://insideclimatenews.org/news/23062021/climate-research-mosaic-arctic-ozone/}{Berwyn (2020) Ozone Alarm in the High North - InsideClimateNews}
+
+\emph{von der Gathen - Abstract}
+
+Chemical loss of Arctic ozone due to anthropogenic halogens is driven by temperature, with more loss occurring during cold winters favourable for formation of polar stratospheric clouds (PSCs). We show that a positive, statistically significant rise in the local maxima of PSC formation potential (PFPLM) for cold winters is apparent in meteorological data collected over the past half century. Output from numerous General Circulation Models (GCMs) also exhibits positive trends in PFPLM over 1950 to 2100, with highest values occurring at end of century, for simulations driven by a large rise in the radiative forcing of climate from greenhouse gases (GHGs). We combine projections of stratospheric halogen loading and humidity with GCM-based forecasts of temperature to suggest that conditions favourable for large, seasonal loss of Arctic column O3 could persist or even worsen until the end of this century, if future abundances of GHGs continue to steeply rise.
+
+\href{https://www.nature.com/articles/s41467-021-24089-6}{von der Gathen (2021) Climate change favours large seasonal loss of Arctic ozone}
+
 \hypertarget{stratosphere-shrinking}{%
 \section{Stratosphere shrinking}\label{stratosphere-shrinking}}
 
@@ -1437,6 +1892,49 @@ The stratosphere extends from about 20km to 60km above the Earth's surface. Belo
 Rising emissions of anthropogenic greenhouse gases (GHG) have led to tropospheric warming and stratospheric cooling over recent decades. As a thermodynamic consequence, the troposphere has expanded and the rise of the tropopause, the boundary between the troposphere and stratosphere, has been suggested as one of the most robust fingerprints of anthropogenic climate change. Conversely, at altitudes above \textasciitilde55 km (in the mesosphere and thermosphere) observational and modeling evidence indicates a downward shift of the height of pressure levels or decreasing density at fixed altitudes. The layer in between, the stratosphere, has not been studied extensively with respect to changes of its global structure. Here we show that this atmospheric layer has contracted substantially over the last decades, and that the main driver for this are increasing concentrations of GHG. Using data from coupled chemistry-climate models we show that this trend will continue and the mean climatological thickness of the stratosphere will decrease by 1.3 km following representative concentration pathway 6.0 by 2080. We also demonstrate that the stratospheric contraction is not only a response to cooling, as changes in both tropopause and stratopause pressure contribute. Moreover, its short emergence time (less than 15 years) makes it a novel and independent indicator of GHG induced climate change.
 
 \href{https://iopscience.iop.org/article/10.1088/1748-9326/abfe2b}{Pisoft}
+
+\hypertarget{n2o}{%
+\subsection{N2O}\label{n2o}}
+
+The growth rate of the third strongest greenhouse gas, N2O, does not provide any good news. Its growth rate continues to increase.
+
+\includegraphics{fig/N2O_Abundance.png}
+
+\href{https://mailchi.mp/caa/the-world-has-cooled-off-whats-the-significance}{James Hansen 13 May 2021}
+
+\hypertarget{contrails}{%
+\section{Contrails}\label{contrails}}
+
+\emph{Pearce}
+
+New research shows that condensation trails from aircraft exhaust are playing a significant role in global warming. Experts are concerned that efforts to change aviation engine design to reduce CO2 emissions could actually create more contrails and raise daily temperatures even more.
+
+Like regular cirrus clouds, contrail clouds trap heat radiating from the earth's surface, causing warming in the air below.
+
+Contrails are human-made clouds. They form in air above about 25,000 feet, when that air is moist and colder than -40 degrees Celsius. Like regular clouds, they arise when water vapor, in this case from the engine exhausts, forms into droplets by condensing onto particles in the air, in this case soot from the engines. Within a second, the water droplets freeze to make tiny ice crystals that show up visually as contrails.
+
+If the air is not cool or moist enough, contrails may not form or may disappear quickly. But at other times, they stick around -- either as tight, white lines in the sky, like chalk marks, or gradually spreading to create thin layers of ice clouds. They are similar to natural cirrus clouds and are often called contrail cirrus clouds.
+
+Contrail cirrus clouds cover around 0.6 percent of the global skies at any one time --- nine times the amount covered by contrails themselves. In areas with high amounts of air traffic, they can merge to cover as much as 38,000 square miles, roughly the size of Indiana, and last for many hours or even days.
+
+\includegraphics{fig/contrails.jpg}
+
+Like regular cirrus clouds, contrail cirrus clouds have two competing effects on climate. They shade us by reflecting incoming sunlight back into space. But they also trap heat radiating from the earth's surface, so causing warming in the air below.
+
+During the day, cooling compensates part of the warming. But at night, with no sunlight, only the warming effect operates. Red-eye flights are a red light for climate.
+
+The average effect on the earth's radiation balance of contrails and contrail cirrus is 50 milliwatts per square meter of the earth's surface.
+The figure is for 2006, the base year for the U.S. Federal Aviation Administration dataset used by the authors. It was double the 24 milliwatts from the CO2 that had accumulated in the atmosphere from a century of aviation (and is a significant part of a total anthropogenic effect at the time of around 1,600 milliwatts).
+
+One is to divert aircraft away from air where contrails are likely to form. This can be done vertically by changing altitude, or horizontally by detouring around the problem air. But aircraft currently fly the shortest routes and at altitudes that minimize fuel burn \ldots controlling contrail formation in this way\ldots{} will almost certainly lead to increases in aircraft CO2 emissions.
+
+A second approach to minimizing contrails is to change fuels --- from kerosene-based fuels to biofuels, hydrogen, liquid natural gas, or even electricity.
+
+Even if fuel changes reduce soot emissions, researchers estimate contrail production will increase by a factor of 2.8 by 2050.
+
+\href{https://e360.yale.edu/features/how-airplane-contrails-are-helping-make-the-planet-warmer}{Pearce (2019) Airplane Contrails make Planet warmer}
+
+\href{https://twitter.com/KenCaldeira/status/1394648353594515460/photo/1}{Kaldeira (twitter thread)}
 
 \hypertarget{attributing-emissions}{%
 \section{Attributing Emissions}\label{attributing-emissions}}
@@ -1684,6 +2182,18 @@ from GrIS SMB in the year 2100.
 \href{https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL090471}{Noel (2021) Greenland Ice Sheet Loss}
 \href{pdf/Noel_2021_Greenland_Ice_Sheet_Loss.pdf}{(pdf)}
 
+\emph{Boers Significance}
+
+It has been suggested that, in response to anthropogenic global warming, the Greenland Ice Sheet may reach a tipping point beyond which its current configuration would become unstable. A crucial nonlinear mechanism for the existence of this tipping point is the positive melt-elevation feedback: Melting reduces ice sheet height, exposing the ice sheet surface to warmer temperatures, which further accelerates melting. We reveal early-warning signals for a forthcoming critical transition from ice-core-derived height reconstructions and infer that the western Greenland Ice Sheet has been losing stability in response to rising temperatures. We show that the melt-elevation feedback is likely to be responsible for the observed destabilization. Our results suggest substantially enhanced melting in the near future.
+
+\emph{Boers Abstract}
+
+The Greenland Ice Sheet (GrIS) is a potentially unstable component of the Earth system and may exhibit a critical transition under ongoing global warming. Mass reductions of the GrIS have substantial impacts on global sea level and the speed of the Atlantic Meridional Overturning Circulation, due to the additional freshwater caused by increased meltwater runoff into the northern Atlantic. The stability of the GrIS depends crucially on the positive melt-elevation feedback (MEF), by which melt rates increase as the overall ice sheet height decreases under rising temperatures. Melting rates across Greenland have accelerated nonlinearly in recent decades, and models predict a critical temperature threshold beyond which the current ice sheet state is not maintainable. Here, we investigate long-term melt rate and ice sheet height reconstructions from the central-western GrIS in combination with model simulations to quantify the stability of this part of the GrIS. We reveal significant early-warning signals (EWS) indicating that the central-western GrIS is close to a critical transition. By relating the statistical EWS to underlying physical processes, our results suggest that the MEF plays a dominant role in the observed, ongoing destabilization of the central-western GrIS. Our results suggest substantial further GrIS mass loss in the near future and call for urgent, observation-constrained stability assessments of other parts of the GrIS.
+
+\href{https://www.pnas.org/content/118/21/e2024192118}{Boers (2021) Western Greenland Ice Sheet is close to a tipping point}
+
+\href{https://www.theguardian.com/environment/2021/may/17/greenland-ice-sheet-on-brink-of-major-tipping-point-says-study}{Guardian}
+
 \hypertarget{antarctica}{%
 \section{Antarctica}\label{antarctica}}
 
@@ -1718,8 +2228,194 @@ Once in motion, the impacts from such dramatic ice loss would unfurl over centur
 \hypertarget{ocean}{%
 \chapter{Ocean}\label{ocean}}
 
+\hypertarget{ocean-temperature}{%
+\section{Ocean Temperature}\label{ocean-temperature}}
+
+\emph{EPA}
+
+Based on the historical record, increases in sea surface temperature have largely occurred over two key periods: between 1910 and 1940, and from about 1970 to the present. Sea surface temperature appears to have cooled between 1880 and 1910.
+
+Changes in sea surface temperature can alter marine ecosystems in several ways. For example, variations in ocean temperature can affect what species of plants, animals, and microbes are present in a location, alter migration and breeding patterns, threaten sensitive ocean life such as corals, and change the frequency and intensity of harmful algal blooms such as ``red tide.''1 Over the long term, increases in sea surface temperature could also reduce the circulation patterns that bring nutrients from the deep sea to surface waters. Changes in reef habitat and nutrient supply could dramatically alter ocean ecosystems and lead to declines in fish populations, which in turn could affect people who depend on fishing for food or jobs.2,3
+
+Because the oceans continuously interact with the atmosphere, sea surface temperature can also have profound effects on global climate. Increases in sea surface temperature have led to an increase in the amount of atmospheric water vapor over the oceans.4 This water vapor feeds weather systems that produce precipitation, increasing the risk of heavy rain and snow (see the Heavy Precipitation and Tropical Cyclone Activity indicators). Changes in sea surface temperature can shift storm tracks, potentially contributing to droughts in some areas.5 Increases in sea surface temperature are also expected to lengthen the growth season for certain bacteria that can contaminate seafood and cause foodborne illnesses, thereby increasing the risk of health effects.6
+
+\includegraphics{fig/sea_surface_tmp_2.png}
+
+\href{https://www.epa.gov/climate-indicators/climate-change-indicators-sea-surface-temperature}{EPA}
+
+\emph{IUCN}
+
+The ocean absorbs vast quantities of heat as a result of increased concentrations of greenhouse gases in the atmosphere, mainly from fossil fuel consumption. The Fifth Assessment Report published by the Intergovernmental Panel on Climate Change (IPCC) in 2013 revealed that the ocean had absorbed more than 93\% of the excess heat from greenhouse gas emissions since the 1970s. This is causing ocean temperatures to rise.
+
+Data from the US National Oceanic and Atmospheric Administration (NOAA) shows that the average global sea surface temperature -- the temperature of the upper few metres of the ocean -- has increased by approximately 0.13°C per decade over the past 100 years. A 2012 paper published in the journal Geophysical Research Letters revealed that the deep ocean is also affected, with one third of the excess heat absorbed 700 m below the sea surface. Modelling studies published in IPCC's 2013 Report predict that there is likely to be an increase in mean global ocean temperature of 1-4oC by 2100.
+
+The ocean's ability to absorb excess heat has shielded humans from even more rapid changes in climate. Without this oceanic buffer, global temperatures would have risen much more than they have done to date. IPCC's Fourth Assessment Report published in 2007 estimated that the Earth had experienced a warming of 0.55°C since the 1970s. According to an analysis by the Grantham Institute, if the same amount of heat that has gone into the top 2,000 m of the ocean between 1955 and 2010 had gone into the lower 10 km of the atmosphere, the Earth would have seen a warming of 36°C.
+
+Ocean warming leads to deoxygenation -- a reduction in the amount of oxygen dissolved in the ocean -- and sea-level rise -- resulting from the thermal expansion of sea water and continental ice melting. The rising temperatures, coupled with ocean acidification (the decrease in pH of the ocean due to its uptake of CO2), affect marine species and ecosystems and, consequently, the fundamental benefits humans derive from the ocean.
+
+Marine fishes, seabirds and marine mammals all face very high risks from increasing temperatures, including high levels of mortalities, loss of breeding grounds and mass movements as species search for favourable environmental conditions. Coral reefs are also affected by increasing temperatures which cause coral bleaching and increase their risk of mortality.
+
+A 2012 report by the Food and Agriculture Organization of the United Nations estimates that marine and freshwater capture fisheries and aquaculture provide 4.3 billion people with about 15\% of their animal protein. Fisheries and aquaculture are also a source of income for millions of people worldwide. By altering distributions of fish stocks and increasing the vulnerability of fish species to diseases, ocean warming is a serious risk to food security and people's livelihoods globally. Economic losses related to ocean warming are likely to run from tens to hundreds of millions of dollars.
+
+Rising temperatures also affect vegetation and reef-building species such as corals and mangroves, which protect coastlines from erosion and sea-level rise. Rising sea levels and erosion will particularly affect low-lying island countries in the Pacific Ocean, destroying housing and infrastructure and forcing people to relocate.
+
+The rise in sea surface temperatures is causing more severe hurricanes and the intensification of El Niño events bringing droughts and floods. This can have significant socio-economic and health effects in some regions of the world.
+
+Warming ocean temperatures are linked to the increase and spread of diseases in marine species. Humans risk direct transmission of these diseases when consuming marine species, or from infections of wounds exposed in marine environments.
+
+\includegraphics{fig/sea_surface_tmp.png}
+
+\href{https://www.iucn.org/resources/issues-briefs/ocean-warming}{IUCN}
+
+\hypertarget{ocean-atmosphere-carbon-balance}{%
+\section{Ocean-Atmosphere Carbon Balance}\label{ocean-atmosphere-carbon-balance}}
+
+\emph{NASA}
+
+For eons, the world's oceans have been sucking carbon dioxide out of the atmosphere and releasing it again in a steady inhale and exhale. The ocean takes up carbon dioxide through photosynthesis by plant-like organisms (phytoplankton), as well as by simple chemistry: carbon dioxide dissolves in water. It reacts with seawater, creating carbonic acid. Carbonic acid releases hydrogen ions, which combine with carbonate in seawater to form bicarbonate, a form of carbon that doesn't escape the ocean easily.
+
+\includegraphics{fig/ocean_carbon_uptake.jpg}
+
+\emph{Figure: The concentration of carbon dioxide (CO2) in ocean water (y axis) depends on the amount of CO2 in the atmosphere (shaded curves) and the temperature of the water (x axis). This simplified graph shows that as atmospheric CO2 increases from pre-industrial levels (blue) to double (2X) the pre-industrial amounts (light green), the ocean CO2 concentration increases as well. However, as water temperature increases, its ability dissolve CO2 decreases. Global warming is expected to reduce the ocean's ability to absorb CO2, leaving more in the atmosphere\ldots which will lead to even higher temperatures.}
+
+As we burn fossil fuels and atmospheric carbon dioxide levels go up, the ocean absorbs more carbon dioxide to stay in balance. But this absorption has a price: these reactions lower the water's pH, meaning it's more acidic. And the ocean has its limits. As temperatures rise, carbon dioxide leaks out of the ocean like a glass of root beer going flat on a warm day. Carbonate gets used up and has to be re-stocked by upwelling of deeper waters, which are rich in carbonate dissolved from limestone and other rocks.
+
+In the center of the ocean, wind-driven currents bring cool waters and fresh carbonate to the surface. The new water takes up yet more carbon to match the atmosphere, while the old water carries the carbon it has captured into the ocean.
+
+The warmer the surface water becomes, the harder it is for winds to mix the surface layers with the deeper layers. The ocean settles into layers, or stratifies. Without an infusion of fresh carbonate-rich water from below, the surface water saturates with carbon dioxide. The stagnant water also supports fewer phytoplankton, and carbon dioxide uptake from photosynthesis slows. In short, stratification cuts down the amount of carbon the ocean can take up.
+
+The ocean does not take up carbon uniformly. It breathes, inhaling and exhaling carbon dioxide. In addition to the wind-driven currents that gently stir the center of ocean basins (the waters that are most limited by stratification), the ocean's natural, large-scale circulation drags deep water to the surface here and there. Having collected carbon over hundreds of years, this deep upwelling water vents carbon dioxide to the atmosphere like smoke escaping through a chimney. The stronger upwelling brought by the cold phase of the Pacific Decadal Oscillation apparently enhanced the size of the chimney and let more carbon escape to the atmosphere.
+
+\includegraphics{fig/ocean_circulation_carbon_sinks.jpg}
+
+\emph{Figure: The global oceans are connected by deep currents (blue lines) and surface currents (red). Carbon from the atmosphere enters the ocean depths in areas of deep water formation in the North Atlantic and offshore of the Antarctic Peninsula. Where deep currents rise towards the surface, they can release ``fossil'' carbon dioxide stored centuries ago.}
+
+After 30 years of measurements, the ocean carbon community is realizing that tracking human-induced changes in the ocean is not as easy as they thought it would be. It wasn't a mere matter of measuring changes in carbon concentrations in the ocean over time because the natural carbon cycle in the ocean turned out to be a lot more variable than they imagined. ``We discovered that natural processes play such an important role that the signals they generate can be as large as or larger than the anthropogenic signal,'' says Feely. ``Now we are trying to address how these decadal changes affect the uptake of carbon. Once we account for these processes, we can remove them from the data set and calculate the anthropogenic carbon dioxide as the residual.'' But to track the increasingly complicated carbon balance sheet, the ocean community needed models, mathematical simulations of the natural world.
+
+\ldots{}
+
+Stratification might wind up having competing effects on the overall carbon cycle, with saturation slowing carbon dioxide uptake in surface waters, but also suppressing venting.
+
+``The link between the destruction of the ozone layer, the changing wind patterns, and the impact on the carbon cycle is the thing that makes Le Quéré's paper unique,'' says Feely. ``It links back to man-made impacts on the climate.'' The idea that the man-made ozone hole and global warming have changed the Southern Ocean carbon sink is ``disturbing on the one hand, but extremely interesting also,''
+
+Scientists realized that to understand the ocean carbon cycle, they are going to have to look for the human fingerprint in ocean circulation and biology, not just in ocean chemistry.
+
+\href{https://earthobservatory.nasa.gov/features/OceanCarbon}{NASA Earth Observatory}
+
+\emph{Water Encyclopedia}
+
+Of the three places where carbon is stored---atmosphere, oceans, and land biosphere---approximately 93 percent of the CO 2 is found in the oceans. The atmosphere, at about 750 petagrams of carbon (a petagram {[}Pg{]} is 10 15 grams), has the smallest amount of carbon.
+
+Approximately 90 to 100 Pg of carbon moves back and forth between the atmosphere and the oceans, and between the atmosphere and the land biosphere. Although these exchange rates are large relative to the total amount of carbon stored in the atmosphere, the concentration of CO 2 was constant.
+
+All trees, nearly all plants from cold climates, and most agricultural crops respond to increasing atmospheric CO 2 levels by increasing the amount of CO 2 they take up for photosynthesis .
+
+The oceans contain about 50 times more CO 2 than the atmosphere and 19 times more than the land biosphere. CO 2 moves between the atmosphere and the ocean by molecular diffusion when there is a difference between CO 2 gas pressure (pCO 2 ) between the atmosphere and oceans. For example, when the atmospheric pCO 2 is higher than the surface ocean, CO 2 diffuses across the air-sea boundary into the sea water.
+The oceans are able to hold much more carbon than the atmosphere because most of the CO 2 that diffuses into the oceans reacts with the water to form carbonic acid and its dissociation products, bicarbonate and carbonate ions . The conversion of CO 2 gas into nongaseous forms such as carbonic acid and bicarbonate and carbonate ions effectively reduces the CO 2 gas pressure in the water, thereby allowing more diffusion from the atmosphere.
+
+The oceans are mixed much more slowly than the atmosphere, so there are large horizontal and vertical changes in CO 2 concentration. In general, tropical waters release CO 2 to the atmosphere, whereas high-latitude oceans take up CO 2 from the atmosphere. CO 2 is also about 10 percent higher in the deep ocean than at the surface. The two basic mechanisms that control the distribution of carbon in the oceans are referred to as the solubility pump and the biological pump.
+
+olubility Pump.
+
+The solubility pump is driven by two principal factors. First, more than twice as much CO 2 can dissolve into cold polar waters than in the warm equatorial waters. As major ocean currents (e.g., the Gulf Stream) move waters from the tropics to the poles, they are cooled and can take up more CO 2 from the atmosphere. Second, the high latitude zones are also places where deep waters are formed. As the waters are cooled, they become denser and sink into the ocean's interior, taking with them the CO 2 accumulated at the surface.
+Biological Pump.
+
+Another process that moves CO 2 away from the surface ocean is called the biological pump. Growth of marine plants (e.g., phytoplankton) takes CO 2 and other chemicals from sea water to make plant tissue. Microscopic marine animals, called zooplankton, eat the phytoplankton and provide the basis for the food web for all animal life in the sea. Because photosynthesis requires light, phytoplankton only grow in the nearsurface ocean, where sufficient light can penetrate.
+
+Although most of the CO 2 taken up by phytoplankton is recycled near the surface, a substantial fraction, perhaps 30 percent, sinks into the deeper waters before being converted back into CO 2 by marine bacteria. Only about 0.1 percent reaches the seafloor to be buried in the sediments.
+
+Scientists research the exchange of carbon dioxide between the atmosphere and ocean. This photograph shows the Ronald H. Brown, a research vessel of the National Oceanic and Atmospheric Administration, in the Equatorial Pacific Ocean during the GASEX II expedition in 2001. The floating instrument in the foreground measures a number of parameters associated with the transfer of CO2 across the air--sea interface.
+Scientists research the exchange of carbon dioxide between the atmosphere and ocean. This photograph shows the Ronald H. Brown, a research vessel of the National Oceanic and Atmospheric Administration, in the Equatorial Pacific Ocean during the GASEX II expedition in 2001. The floating instrument in the foreground measures a number of parameters associated with the transfer of CO 2 across the air--sea interface.
+
+The CO 2 that is recycled at depth is slowly carried large distances by currents to areas where the waters return to the surface (upwelling regions). When the waters regain contact with the atmosphere, the CO 2 originally taken up by the phytoplankton is returned to the atmosphere. This exchange process helps to control atmospheric CO 2 concentrations over decadal and longer time scales.
+
+n the 1980s, the oceans removed an estimated 2.0±0.6 Pg of anthropogenic CO 2 each year. Because humans are producing CO 2 at an everincreasing rate, the average ocean removal rate increased to 2.4±0.5 Pg of carbon each year in the 1990s.
+
+The uptake of anthropogenic CO 2 by the oceans is driven by the difference in gas pressure in the atmosphere and in the oceans and by the air--sea transfer velocity. Because the pCO 2 is increasing in the atmosphere, CO 2 moves into the ocean in an attempt to balance the oceanic and atmospheric gas pressures.
+
+The mechanisms that control the speed with which the CO 2 gas can move from the atmosphere to the oceans (air--sea transfer velocity) are not well understood today. Recent technological advances are helping scientists to better understand these mechanisms.
+
+The transfer velocity is related to the surface roughness of the ocean and the wind speed. The difference in pCO 2 is related to the amount of carbon that is converted from CO 2 gas to other nongaseous carbon species in the sea water, like bicarbonate and carbonate ions. This so-called ``buffer capacity'' is what allows the oceans to hold so much carbon.
+
+The relative concentrations of CO 2 (1\%), bicarbonate ion (91\%) and carbonate ion (8\%) control the acidity (pH) of the oceans. Since CO 2 is an acid gas, the uptake of anthropogenic CO 2 uses up carbonate ions and lowers the oceanic pH. The carbonate ion concentration of surface sea water will decrease by an estimated 30 percent with a doubling of atmospheric CO 2 from preindustrial levels (280 to 560 ppm). As the carbonate ion concentration decreases, the buffer capacity of the ocean and its ability to take up CO 2 from the atmosphere is reduced.
+
+Over the long term (millennial timescales), the ocean has the potential to take up approximately 85 percent of the anthropogenic CO 2 that is released to the atmosphere. As long as atmospheric CO 2 concentrations continue to rise, the oceans will continue to take up CO 2 . However, this reaction is reversible. If atmospheric CO 2 were to decrease in the future, the oceans will start releasing the accumulated anthropogenic CO 2 back out into the atmosphere.
+
+The ultimate storage place for anthropogenic CO 2 must be reactions that bind the CO 2 in a manner that is not easily reversed. Dissolution of calcium carbonate in the oceans, for example, is a long-term storage place for CO 2 . As the oceans continue to take up anthropogenic CO 2 , it will penetrate deeper into the water column, lowering the pH and making the waters more corrosive to calcium carbonate. The problem is that carbonate dissolution typically occurs in the deep ocean, well removed from the anthropogenic CO 2 taken up in the surface waters. In portions of the North Atlantic and North Pacific Oceans, however, anthropogenic CO 2 may have already penetrated deep enough to influence the dissolution of calcium carbonate in the water column.
+
+Sediment Burial.
+
+Burial of plant and animal material into the sediments can also provide long-term storage of anthropogenic CO 2 . Interestingly, almost no phytoplankton seem to grow faster in higher CO 2 environments, unlike many land plants. This is because phytoplankton growth in the oceans is generally limited by the availability of light and chemicals other than CO 2 , principally nitrogen and phosphorus but also smaller amounts of iron, zinc, and other micronutrients.
+
+One proposed approach for enhancing carbon removal from the atmosphere is to enhance phytoplankton growth by fertilizing specific regions of the ocean with a relatively inexpensive biologically limiting chemical like iron. The hypothesis is that the resulting bloom of oceanic plants would remove CO 2 from the atmosphere then transport that carbon into the deep ocean or sediments, effectively removing it from the short-term budget. The effectiveness of the ``iron hypothesis'' is being tested with several research efforts attempting to scale up iron fertilization experiments.
+
+Other carbon sequestration approaches, including direct injection of liquefied CO 2 into the deep ocean, are also being examined. Further research is necessary to determine whether any of these techniques will be effective or economically feasible. Implementation of these approaches may depend, in large part, on policy decisions made at national and international levels.
+
+\href{http://www.waterencyclopedia.com/Bi-Ca/Carbon-Dioxide-in-the-Ocean-and-Atmosphere.html}{Water Encyclopedia}
+
+\emph{NOAA PMEL}
+
+Air-sea gas exchange is a physio-chemical process, primarily controlled by the air-sea difference in gas concentrations and the exchange coefficient, which determines how quickly a molecule of gas can move across the ocean-atmosphere boundary. It takes about one year to equilibrate CO2 in the surface ocean with atmospheric CO2, so it is not unusual to observe large air-sea differences in CO2 concentrations. Most of the differences are caused by variability in the oceans due to biology and ocean circulation. The oceans contain a very large reservoir of carbon that can be exchanged with the atmosphere because the CO2 reacts with water to form carbonic acid and its dissociation products. As atmospheric CO2 increases, the interaction with the surface ocean will change the chemistry of the seawater resulting in ocean acidification.
+
+Evidence suggests that the past and current ocean uptake of human-derived (anthropogenic) CO2 is primarily a physical response to rising atmospheric CO2 concentrations. Whenever the partial pressure of a gas is increased in the atmosphere over a body of water, the gas will diffuse into that water until the partial pressures across the air-water interface are equilibrated. However, because the global carbon cycle is intimately embedded in the physical climate system there exist several feedback loops between the two systems. For example, increasing CO2 modifies the climate which in turn impacts ocean circulation and therefore ocean CO2 uptake. Changes in marine ecosystems resulting from rising CO2 and/or changing climate can also result in changes in air-sea CO2 exchange. These feedbacks can change the role of the oceans in taking up atmospheric CO2 making it very difficult to predict how the ocean carbon cycle will operate in the future.
+
+\includegraphics{fig/ocean_atmosphere_concentration.jpg}
+
+\href{https://www.pmel.noaa.gov/co2/story/Ocean+Carbon+Uptake}{NOAA PMEL}
+
+\emph{National Geographic}
+
+Warming is speeding up. The top part of the ocean is warming up about 24 percent faster than it did a few decades ago, and that rate is likely to increase in the future.
+
+\href{https://www.nationalgeographic.com/environment/article/critical-issues-sea-temperature-rise}{National Geographic}
+
+\emph{New Scientist}
+
+As the world's oceans warm, their massive stores of dissolved carbon dioxide may be quick to bubble back out into the atmosphere and amplify the greenhouse effect, according to a new study.
+
+The oceans capture around 30 per cent of human carbon dioxide emissions and hide it in their depths. This slows the march of global warming somewhat. But climate records from the end of the last ice age show that as temperatures climb, the trend reverses and the oceans emit CO2, which exacerbates warming.
+
+Previous studies have suggested that it takes between 400 and 1300 years for this to happen. But now the most precise analysis to date has whittled that figure down.
+We now think the delay is more like 200 years, possibly even less,
+
+\href{https://www.newscientist.com/article/dn20413-warmer-oceans-release-co2-faster-than-thought/}{New Scientist}
+
+\emph{RealClimate}
+
+The oceans are presently taking up about 2 Gton C per year, a significant dent in our emissions of 7 Gton C per year. This could slow in the future, as overturning becomes inhibited by stratification, as the buffer loses its capacity due to acidification. Eventually, the fluxes could reverse as with a decrease in CO2 solubility due to ocean warming.
+
+The situation today is complicated somewhat by a carbon spike transient. Atmospheric CO2 is rising so quickly that the terrestrial biosphere and the ocean carbon reservoirs find themselves far out of equilibrium. In attempting to keep up, the other reservoirs are taking up massive amounts of CO2. If emissions were to stop today, it would take a few centuries for the atmosphere to equilibrate, and it would contain something like 25\% of our emitted CO2.
+
+\href{https://www.realclimate.org/index.php/archives/2006/05/positive-feedbacks-from-the-carbon-cycle/}{RealClimate}
+
+\emph{RealClimate}
+
+The ocean has a tendency to take up more carbon as the CO2 concentration in the air rises, because of Henry's Law, which states that in equilibrium, more in the air means more dissolved in the water. Stratification of the waters in the ocean, due to warming at the surface for example, tends to oppose CO2 invasion, by slowing the rate of replenishing surface waters by deep waters which haven't taken up fossil fuel CO2 yet.
+
+The Southern Ocean is an important avenue of carbon invasion into the ocean, because the deep ocean outcrops here. Le Quere et al.~{[}2007{]} diagnosed the uptake of CO2 into the Southern Ocean using atmospheric CO2 concentration data from a dozen or so sites in the Southern hemisphere. They find that the Southern Ocean has begun to release carbon since about 1990, in contrast to the model predictions that Southern Ocean carbon uptake should be increasing because of the Henry's Law thing. We have to keep in mind that it is a tricky business to invert the atmospheric CO2 concentration to get sources and sinks. The history of this type of study tells us to wait for independent replication before taking this result to the bank.
+
+Le Quere et al propose that the sluggish Southern Ocean CO2 uptake could be due to a windier Southern Ocean. Here the literature gets complicated. The deep ocean contains high concentrations of CO2, the product of organic carbon degradation (think exhaling fish). The effect of the winds is to open a ventilation channel between the atmosphere and the deep ocean. Stratification, especially some decades from now, would tend to shut down this ventilation channel. The ventilation channel could let the deep ocean carbon out, or it could let atmospheric carbon in, especially in a few decades as the CO2 concentration gets ever higher (Henry's Law again). I guess it's fair to say that models are not decisive in their assessment about which of these two factors should be dominating at present. The atmospheric inversion method, once it passes the test of independent replication, would trump model predictions of what ought to be happening, in my book.
+
+A decrease in ocean uptake is more clearly documented in the North Atlantic by Schuster and Watson {[}2007{]}. They show surface ocean CO2 measurements from ships of opportunity from the period 1994-1995, and from 2002-2005. Their surface ocean chemistry data is expressed in terms of partial pressure of CO2 that would be in equilibrium with the water. If the pCO2 of the air is higher than the calculated pCO2 of the water for example, then CO2 will be dissolving into the water.
+
+The pCO2 of the air rose by about 15 microatmospheres in that decade. The strongest Henry's Law scenario would be for the ocean pCO2 to remain constant through that time, so that the air/sea difference would increase by the 15 microatmospheres of the atmospheric rise. Instead what happened is that the pCO2 of the water rose twice as fast as the atmosphere did, by about 30 microatmospheres. The air-sea difference in pCO2 collapsed to zero in the high latitudes, meaning no CO2 uptake at all in a place where the CO2 uptake might be expected to be strongest.
+
+One factor that might be changing the pressure of CO2 coming from the sea surface might be the warming surface waters, because CO2 becomes less soluble as the temperature rises. But that ain't it, as it turns out. The surface ocean is warming in their data, except for the two most tropical regions, but the amount of warming can only explain a small fraction of the CO2 pressure change. The culprit is not in hand exactly, but is described as some change in ocean circulation, caused maybe by stratification or by the North Atlantic Oscillation, bringing a different crop of water to the surface. At any event, the decrease in ocean uptake in the North Atlantic is convincing.
+
+Canadell et al {[}2007{]} claim to see the recent sluggishness of natural CO2 uptake in the rate of atmospheric CO2 rise relative to the total rate of CO2 release (from fossil fuels plus land use changes). They construct records of the atmospheric fraction of the total carbon release, and find that it has increased from 0.4 back in about 1960, to 0.45 today. Carbon cycle models (13 of them, from the SRES A2 scenario) also predict that the atmospheric fraction should increase, but not yet. For the time period from 1960 to 2000, the models predict that we would find the opposite of what is observed: a slight decrease in the atmospheric fraction, driven by increasing carbon uptake into the natural world. Positive feedbacks in the real-world carbon cycle seem to be kicking in faster than anticipated, Canadell et al conclude.
+
+There is no real new information in the Canadell et al {[}2007{]} analysis on whether the sinking sink is in the ocean or on land. They use an ocean model to do this bookkeeping, but we have just seen how hard it is to model or even understand some of the observed changes in ocean uptake. In addition to the changing ocean sink, drought and heat wave conditions may change the uptake of carbon on land. The infamously hot summer of 2003 in Europe for example cut the rate of photosynthesis by 50\%, dumping as much carbon into the air as had been taken up by that same area for the four previous years {[}Ciais et al., 2005{]}.
+
+The warming at the end of the last ice age was prompted by changes in Earth's orbit around the sun, but it was greatly amplified by the rising CO2 concentration in the atmosphere. The orbits pushed on ice sheets, which pushed on climate. The climate changes triggered a strong positive carbon cycle feedback which is, yes, still poorly understood.
+
+Now industrial activity is pushing on atmospheric CO2 directly. The question is when and how strongly the carbon cycle will push back.
+
+\href{https://www.realclimate.org/index.php/archives/2007/11/is-the-ocean-carbon-sink-sinking/}{RealClimate}
+
 \hypertarget{sea-level-rise}{%
 \section{Sea Level Rise}\label{sea-level-rise}}
+
+\emph{IPCC}
 
 In its most recent assessment, the Intergovernmental Panel on Climate Change said the sea level was unlikely to rise beyond 1.1 metre (3.6ft) by 2100.
 
@@ -1728,6 +2424,46 @@ But climate researchers from the University of Copenhagen's Niels Bohr Institute
 ``The models used to base predictions of sea level rise on presently are not sensitive enough,'' he said. ``To put it plainly, they don't hit the mark when we compare them to the rate of sea level rise we see when comparing future scenarios with observations going back in time.''
 
 \href{https://www.theguardian.com/environment/2021/feb/02/sea-level-rise-could-be-worse-than-feared-warn-researchers}{Higher Sea Level Rise (Guardian)}
+
+\hypertarget{uncertainty}{%
+\subsection{Uncertainty}\label{uncertainty}}
+
+\emph{Gavin}
+
+\textbf{Why is future sea level rise still so uncertain?}
+
+Here's a list of factors that will influence future regional sea level (in rough order of importance):
+
+\begin{verbatim}
+ice mass loss from West Antarctica
+ice mass loss from Greenland
+ocean thermal expansion
+mountain glacier melt
+gravitational, rotational and deformational (GRD) effects
+changes in ocean circulation
+steric (freshwater/salinity) effects
+groundwater extraction
+reservoir construction and filling
+changes in atmospheric pressure and winds
+\end{verbatim}
+
+And on top of that, the risks of coastal flooding also depend on:
+
+\begin{verbatim}
+tectonic/isostatic land motion
+local subsidence
+local hydrology
+storm surges
+tides
+\end{verbatim}
+
+If that wasn't bad enough, it doesn't even get into why some of the bigger terms here are so difficult to constrain.
+
+Note that the factors listed above involve the whole Earth system: the oceans, the cryosphere, the atmosphere, the solid earth and lithosphere, and a full range of scales, from the city block and shoreline, to ice dynamics that change over kilometers, to GRD footprints, to the whole global ocean. While each of these elements has a devoted scientific community, sea level rise cuts across all the disciplines. And similarly, while each of these elements has a specialized modeling capability, there is no single model that encompasses all of this (not even close -- as yet).
+
+What this means is that estimates of future sea level rise are mixes of information from multiple sources, tied together in more or less sophisticated frameworks (this is the approach in the IPCC SCROCC report and the upcoming AR6) that attempt to build a full uncertainty range from all the disparate sources of information (coupled ocean-atmosphere models, hydrology models, ice sheet models, solid earth models etc.). To reiterate, there is no `climate model' prediction of global sea level rise, though the climate models we often discuss here (the CMIP-class of models), do provide some of the inputs. This means that links and feedbacks between these different elements are not always coherent -- e.g.~the estimates of groundwater depletion (used for irrigation) or glacier melt might not impact the soils or the freshwater budget of the downstream rivers and ocean.
+
+\href{https://www.realclimate.org/index.php/archives/2021/05/why-is-future-sea-level-rise-still-so-uncertain/\#.YKyaa3u_nmc.twitter}{RealClimate}
 
 \hypertarget{tsls-transient-sea-level-sensitivity}{%
 \subsection{TSLS Transient Sea Level Sensitivity}\label{tsls-transient-sea-level-sensitivity}}
@@ -1830,6 +2566,65 @@ Nonetheless, there is broad agreement that the climatic consequences of a potent
 
 \href{https://eos.org/science-updates/rethinking-oceanic-overturning-in-the-nordic-seas\#.YHvKO1RSYTk.twitter}{Chafik (2021) Rethinking Oceanic Overturning in Nordic Seas}
 
+\hypertarget{whale-mitigation}{%
+\section{Whale Mitigation}\label{whale-mitigation}}
+
+\emph{Chami}
+
+\textbf{When it comes to saving the planet, one whale is worth thousands of trees.}
+
+\begin{quote}
+Many proposed solutions to global warming, such as capturing carbon directly from the air and burying it deep in the earth, are complex, untested, and expensive. What if there were a low-tech solution to this problem that not only is effective and economical, but also has a successful funding model?
+\end{quote}
+
+An example of such an opportunity comes from a surprisingly simple and essentially ``no-tech'' strategy to capture more carbon from the atmosphere: \emph{increase global whale populations}.
+
+Marine biologists have recently discovered that whales---especially the great whales---play a significant role in capturing carbon from the atmosphere (Roman and others 2014). And international organizations have implemented programs such as Reducing Emissions from Degradation and Deforestation (REDD) that fund the preservation of carbon-capturing ecosystems.
+
+The carbon capture potential of whales is truly startling. Whales accumulate carbon in their bodies during their long lives. When they die, they sink to the bottom of the ocean; each great whale sequesters 33 tons of CO2 on average, taking that carbon out of the atmosphere for centuries. A tree, meanwhile, absorbs only up to 48 pounds of CO2 a year.
+
+Protecting whales could add significantly to carbon capture because the current population of the largest great whales is only a small fraction of what it once was. Sadly, after decades of industrialized whaling, biologists estimate that overall whale populations are now to less than one fourth what they once were. Some species, like the blue whales, have been reduced to only 3 percent of their previous abundance. Thus, the benefits from whales' ecosystem services to us and to our survival are much less than they could be.
+
+\emph{Whale Pump}
+
+Wherever whales, the largest living things on earth, are found, so are populations of some of the smallest, phytoplankton. These microscopic creatures not only contribute at least 50 percent of all oxygen to our atmosphere, they do so by capturing about 37 billion metric tons of CO2, an estimated 40 percent of all CO2 produced. To put things in perspective, we calculate that this is equivalent to the amount of CO2 captured by 1.70 trillion trees---four Amazon forests' worth---or 70 times the amount absorbed by all the trees in the US Redwood National and State Parks each year. More phytoplankton means more carbon capture.
+
+In recent years, scientists have discovered that whales have a multiplier effect of increasing phytoplankton production wherever they go. How? It turns out that whales' waste products contain exactly the substances---notably iron and nitrogen---phytoplankton need to grow. Whales bring minerals up to the ocean surface through their vertical movement, called the ``whale pump,'' and through their migration across oceans, called the ``whale conveyor belt.
+
+\includegraphics{fig/whale_flux.jpg}
+
+Despite the fact that nutrients are carried into the ocean through dust storms, river sediments, and upwelling from wind and waves, nitrogen and phosphorus remain scarce and limit the amount of phytoplankton that can bloom in warmer parts of the oceans. In colder regions, such as in the Southern Ocean, the limiting mineral tends to be iron. If more of these missing minerals became available in parts of the ocean where they are scarce, more phytoplankton could grow, potentially absorbing much more carbon than otherwise possible.
+
+If whales were allowed to return to their pre-whaling number of 4 to 5 million---from slightly more than 1.3 million today---it could add significantly to the amount of phytoplankton in the oceans and to the carbon they capture each year.
+
+Despite the drastic reduction in commercial whaling, whales still face significant life-threatening hazards, including ship strikes, entanglement in fishing nets, waterborne plastic waste, and noise pollution. While some species of whales are recovering---slowly---many are not.
+
+Enhancing protection of whales from human-made dangers would deliver benefits to ourselves, the planet, and of course, the whales themselves. This ``earth-tech'' approach to carbon sequestration also avoids the risk of unanticipated harm from suggested untested high-tech fixes. Nature has had millions of years to perfect her whale-based carbon sink technology. All we need to do is let the whales live.
+
+\emph{Finance!}
+
+International financial institutions, in partnership with other UN and multilateral organizations, are ideally suited to advise, monitor, and coordinate the actions of countries in protecting whales.
+
+Whales are commonly found in the waters around low-income and fragile states, countries that may be unable to deal with the needed mitigation measures. Support for these countries could come, for example, from the Global Environment Facility, which typically provides support to such countries to meet international environmental agreements. The IMF is also well placed to help governments integrate the macroeconomic benefit that whales provide in mitigating climate change, as well as the cost of measures to protect the whales, into their macro-fiscal frameworks. The World Bank has the expertise to design and implement specific programs to compensate private sector actors for their efforts to protect whales. Other UN and multilateral organizations can oversee compliance and collect data to measure the progress of these efforts.
+
+Coordinating the economics of whale protection must rise to the top of the global community's climate agenda.
+
+\emph{Earth-Tech}
+
+The ``earth-tech'' strategy of supporting whales' return to their previous abundance in the oceans would significantly benefit not only life in the oceans but also life on land, including our own.
+
+\href{https://www.imf.org/external/pubs/ft/fandd/2019/12/natures-solution-to-climate-change-chami.htm}{Chami IMF (2019) Protect Whales - Limit Global Warming}
+\href{pdf/Chami_2021_Whale_Pump.pdf}{(pdf)}
+
+\hypertarget{antarcticas-role}{%
+\section{Antarctica's Role}\label{antarcticas-role}}
+
+Climate change is rapidly pushing five critical, interconnected processes in the Antarctic Southern Ocean towards substantial changes. It warns that disrupting these processes may disproportionately exacerbate global climate change and have widespread impacts on marine and human life worldwide, due to the region's central role in regulating our earth systems.
+
+\includegraphics{fig/Antarctica_Circulation.jpeg}
+
+\href{https://www.wilsoncenter.org/publication/polar-perspectives-no-5-climate-change-and-southern-ocean-resilience}{Wilson Center}
+
 \hypertarget{permafrost}{%
 \chapter{Permafrost}\label{permafrost}}
 
@@ -1858,6 +2653,126 @@ Given that the land absorbs 30\% of the carbon emitted from fossil fuels and def
 Change would be determined by the balance between rising CO2 boosting plant growth and the negative effects of climate change itself, including drought, heatwaves and fires. The evidence to date suggests the biggest change will be the negative effects of global heating on ecosystems
 
 \href{https://www.theguardian.com/environment/2021/mar/24/soils-ability-to-absorb-carbon-emissions-may-be-overestimated-study}{Guardian}
+
+\hypertarget{soil-depth}{%
+\section{Soil Depth}\label{soil-depth}}
+
+No-till farming was developed and promoted in the mid-20th century as an erosion control measure. Under conve\\
+ntional tillage, soil is broken up and mixed mechanically. In no-till farming, soil disturbance is minimized\\
+and crop residues are left on the soil surface. Reducing or eliminating tillage improves water infiltration r\\
+ates and protects against wind and water erosion. Reducing tillage also improves soil structure, allowing ``ag\\
+gregates'' (intact clumps of soil) to form when they otherwise would have been broken into smaller pieces. Agg\\
+regates are often carbon rich, and are thought to have a role in protecting organic matter from decay.Althoug\\
+h this suggests that eliminating or reducing tillage might be a way to increase the overall amount of carbon\\
+stored in soil, the relationship between tillage and soil carbon storage remains a heavily debated topic. No\\
+fewer than 11 synthesis papers published in the past five years have addressed the relationship between tilla\\
+ge and soil carbon storage.
+
+These papers each analyzed data from hundreds of individual studies. While the synthesis papers analyzed many\\
+of the same studies, they reached a range of conclusions. Some have concluded that tillage has no statistica\\
+lly detectable effect on overall soil carbon storage, while others have identified positive effects or indica\\
+ted that tillage effects depend on other factors such as climate and soil type
+
+Sampling depth is likely a key source of the disagreement. It has two main effects, which we call the ``carbon\\
+redistribution effect'' and ``density change effect''. We'll describe each in turn.
+
+\href{https://carbonplan.org/research/soil-depth-sampling}{CarbonPlan}
+
+\hypertarget{land-use-change-luc}{%
+\section{Land Use Change (LUC)}\label{land-use-change-luc}}
+
+\emph{Independent}
+
+A recent study in Nature Communications shows that global demands for commodities, especially in connection with agricultural development, are the main drivers of land use change in the global south.
+
+A land use change is defined as a permanent or long-term conversion in the type of cover of an area of land, for instance from forest to urban use, agricultural crops or savanna, or vice versa. The researchers used modern satellite technology, now able to detect changes such as deforestation in near real time, to evaluate global trends.
+
+They suggest global land use changes may be happening at a much higher rate than previously thought. The authors found that 17 per cent of the Earth's land surface has undergone change at least once since 1960, which works out to an area the size of Germany every year. Over that period there was a net forest loss of 0.8 million km², while agricultural crops expanded by 1 million km² and rangelands and pastures by 0.9 million km².
+
+\href{https://www.independent.co.uk/news/science/cause-deforestation-world-global-markets-b1865516.html}{Independent}
+
+\emph{Winkler}
+
+we analyse the dynamics of global land use change at an unprecedented spatial resolution by combining multiple open data streams (remote sensing, reconstructions and statistics) to create the HIstoric Land Dynamics Assessment + (HILDA +). We estimate that land use change has affected almost a third (32\%) of the global land area in just six decades (1960-2019) and, thus, is around four times greater in extent than previously estimated from long-term land change assessments. We also identify geographically diverging land use change processes, with afforestation and cropland abandonment in the Global North and deforestation and agricultural expansion in the South. Here, we show that observed phases of accelerating (\textasciitilde1960--2005) and decelerating (2006--2019) land use change can be explained by the effects of global trade on agricultural production.
+
+\textbf{Temporal dynamics of global land use change and its relation
+to globalised markets.}
+
+The rate of global land use change was not
+constant over time. In analysing the temporal dynamics, we
+identify two different phases: (1) an acceleration phase with an
+increasing rate of change from 1960 to 2004; and (2) a decreasing
+rate of change from 2005 to 2019. The transition from
+constant to rising rates of land use change has been discussed in
+the context of shifting global food regimes and coincides with a
+period when global food production changed from agro-
+technological intensification (driven by the Green Revolution in
+the 1960s) to the production for globalised markets and
+increasing trade, especially during the 1990s. We find this
+acceleration phase to be more distinct in regions of the Global
+
+South, as observed in South America, Africa and Southeast Asia,
+where production and export of commodity crops
+have increased, most strikingly since the 2000s.
+The growing influence of tele-connected
+markets is found to be a major driver of land use change, parti-
+cularly deforestation for commodity crops in the Global South.
+This offshoring of land use change from the Global North to the
+South is evident in the growing proportion of cropland in the
+countries of the Global South used for export and consumption
+outside of their territories.
+However, the data suggest a rather abrupt change to decreasing
+rates of land use change in the period from 2005, which is most
+evident in Africa and South America, regions of the
+Subtropics and Tropics. We
+hypothesise that the transition from accelerating to decelerating
+land use change is related to market developments in the context
+of the global economic and food crisis 2007--2009. Before the
+crisis, rising demand for food, animal feed and biofuels as well as
+increasing oil prices (reaching an all-time high in 2008 at \$145.31
+per barrel of Crude) stimulated global agricultural production,
+which enhanced global land use change. In particular, high oil
+prices made bioenergy crops more competitive and profitable
+compared to fossil fuels. Increasing demand, mostly in the
+developed countries of the Global North, spurred bioenergy crop
+expansion in the Global South (e.g.~production of oil crops in
+Ghana, Argentina, Brazil and Indonesia).
+Biofuel policies, climatic extremes and export bans led to
+global food price spikes in 2007--2008 and in 2010, which
+raised concerns about food security in many import-dependent
+countries and rapidly growing economies (e.g.~the EU, China or
+India). A wave of large-scale, transboundary land acquisitions and
+foreign investments in agriculture emerged, mostly targeting sub-
+Saharan Africa, Southeast Asia and South America 48,55,56 . This
+development is reflected in the sudden increase in the rate of land
+use change (during 2000--2005), ensuing fluctuations (during
+2006--2010) and sharp decrease (after 2010) in countries of the
+Global South, e.g.~Brazil, Argentina or Ethiopia.
+We find that the observed slowdown of global land
+use change after the economic crisis 2007--2009 is mainly caused
+by a decline in agricultural expansion in the countries of the
+Global South, particularly pronounced in Argentina, Ghana and
+Ethiopia. We postulate that the global
+deceleration of land use change is related to market mechanisms
+during the economic crisis. With the economic boom coming to
+an end during the Great Recession, the global demand for
+commodities dropped. Countries which focussed on the produc-
+tion of commodity crops for global markets prior to the crisis (e.g.
+Argentina, Brazil, Ghana or Indonesia), no longer found buyers
+for their goods, reduced agricultural production and, thus, the
+rate of agricultural land expansion. The observed sharp decline in
+the rate of land use change, especially in Africa, may
+be further caused by a decrease in the number and size of global
+land acquisitions after the financial crisis in 2007--2009. Since
+then, hedge funds in land became less common and concerns
+were raised about unsustainable practices related to transbound-
+ary land acquisitions (e.g.~land/water degradation and displace-
+ment of rural labour). Resulting incentives from international
+organisations and exporting countries to limit land trade may
+have led to the recent decline in large-scale land acquisitions.
+
+\href{https://www.nature.com/articles/s41467-021-22702-2}{Winkler (2021) Global land use changes are four times greater than previously estimated}
+\href{pdf/Winkler_2021_LUC_4_times_greater.pdf}{(pdf)}
 
 \hypertarget{part-policy}{%
 \part{Policy}\label{part-policy}}
@@ -1908,8 +2823,27 @@ drought.
 
 \href{https://www.unep.org/resources/adaptation-gap-report-2020}{UNEP Adaptation Report 2020}
 
+\hypertarget{mobilization-for-adaptation}{%
+\section{Mobilization for Adaptation}\label{mobilization-for-adaptation}}
+
+\hypertarget{climate-grant-universities}{%
+\subsection{Climate Grant Universities}\label{climate-grant-universities}}
+
+With cues from the successful land grant model, the United States should establish a system of universities to democratize access to climate knowledge and aid efforts to tackle the climate crisis.
+
+A national climate extension network will address local-scale gaps in the U.S. climate knowledge system created by the unequal availability of climate services.
+
+\href{https://eos.org/opinions/climate-grant-universities-could-mobilize-community-climate-action}{Kopp (2021) Climate Grant Universities Could Mobilize Community Climate Action}
+
 \hypertarget{carbon-pricing}{%
 \chapter{Carbon Pricing}\label{carbon-pricing}}
+
+\hypertarget{cbam}{%
+\section{CBAM}\label{cbam}}
+
+While some countries are moving ahead aggressively, ambition varies country-by-country such that four-fifths of global emissions remain unpriced and the global average emissions price is only \$3 per ton. As a knock-on effect, some countries and regions with high or rising carbon prices are considering placing charges on the carbon content of imports from places without similar schemes. From a global climate perspective, however, such border carbon adjustments are insufficient instruments as carbon embodied in trade flows is typically less than 10 percent of countries' total emissions.
+
+\href{https://blogs.imf.org/2021/06/18/a-proposal-to-scale-up-global-carbon-pricing/}{IMF}
 
 \hypertarget{policy-sequencing}{%
 \section{Policy Sequencing}\label{policy-sequencing}}
@@ -3003,6 +3937,55 @@ Proponents of geoengineering argue that impacts of global heating could be so gr
 \href{https://www.nap.edu/download/25762}{NAS Solar geoengineering Recommendations}
 \href{pdf/NAS_2021_Sun_Geoengineering.pdf}{(pdf)}
 
+\hypertarget{ocean-geoengineering}{%
+\section{Ocean Geoengineering}\label{ocean-geoengineering}}
+
+\emph{Guardian}
+
+Tom Green has a plan to tackle climate change. The British biologist and director of the charity Project Vesta wants to turn a trillion tonnes of CO2 into rock, and sink it to the bottom of the sea.
+
+Green admits the idea is ``audacious''. It would involve locking away atmospheric carbon by dropping pea-coloured sand into the ocean. The sand is made of ground olivine -- an abundant volcanic rock, known to jewellers as peridot -- and, if Green's calculations are correct, depositing it offshore on 2\% of the world's coastlines would capture 100\% of total global annual carbon emissions.
+
+The plan relies on a natural process called weathering. ``Weathering has been working on the planet for billions of years,'' says Green, a graduate of Harvard Business School who runs Project Vesta from San Francisco. ``When rain falls on volcanic rocks, they dissolve a little in the water, causing a chemical reaction that uses carbon dioxide from the atmosphere. The carbon ends up in the ocean, where it's used by marine-calcifying organisms like corals and shell-making animals, whose skeletons and shells sink to the bottom of the ocean as sediment and eventually become limestone.''
+
+Olivine weathers easily, and allowing ocean currents to churn it up, says Green, ``will make it dissolve much more quickly, to happen on a human-relevant timescale''. It is not a rare mineral: there are beaches in the Galapagos islands and in Hawaii that are green with olivine-rich sand.
+
+The idea of using the sea to absorb excess carbon is not far-fetched, says Green. Ocean water can hold 150 times more CO2 than air, per unit of volume. ``The ocean has already taken up about 30\% of the excess carbon dioxide that we've emitted as a society,'' he says. He and his colleagues are gearing up to test their process in two similar Caribbean coves, one acting as an untouched ``control'' in the experiment.
+
+Nobody knows if these concepts will work, or what consequences there could be.
+
+UCLA engineers have developed a machine that mimics how seashells form. Called a flow reactor, the machine sucks seawater in, and an electrical charge makes it alkaline, which triggers the CO2 to react with the seawater's magnesium and calcium, producing limestone and magnesite (like forming shells). The water then flows out and, depleted of its captured CO2, is ready to take up more. A byproduct of this process -- hydrogen -- can be extracted for fuel.
+
+It's a similar concept to weathering olivine in the ocean, and Sant's plan is for initial small studies before a gradual scaling up. The team aims to remove between 10 and 20 gigatonnes of CO2 from the atmosphere, starting in 2050.
+It will be a huge challenge to build a system large enough -- and then to build thousands more.
+
+Jean-Pierre Gattuso, research director at the Laboratoire d'Océanographie de Villefranche in Paris, says the latest research suggests the idea is not viable. ``Ocean fertilisation experiments were performed at sea demonstrating that iron addition can trigger a phytoplankton bloom,'' he says. ``However, the amount of CO2 permanently sequestered appears to be small, because most of the organic matter produced is respired back to CO2 before it has a chance to be stored in the deep ocean. An unintended consequence may also be the creation of low-oxygen areas of water.''
+
+\includegraphics{fig/seawater_spraying_ship.png}
+
+``Marine cloud-brightening'' is spraying a fine mist of seawater into clouds so that the salt makes them brighter, and more reflective of the sun's heat.
+
+It is already being trialled as part of an Australian government-funded research programme to limit damage to the Great Barrier Reef, and Wadhams believes it could be used on a mass scale. However, he thinks the most urgent need is to deploy it ``on a more restricted scale, around the edges of the Arctic'' where the methane escape risks are highest.
+
+Ray Pierrehumbert, professor of physics at Oxford University, sees red flags.
+``A lot of weather patterns like monsoons depend on the difference in heating between the continents and the oceans,'' he says. ``If you do something to cool down the North Atlantic, let's say to preserve the sea ice or Greenland glaciers, that shifts precipitation in the tropics. Every part of the atmosphere is connected, so if you don't balance your warming and cooling very carefully, then you get all sorts of changes in the climate system, some of which are difficult to predict.''
+A graver risk, he says, is viewing technology such as this as a way to avoid reducing emissions. ``Once you emit CO2, its warming effect will continue for thousands of years. Whereas marine cloud-brightening relies on particles that fall out of the atmosphere after, maybe, seven days. So you have to renew them every week. And if you come to rely on it for something like keeping the Great Barrier Reef from dying, you have to continue doing it for ever. But all sorts of things could happen to force you to stop -- wars, whatever -- and if you do stop, then you get this extremely rapid, catastrophic warming.''
+
+cloud-seeding rarely appears without the accompanying phrase ``playing god''. But that isn't deterring the people behind another new ocean geoengineering project to tackle hurricanes by cooling the surface water where they form.
+
+In 2017, with his brother Bjorn, Olav Hollingsaeter, a former Norwegian navy submariner, started OceanTherm to repurpose established technology to reduce storm intensity. During Norwegian winters, OceanTherm uses ``bubble curtains'' to release compressed air into deep water. These push warmer water to the surface, which stops harbours freezing over. Deploying bubble curtains in warmer waters shoots colder deep water upwards, cooling the surface.
+
+Hollingsaeter is in talks with decision-makers in areas affected by hurricanes around the Gulf of Mexico, but his quest is complicated by legal and ethical concerns. A similar ``hurricane slayer'' project by Alan Blumberg, the oceanographer behind an attempt to cool surface water by pumping colder water up, told the Washington Post in 2019 that his research stalled over fears it might change the landfall of a storm, or increase its flooding impact.
+
+Hollingsaeter claims his design improves on Blumberg's . ``When you're pumping colder water to the surface, the cold water is much heavier and will sink. But the bubble curtain mixes the water temperatures all the way up, so there's a thick layer of cooler water.''
+
+He admits that nobody knows if cooling surface water could change a storm's trajectory or power but argues that the potential benefits make it worth further research.
+
+Rewilding coastlines is perhaps an easier climate crisis mitigation plan to get behind. There are three types of ``blue carbon'' coastal ecosystems that store carbon in sediment or soil: mangroves, salt marshes and seagrasses. Together, they absorb more carbon than land forests, and the carbon escapes only if the ecosystems are destroyed.
+Unfortunately, this is what has happened to half of the world's mangroves and many salt marshes, as coastlines are cleared of natural landscapes. In the UK alone, more than 90\% of seagrass meadows have been lost to coastal development, anchor damage and algae-feeding pollution.
+
+\href{https://www.theguardian.com/environment/2021/jun/23/cloud-spraying-and-hurricane-slaying-could-geoengineering-fix-the-climate-crisis}{Guardian}
+
 \hypertarget{fair-shares}{%
 \chapter{Fair Shares}\label{fair-shares}}
 
@@ -3045,7 +4028,7 @@ Overview of Nature Communications on Climate Change Impacts:
 \href{https://www.nature.com/collections/hcfhgcahdc}{Nature Communications}
 
 \hypertarget{draught}{%
-\section{Draught}\label{draught}}
+\chapter{Draught}\label{draught}}
 
 \hypertarget{european-draught-extremes}{%
 \subsection{European Draught Extremes}\label{european-draught-extremes}}
@@ -3071,10 +4054,10 @@ Europe's recent summer droughts have had devastating ecological and economic con
 \href{https://www.nature.com/articles/s41561-021-00698-0}{Büntgen (2021) European drought extremes - Nature (Paywall)}
 
 \hypertarget{rainfall}{%
-\section{Rainfall}\label{rainfall}}
+\chapter{Rainfall}\label{rainfall}}
 
 \hypertarget{decreased-gloabel-precipitation-area}{%
-\subsection{Decreased Gloabel Precipitation Area}\label{decreased-gloabel-precipitation-area}}
+\section{Decreased Gloabel Precipitation Area}\label{decreased-gloabel-precipitation-area}}
 
 \emph{Benestad}
 
@@ -3097,7 +4080,7 @@ A regression analysis suggested that the daily precipitation area diminishes wit
 \href{https://iopscience.iop.org/article/10.1088/1748-9326/aab375}{Benestad}
 
 \hypertarget{landslides}{%
-\subsection{Landslides}\label{landslides}}
+\section{Landslides}\label{landslides}}
 
 \href{https://blogs.agu.org/landslideblog/2018/08/24/global-fatal-landslide-occurrence-1/}{The global landslide hotspot is located in South Asia}, driven by the summer (SW) \href{https://blogs.agu.org/landslideblog/?s=monsoon\&submit.x=0\&submit.y=0\&mswhere=blog}{monsoon}. The monsoon drives a period of intense and prolonged rainfall in the period centred on June to September. Rainfall levels can be high -- in some cases the highest in the world. The monsoon also drives convective activity that can cause cloudbursts. Together, these effects trigger large numbers of landslides, with catastrophic outcomes.
 
@@ -3190,14 +4173,48 @@ Agricultural research has fostered productivity growth, but the historical influ
 
 \href{https://www.nature.com/articles/s41558-021-01000-1}{Nature (Paywall)}
 
+A third of global food production will be at risk by the end of the century if greenhouse gas emissions continue to rise at their current rate, new research suggests.
+
+Many of the world's most important food-growing areas will see temperatures increase and rainfall patterns alter drastically if temperatures rise by about 3.7C, the forecast increase if emissions stay high.
+
+Researchers at Aalto University in Finland have calculated that about 95\% of current crop production takes place in areas they define as ``safe climatic space'', or conditions where temperature, rainfall and aridity fall within certain bounds.
+
+If temperatures were to rise by 3.7C or thereabouts by the century's end, that safe area would shrink drastically, mostly affecting south and south-eastern Asia and Africa's Sudano-Sahelian zone, according to a paper published in the journal One Earth on Friday.
+
+\href{https://www.theguardian.com/environment/2021/may/14/third-of-global-food-production-at-risk-from-climate-crisis}{Guardian}
+
+Climate change risks pushing 1/3 of food production outside safe climatic space.
+
+\emph{Kummu}
+
+We developed the novel concept of safe
+climatic space, which allows us, for the
+first time, to identify the climatic
+conditions under which food production
+developed during the stable Holocene
+climate conditions. We show that nearly
+one-third of global food crop production
+and over one-third of livestock
+production could be forced beyond these
+suitable conditions by 2081--2100 if we
+cannot limit the warming to 1.5--2 C. The
+most vulnerable areas would be South
+and Southeast Asia and Africa's Sudano-
+Sahelian Zone.
+
+\includegraphics{fig/agricultural_safe_climatic_space.png}
+
+\href{https://www.cell.com/one-earth/fulltext/S2590-3322(21)00236-0}{Kummu (2021)}
+\href{pdf/Kummu_2021_Food_outside_Safe_Climatic_Space.pdf}{(pdf)}
+
 \hypertarget{human-health}{%
-\section{Human Health}\label{human-health}}
+\chapter{Human Health}\label{human-health}}
 
 \hypertarget{morbidity-and-mortality}{%
-\subsection{Morbidity and Mortality}\label{morbidity-and-mortality}}
+\section{Morbidity and Mortality}\label{morbidity-and-mortality}}
 
 \hypertarget{humid-heat-bulbs}{%
-\subsubsection{Humid Heat Bulbs}\label{humid-heat-bulbs}}
+\section{Humid Heat Bulbs}\label{humid-heat-bulbs}}
 
 \emph{Abstract Raymond:}
 
@@ -3217,8 +4234,20 @@ that is more intense than previously reported and increasingly severe.
 
 \href{https://advances.sciencemag.org/content/6/19/eaaw1838}{Raymond (2020)}
 
+\emph{Inside}
+
+While scientists warn with increasing urgency that global warming is sharply increasing the likelihood of deadly heat waves, many regions are doing little to protect vulnerable populations.
+
+Recent research shows that the global death toll from extreme heat is rising, but still, ``Large parts of society don't think of heat as a threat,'' said University of Oxford University climate scientist Fredi Otto after researchers unveiled a series of new extreme heat studies at the European Geosciences Union online conference last month.
+
+The research discussed at the conference suggests that many models are underestimating the short-term threat to the most vulnerable areas---densely populated tropical regions---and that the threats aren't clearly communicated. And a study released in late April showed that, in the U.S., the risk of power failures during such heatwaves could increase the death toll.
+
+Last week's updates to the U.S. Environmental Protection Agency's Climate Indicators website, which had been delayed for years by the Trump administration, showed that major U.S. cities experienced three times as many heat waves---four or more days with temperatures that should only occur every 10 years---in the 2010s as during the 1960s. The season in which heat waves occur has lengthened by 47 days. In addition to heat exhaustion, recent research also showed that extreme heat dramatically increases the chances of pre-term births.
+
+\href{https://insideclimatenews.org/news/16052021/extreme-heat-risks-climate-change/}{Inside}
+
 \hypertarget{covid}{%
-\subsection{COVID}\label{covid}}
+\section{COVID}\label{covid}}
 
 \emph{Abstract Beyer}
 
@@ -3286,6 +4315,47 @@ impairing energy flux through food chains,
 with negative implications for larger consumers and the functioning of entire ecosystems.
 
 \href{https://www.nature.com/articles/s41586-021-03352-2.epdf?sharing_token=en8G_PplC0NZ0bhBexd-sNRgN0jAjWel9jnR3ZoTv0Ocz1xjDcPWe-XYsQ6aAwENGLYkqI0ZtDZNzNTVzQDqzZn-V1IKe1zVtdJyDa_OeTOMHVBxxTmAVAdf8C0XWZFeT5VbXvvLwC4vezF-pqJafKF8PZc0_EjTPOG1MccecjM\%3D}{Barneche (2020) Warming impairs trophic transfer}
+
+\hypertarget{climate-controvercies}{%
+\chapter{Climate Controvercies}\label{climate-controvercies}}
+
+\href{https://arxiv.org/abs/0707.1161v3}{Gerlich (2007) Falsification Of The Atmospheric CO2 Greenhouse Effects Within The Frame Of Physics}
+\href{pdf/Gerlich_2007_Falsification_Greenhouse.pdf}{(pdf)}
+
+\emph{Halpern on Gerlich}
+
+Gerhard Gerlich and Ralf D. Tscheuschner claim to have falsified the existence of an atmospheric greenhouse effect.1 Here, we show that their methods, logic, and conclusions are in error. Their most significant errors include trying to apply the Clausius statement of the Second Law of Thermodynamics to only one side of a heat transfer process rather than the entire process, and systematically ignoring most non-radiative heat flows applicable to the Earth's surface and atmosphere. They claim that radiative heat transfer from a colder atmosphere to a warmer surface is forbidden, ignoring the larger transfer in the other direction which makes the complete process allowed. Further, by ignoring heat capacity and non-radiative heat flows, they claim that radiative balance requires that the surface cool by 100 K or more at night, an obvious absurdity induced by an unphysical assumption. This comment concentrates on these two major points, while also taking note of some of Gerlich and Tscheuschner's other errors and misunderstandings.
+
+\href{https://ui.adsabs.harvard.edu/abs/2010IJMPB..24.1309H/abstract}{Halpern on Gerlich (2010) (paywall)}
+
+\href{https://arxiv.org/abs/1012.0421}{Gerlich Reply to Halpern (2010)}
+\href{pdf/Gerlich_2007_Falsification_Greenhouse_reply_to_Halpern.pdf}{(pdf)}
+
+\emph{Skeptical Science}
+
+The second law of thermodynamics has been stated in many ways. For us, Rudolf Clausius said it best:
+
+\begin{quote}
+``Heat generally cannot flow spontaneously from a material at lower temperature to a material at higher temperature.''
+\end{quote}
+
+The skeptic tells us that, because the air, including the greenhouse gasses, is cooler than the surface of the Earth, it cannot warm the Earth. If it did, they say, that means heat would have to flow from cold to hot, in apparent violation of the second law of thermodynamics.
+
+The skeptic is ignoring the fact that the Earth is being warmed by the sun, which makes all the difference.
+
+o summarise: Heat from the sun warms the Earth, as heat from your body keeps you warm. The Earth loses heat to space, and your body loses heat to the environment. Greenhouse gases slow down the rate of heat-loss from the surface of the Earth, like a blanket that slows down the rate at which your body loses heat. The result is the same in both cases, the surface of the Earth, or of your body, gets warmer.
+
+So global warming does not violate the second law of thermodynamics.
+
+\href{https://skepticalscience.com/Second-law-of-thermodynamics-greenhouse-theory.htm}{SkepticalScience on Gerlich}
+
+\href{https://skepticalscience.com/postma-disproved-the-greenhouse-effect.htm}{SkepticalScience on Postma}
+
+\emph{Endersbee}
+
+\href{pdf/Endersbee_2008_GCC_has_natural_causes.pdf}{Endersbee (2008) GCC has natural causes (pdf)}
+
+\href{https://forskning.no/klima-kronikk/kronikk-co2-okningen-er-ikke-naturlig/1183609}{Bellerby on Segalstad (2008)}
 
 \hypertarget{part-actions}{%
 \part{Actions}\label{part-actions}}
@@ -3499,6 +4569,22 @@ Climate impacts will tear through social systems and disrupt them. Technological
 A final problem with the aspirations to being purely technocratic and apolitical advisors to power is that we have been generally averse to take our scientific findings directly to the people.
 
 \href{https://medium.com/age-of-awareness/a-postmortem-for-survival-on-science-failure-and-action-on-climate-change-35636c79971e}{Julia Steinberger (2017) Postmortem}
+
+\hypertarget{capitalism-and-climate-change}{%
+\chapter{Capitalism and Climate Change}\label{capitalism-and-climate-change}}
+
+\hypertarget{orthogonal}{%
+\section{Orthogonal?}\label{orthogonal}}
+
+\emph{Milanovic}
+
+The third critique that Alyssa Battistoni makes is in my opinion the easiest to answer. She criticizes the absence of discussion of climate change in ``Capitalism, Alone'', calling such absence ``irresponsible''. This is because development of capitalism is hitting the planetary limits and might lead to substantial catastrophes through the change in climate and loss of livelihood for many people, especially in Africa. I find this critique relatively easy to answer because it is based on a misunderstanding or even sloppy thinking. What is responsible for climate change is economic growth, not capitalism as such. Economic growth in turn comes from our desire, in poor and rich countries alike, among poor and rich people alike, to lead better lives and to have more goods and services. It is the production and consumption of these goods and services that is responsible for climate change. So if one wants to stop the climate change one needs to reduce the production of goods and services that are CO2 emission-intensive. But doing so through a combination of taxes and subsidies does in no way change capitalism.
+
+No partisan of climate change, however radical, whether it be Alexandria Ocasio-Cortez, Bernie Sanders, or Greta Thunberg has suggested that large oil companies be nationalized, or that many of the companies responsible for emissions be run by worker councils; they have not suggested that profits of ``bad'' companies be confiscated. All such movements would indeed spell the end of capitalism in at least some sectors. Yet such ideas are never mentioned. No partisan of struggle against climate change is ever advocating policies that would effectively stop capitalism even in one small part of the economy. What they are advocating is a specific combination of taxes and subsidies, discouragement of consumption, carbon permits, and moral suasion (or moral shaming) which would result in the reduction of emissions.
+
+But whether electricity or oil companies or meat producers or a person using air conditioning are working within one set of incentives, where the products that are responsible for climate change are cheap or expensive, they are still working within the capitalist framework. The company is still privately owned, the objective of the company is still maximization of profit, the objective of individuals is still maximization of wealth. It is just taking place under a different structure of prices. Differently structured prices may, one hopes, curb climate change but they have really nothing to do with eliminating capitalism. Since my book is about capitalism, I have very little to say about proposals which have nothing to say about capitalism as a mode of production. Despite much ``noise'', capitalism, as accurately defined, and climate change, even in the words of their most vocal opponents, are really orthogonal. Whatever policies are adopted regarding climate change---even if they are of the most radical kind currently on offer---will have very little impact on capitalism as an economic system. Such policies can reduce profit rates of some companies or some branches of production but they will simply redistribute profits within the capitalist sector, not end capitalism as a system. To be blunt: capitalism and greed would be pursued under different relative prices.
+
+\href{http://glineq.blogspot.com/2021/05/capital-gains-my-reply-to-alyssa.html}{Milanovic}
 
 \hypertarget{climate-finance}{%
 \chapter{Climate Finance}\label{climate-finance}}
@@ -4174,6 +5260,18 @@ I 1959 dukket for første gang ordet «drivhuseffekt» opp i en norsk avis. Men 
 
 \hypertarget{news}{%
 \chapter{NEWS}\label{news}}
+
+\hypertarget{dutch-court-against-shell}{%
+\section{210526 Dutch Court against Shell}\label{dutch-court-against-shell}}
+
+This is a real ruling: it includes Scope 3 emissions.
+
+\emph{Rechtspraak}
+
+De rechtbank Den Haag beveelt Royal Dutch Shell (RDS) om via het concernbeleid van de Shell-groep de CO2-uitstoot eind 2030 terug te brengen tot netto 45\% ten opzichte van het niveau van 2019.
+
+\href{https://www.rechtspraak.nl/Organisatie-en-contact/Organisatie/Rechtbanken/Rechtbank-Den-Haag/Nieuws/Paginas/Royal-Dutch-Shell-moet-CO2-uitstoot-terugbrengen.aspx}{Rechtsspraak (Dutch)}
+\href{https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:RBDHA:2021:5339\&showbutton=true\&keyword=shell}{English Translation}
 
 \hypertarget{ndcs-need-80-increase-to-2c}{%
 \section{210509 NDCs need 80\% increase to 2°C}\label{ndcs-need-80-increase-to-2c}}
