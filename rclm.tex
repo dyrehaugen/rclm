@@ -4,8 +4,8 @@
 %
 \documentclass[
 ]{book}
-\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
+\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -41,8 +41,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
+\usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -78,15 +77,12 @@
 \makeatother
 
 \renewcommand\chaptername{}
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Climate Change}
 \author{Dyrehaugen Web Notebook}
-\date{2021-06-27}
+\date{2021-10-03}
 
 \begin{document}
 \maketitle
@@ -228,7 +224,7 @@ and transparently documented, 23 and is already being used in updates of the SCC
 A key limitation of FAIR and other simple climate models is that they do not represent
 the change in global mean sea level rise (GMSL) due to a marginal change in emissions.
 
-\href{Greenstone_2021_Updating_SCC.pdf}{Carleton Greenstone (2021) Updating SCC (pdf)}
+\href{pdf/Greenstone_2021_Updating_SCC.pdf}{Carleton Greenstone (2021) Updating SCC (pdf)}
 
 \href{https://fair.readthedocs.io/en/latest/}{FAIR}
 
@@ -245,6 +241,224 @@ Used by Kuhnhenn - STS - Heinrch Böll Stiftung
 \section{Monash Climate Model}\label{monash-climate-model}}
 
 Some text on Monash Model
+
+\hypertarget{page}{%
+\chapter{PAGE}\label{page}}
+
+\emph{Kikstra Abstract}
+
+A key statistic describing climate change impacts is the `social cost of carbon dioxide' (SCCO 2 ), the
+projected cost to society of releasing an additional tonne of CO 2 . Cost-benefit integrated
+assessment models that estimate the SCCO 2 lack robust representations of climate feedbacks,
+economy feedbacks, and climate extremes. We compare the PAGE-ICE model with the decade
+older PAGE09 and find that PAGE-ICE yields SCCO 2 values about two times higher, because of its
+climate and economic updates. Climate feedbacks only account for a relatively minor increase
+compared to other updates. Extending PAGE-ICE with economy feedbacks demonstrates a
+manifold increase in the SCCO 2 resulting from an empirically derived estimate of partially
+persistent economic damages. Both the economy feedbacks and other increases since PAGE09 are
+almost entirely due to higher damages in the Global South. Including an estimate of interannual
+temperature variability increases the width of the SCCO 2 distribution, with particularly strong
+effects in the tails and a slight increase in the mean SCCO 2 . Our results highlight the large impacts
+of climate change if future adaptation does not exceed historical trends. Robust quantification of
+climate-economy feedbacks and climate extremes are demonstrated to be essential for estimating
+the SCCO 2 and its uncertainty.
+
+\emph{Kikstra Memo}
+
+How temperature rises affect long-run economic
+output is an important open question (Piontek et al
+2021). Climate impacts could either trigger addi-
+tional GDP growth due to increased agricultural
+productivity and rebuilding activities (Stern 2007,
+Hallegatte and Dumas 2009, Hsiang 2010, National
+Academies of Sciences Engineering and Medicine
+2017) or inhibit growth due to damaged capital
+stocks (Pindyck 2013), lower savings (Fankhauser and
+Tol 2005) and inefficient factor reallocation (Piontek
+et al 2019). Existing studies have identified substan-
+tial impacts of economic growth feedbacks (Moyer
+et al 2014, Dietz and Stern 2015, Estrada et al 2015,
+Moore and Diaz 2015), but have not yet quantified
+the uncertainties involved based on empirical distri-
+butions. One particular example is Kalkuhl and Wenz
+(2020), who incorporate short-term economic per-
+sistence into a recent version of DICE (Nordhaus
+2017), approximately tripling the resulting SCCO 2
+(\$37--\$132). For fairly comparable economic assump-
+tions, the effect of long-term persistence is shown to
+increase the outcome even more (\$220--\$417) (Moore
+and Diaz 2015, Ricke et al 2018). We further expand
+on this work by deriving an empirical distribution
+of the persistence of climate impacts on economic
+growth based on recent developments (Burke et al
+2015, Bastien-Olvera and Moore 2021) which we use
+to moderate GDP growth through persistent market
+damages. This partial persistence model builds upon
+recent empirical insights that not all contemporary
+economic damages due to climate change might be
+recovered in the long run (Dell et al 2012, Burke
+et al 2015, Kahn et al 2019, Bastien-Olvera and Moore
+2021). Investigating how the SCCO 2 varies as a func-
+tion of the extent of persistence reveals a sensitivity
+that is on par with the heavily discussed role of dis-
+counting (Anthoff et al 2009b).
+
+Climatic extremes are another particularly
+important driver of climate change-induced dam-
+ages (Field et al 2012, Kotz et al 2021). The impact
+of interannual climate variability on the SCCO 2 has,
+however, not been analyzed previously, despite its
+clear economic implications (Burke et al 2015, Kahn
+et al 2019, Kumar and Khanna 2019) and an appar-
+ent relation to weather extremes such as daily min-
+ima and maxima (Seneviratne et al 2012), extreme
+rainfall (Jones et al 2013), and floods (Marsh et al
+2016). Omission of such features in climate-economy
+models risks underestimation of the SCCO 2 because
+if convex regional temperature damage functions
+(Burke et al 2015) and an expected earlier cross-
+ing of potential climate and social thresholds in
+the climate-economy system (Tol 2019, Glanemann
+et al 2020). Here, we include climate variability by
+coupling the empirical temperature-damage func-
+tion with variable, autoregressive interannual tem-
+peratures. Increasing the amount of uncertainty by
+adding variable elements naturally leads to a less con-
+strained estimate for climate-driven impacts. How-
+ever, it is important to explore the range of possible
+futures, including the consideration of extremes in
+the climate-economy system (Otto et al 2020).
+In summary, we extend the PAGE-ICE CB-IAM
+(Yumashev et al 2019) to quantify the effect on
+the SCCO 2 of including possible long-term tem-
+perature growth feedback on economic trajectories,
+mean annual temperature anomalies, and the already
+modeled permafrost carbon and surface albedo feed-
+backs. Together, these provide an indication of the
+magnitude and uncertainties of the contribution of
+climate and economy feedbacks and interannual vari-
+ability to the SCCO 2 .
+
+\includegraphics{fig/PAGE-ICE-extensions.jpg}
+
+\emph{Figure: Illustrative sketch of changes and extensions to PAGE-ICE presented in this paper. (a) Changes in the climate
+representation. PAGE-ICE includes a more detailed representation of CO 2 and CH 4 sinks, permafrost carbon feedback, the effect
+of sea ice and land snow decline on surface albedo, and a fat-tailed distribution of sea level rise. Here we also include interannual
+temperature variability with a temperature feedback through annual auto-correlation. (b) Changes in the damage module. The
+PAGE-ICE discontinuity damage component was reduced to correspond with updates to climate tipping points and sea-level rise
+risk, and market damages were recalibrated to an empirical estimate based on temperatures. Thus, while the discontinuity and
+non-economic damages continue to be calculated based on the separation between tolerable and excess temperature, the market
+damages are now calculated based on absolute temperature. Here we also extend PAGE-ICE with the possibility of persistent
+climate-induced damages, which in turn affects GDP pathways and scales emissions accordingly (feedback loop in the figure).}
+
+The original PAGE-
+ICE does not simulate damage persistence. Thus, the
+economy always returns to the exogenous economic
+growth path, no matter how high the contemporary
+damages.
+
+Our setup recognizes that deterministic assessments
+of the SCCO 2 carry only very limited information.
+PAGE-ICE uses Monte Carlo sampling of over 150
+parameter distributions (Yumashev et al 2019) to
+provide distributions of the results. All results presen-
+ted use 50 000 Monte Carlo draws (and 100 000 for
+PAGE09, using \citet{RISK} within Excel), with draws
+taken from the same superset to be able to compare
+SCCO 2 distributions across models. The PAGE-ICE
+model has been translated into the Mimi mod-
+eling framework, using the same validation pro-
+cess as for Mimi-PAGE (Moore et al 2018). Model
+code and documentation are available from the
+GitHub repository, \href{https://github.com/openmodels/MimiPAGE2020.jl}{here}.
+
+To estimate the marginal damage of an additional
+tonne of CO 2 , PAGE-ICE is run twice, with one run
+following the exogenously specified emission pathway
+and the second run adding a CO 2 pulse. The SCCO 2
+is then calculated as the difference in global equity-
+weighted damages between those two runs divided
+by the pulse size, discounted to the base year (2015).
+Equity weighting of damages follows the approach
+by Anthoff et al (2009a) using a mean (minimum,
+maximum) elasticity of marginal utility of consump-
+tion of 1.17 (0.1--2.0), and equity-weighted damages
+are discounted using a pure time preference rate of
+1.03\% (0.5\%, 2.0\%). For all our results, we rely on
+a 75Gt pulse size in the first time period of PAGE-
+ICE (mid-2017--2025), representing an annual pulse
+size of 10 Gt CO 2 . In this setup, we found that
+the choice of pulse size can have an effect on the
+SCCO 2 estimates.
+
+We implement the persistence parameter following
+Estrada et al (2015) into the growth system of Burke
+et al (2015) such that:
+\[GDP_{r , t} = GDP_{r , t − 1} · (1 + g_{r , t − ρ} · γ_{r , t − 1} )\],
+where g is the growth rate, γ represents
+the contemporary economic damages in \% of GDP
+returned by the market damage function and ρ specifies
+the share of economic damages that persist and
+thus alter the growth trajectory in the long run. Note
+that this approach nests the extreme assumptions
+of zero persistence usually made in CB-IAMs.
+We also rescale green-house gas emissions proportionally to the change in
+GDP, such that emission intensities of economic output remain unchanged.
+
+\emph{Kikstra Conclusions}
+
+Our results show that determining the level of per-
+sistence of economic damages is one of the most
+important factors in calculating the SCCO 2 , and our
+empirical estimate illustrates the urgency of increas-
+ing adaptive capacity, while suggesting that the mean
+estimate for the SCCO 2 may have been strongly
+underestimated. It further indicates that considering
+annual temperature anomalies leads to large increases
+in uncertainty about the risks of climate change.
+Differences between PAGE09 and PAGE-ICE show
+that the previous SCCO 2 results have also decidedly
+underestimated damages in the Global South.
+The implemented climate feedbacks and annual
+mean temperature variability do not have large effects
+on the mean SCCO 2 . The inclusion of permafrost
+thawing and surface albedo feedbacks is shown to lead
+to a relatively small increase in the SCCO 2 for SSP2-
+4.5, with modest distributional effects. Consideration
+of temperature anomalies shows that internal vari-
+ability in the climate system can lead to increases in
+SCCO 2 estimates, and is key to understanding uncer-
+tainties in the climate-economy system, stressing the
+need for a better representation of variability and
+extremes in CB-IAMs.
+Including an empirical estimate of damage per-
+sistence demonstrates that even minor departures
+from the assumption that climate shocks do not affect
+GDP growth have major economic implications and
+eclipse most other modeling decisions. It suggests
+the need for a strong increase in adaptation to per-
+sistent damages if the long-term social cost of emis-
+sions is to be limited. Our findings corroborate that
+economic uncertainty is larger than climate science
+uncertainty in climate-economy system analysis (Van
+Vuuren et al 2020), and provide a strong argument
+that the assumption of zero persistence in CB-IAMs
+should be subject to increased scrutiny in order to
+avoid considerable bias in SCCO 2 estimates.
+
+\href{https://iopscience.iop.org/article/10.1088/1748-9326/ac1d0b}{Kikstra (2021) The social cost of carbon dioxide under climate-economy feedbacks and temperature variability}
+\href{pdf/Kikstra_2021_SSC_Climate_Economy_Feedbacks_PAGE.pdf}{(pdf)}
+
+\emph{MIMI Modelling Framwork}
+
+Mimi is a Julia package for integrated assessment models developed in connection with Resources for the Future's Social Cost of Carbon Initiative.
+The source code for this package is located on Github \href{https://github.com/mimiframework/Mimi.jl}{here}, and for detailed information on the installation and use of this package, as well as several tutorials, please see the \href{https://www.mimiframework.org/Mimi.jl/stable/}{Documentation}. For specific requests for new functionality, or bug reports, please add an Issue to the repository.
+
+\href{https://www.mimiframework.org/}{MIMI Home Page}
+
+\emph{Kikstra Review}
+
+\href{https://www.sueddeutsche.de/wissen/hochwasserkatastrophe-schaeden-kosten-klimawandel-co2-preis-hurrikan-1.5402770}{Süd-Deutsche}
 
 \hypertarget{bern-simple-climate-model-bernscm}{%
 \section{Bern Simple Climate Model (BernSCM)}\label{bern-simple-climate-model-bernscm}}
@@ -559,6 +773,53 @@ droplet number concentrations.
 
 \href{https://www.cesm.ucar.edu/}{Community Earth System Model CESM}
 
+\hypertarget{ai-in-climate-research}{%
+\chapter{AI in Climate Research}\label{ai-in-climate-research}}
+
+\emph{Irrgang Abstract}
+
+Earth system models (ESMs) are our main tools for quantifying the physical state of the Earth and predicting how it might change in the future under ongoing anthropogenic forcing. In recent years, however, artificial intelligence (AI) methods have been increasingly used to augment or even replace classical ESM tasks, raising hopes that AI could solve some of the grand challenges of climate science. In this Perspective we survey the recent achievements and limitations of both process-based models and AI in Earth system and climate research, and propose a methodological transformation in which deep neural networks and ESMs are dismantled as individual approaches and reassembled as learning, self-validating and interpretable ESM--network hybrids. Following this path, we coin the term neural Earth system modelling. We examine the concurrent potential and pitfalls of neural Earth system modelling and discuss the open question of whether AI can bolster ESMs or even ultimately render them obsolete.
+
+\href{https://www.nature.com/articles/s42256-021-00374-3}{Irrgang (2021) Towards neural Earth system modelling by integrating artificial intelligence in Earth system science (paywall)}
+
+\emph{CarbonBrief}
+
+A new line of climate research is emerging that aims to complement and extend the use of observations and climate models.
+We propose an approach whereby machine learning and climate models are not used as individual tools, but rather as connected ``hybrids'' that are capable of adaptive evolution and self-validation, while still being able to be interpreted by humans.
+
+Climate models have seen continuous improvement over recent decades. The most recent developments have seen the incorporation of biogeochemical cycles -- the transfer of chemicals between living things and their environment -- and how they interact with the climate system.
+Adding in new processes and greater detail have resulted in more sophisticated simulations of the Earth's climate, it comes at the cost of increasingly large and complex models.
+
+ESMs are built on equations that represent the processes and interactions that drive the Earth's climate. Some of these processes can be described by fundamental laws -- such as the Navier-Stokes equations of fluid motion, which capture the speed, pressure, temperature and density of the gases in the atmosphere and the water in the ocean. However, others -- such as physiological processes governing the vegetation that covers vast parts of the land surface -- cannot and instead require approximations based on observations.
+
+These approximations -- as well as other limitations that stem from the sheer complexity of the Earth system -- introduce uncertainties into the model's representation of the climate.
+
+As a result, despite the tremendous success of ESMs, some limitations remain -- such as how well models capture the severity and frequency of extreme events, and abrupt changes and ``tipping points''.
+
+In contrast to ESMs, machine learning does not require prior knowledge about the governing laws and relations within a problem. The respective relations are derived entirely from the data used during an automated learning process. This flexible and powerful concept can be expanded to almost any level of complexity.
+
+The availability of observed climate data and model simulations in combination with ready-to-use machine learning tools -- such as TensorFlow and Keras -- have led to an explosion of machine learning studies in Earth and climate sciences. These have explored how machine learning can be applied to enhance or even replace classical ESM tasks.
+
+Despite wordings like ``learning'' and ``artificial intelligence'', today's machine learning applications in this field are far from intelligent and lack actual process knowledge. More accurately, they are highly specialised algorithms that are trained to solve very specific problems solely based on the problem-related presented data.
+
+Consequently, machine learning is often considered a black box that makes it hard to gather insights from. Similarly, it is often very difficult to validate machine learning in terms of physical consistency, even if their generated outputs may seem plausible.
+
+Many of today's machine learning applications for climate sciences are proof-of-concept studies that work in a simplified environment -- for example, with a spatial resolution much lower than in state-of-the-art ESMs or with a reduced number of physical variables. Thus, it remains to be seen how well machine learning can be scaled up to operational and reliable usage.
+
+Initially, machine learning in climate research was primarily used for automated analysis of patterns and relations in Earth observations. However, more recently, it has been increasingly targeted towards ESMs -- for example, by taking over or correcting specific model components or by accelerating computationally demanding numerical simulations.
+
+This development has led to the concept of ``hybrids'' of ESMs and machine learning, which aim to combine their respective methodological advantages while minimising their limitations. For instance, the hybrid concept has been explored for analysing continental hydrology.
+
+Continuing this line of research will increasingly blend the so-far still strict line between process-based models and machine learning approaches.
+
+\includegraphics{fig/Neural_ESM.png}
+
+\emph{Figure: Illustration of the stages of bringing ESMs and machine learning together towards neural Earth system modelling. The left and right branches visualise the current efforts and goals for building weakly coupled hybrids (blue and yellow), which converge towards strongly coupled hybrids. }
+
+Within machine learning, making a correct prediction for the wrong reasons can be termed taking a ``shortcut'', or having a system description that is ``underdetermined''. Taking shortcuts is increasingly likely within climate science because the data available to us from the observational record is short and biased towards recent decades.
+
+\href{https://www.carbonbrief.org/guest-post-how-artificial-intelligence-is-fast-becoming-a-key-tool-for-climate-science}{CarbonBrief Review}
+
 \hypertarget{goal-index}{%
 \section{Goal Index}\label{goal-index}}
 
@@ -782,6 +1043,238 @@ energy by Earth climate system (solid blue line). Dashed lines correspond to lea
 \href{https://www.nasa.gov/feature/langley/joint-nasa-noaa-study-finds-earths-energy-imbalance-has-doubled}{NASA}
 \href{https://www.theguardian.com/science/2021/jun/17/earth-trapping-heat-study-nasa-noaa}{Guardian}
 
+\hypertarget{energy-imbalance-trend-teei}{%
+\subsection{Energy Imbalance Trend (TEEI)}\label{energy-imbalance-trend-teei}}
+
+\emph{Raghuraman Abstract}
+
+The observed trend in Earth's energy imbalance (TEEI), a measure of the acceleration of heat uptake by the planet, is a fundamental indicator of perturbations to climate. Satellite observations (2001--2020) reveal a significant positive globally-averaged TEEI of 0.38 ± 0.24 \(Wm^{-2} decade^-1\), but the contributing drivers have yet to be understood. Using climate model simulations, we show that it is exceptionally unlikely (\textless1\% probability) that this trend can be explained by internal variability. Instead, TEEI is achieved only upon accounting for the increase in anthropogenic radiative forcing and the associated climate response. TEEI is driven by a large decrease in reflected solar radiation and a small increase in emitted infrared radiation. This is because recent changes in forcing and feedbacks are additive in the solar spectrum, while being nearly offset by each other in the infrared. We conclude that the satellite record provides clear evidence of a human-influenced climate system.
+
+\emph{Raghuraman Memo}
+
+Earth's energy imbalance (EEI) is the difference between the
+incoming solar radiation (S 0 ), and the reflected shortwave
+radiation (RSW) plus the outgoing longwave radiation
+(OLR), at the top of the atmosphere. Thus, EEI is a fundamental
+measure of the degree to which the Earth's global climate
+system is out of balance. A trend in EEI measures the acceleration
+of heat uptake by the planet and hence is an indicator of perturbations
+to the coupled atmosphere-ocean-land-ice system.
+The mean EEI during 2005--2015 was estimated to be
+0.71 ± 0.10 \(Wm^{-2}\) . Oceans store 90\% of this excess heat. Because
+of this close relationship between EEI and ocean heating, EEI
+trends have an important bearing on the warming of the global
+climate system, sea-level rise, and marine health.
+
+In the contemporary climate system, internal variability (ε),
+effective radiative forcing (ΔERF), and the radiative response
+(λΔT s ) change EEI. Thus, an anomaly in EEI can be
+expressed as the sum of these three terms.
+
+\[ΔEEI = ΔERF + λΔT_s+ ε\]
+
+Climate feedbacks and surface temperature are represented by
+λ and \(T_s\) respectively.
+
+While we know
+that TEEI is influenced by internal variability in the climate
+system, external forcings, and climate feedbacks, the extent of the
+contribution from each has not been previously determined.
+
+In particular, due to the inherent noise in the Earth system, a
+single observed 20-year time series of EEI is only one of many
+possible time series that internal variability could produce,
+and therefore, it is imperative to quantify the contribution of
+internal variability (ε) to TEEI.
+
+We focus here on the investigation of the trend in EEI (TEEI).
+In particular, the contributions to TEEI by the drivers of the OLR
+and RSW trends, are an unexplored and unquantified area in the
+explanation of the observed satellite record.
+
+We use Coupled
+Model Intercomparison Project Phase 6 (CMIP6) experiments
+and design a hierarchy of climate model experiments with the
+Geophysical Fluid Dynamics Laboratory Coupled/Atmospheric
+Model 4.0 (GFDL CM4/AM4)to better understand the
+contributions of the three components of Eq. (1) to the CERES-
+observed TEEI, thereby providing an assessment of the relative
+importance of anthropogenically induced changes versus internal
+variability changes. We show that anthropogenic forcing and the
+associated climate response yield the observed positive TEEI.
+
+The observed ΔEEI time series
+yields a significant positive trend of 0.38 ± 0.24 \(Wm^-2 decade^-1\)
+There is, however, the potential for systematic
+errors associated with the observed trend due to instrument drift.
+The trend is driven by large reductions in RSW,
+compensated only by a relatively weaker increase in OLR.
+
+The observed trend in EEI is unexplained by internal varia-
+bility. Our hierarchy of modeling experiments allows us to
+investigate the possible contributions of trends in ΔERF, \(λΔT_s\) ,
+and ε to TEEI. We compose five sets of estimates of the internal
+variability (ε) using climate model simulations. For all five sets of
+estimates, we calculate ε as the ±2σ range of 20-year trends across
+the realizations.
+
+We find that the CERES-observed TEEI lies outside the range
+of trends driven by internal variability alone.
+
+ε comprises a range of trends in EEI due to internal
+variability, the value of ε, ±0.19 \(Wm^{-2} decade^−1\)
+
+The satellite-observed positive EEI trend over the 2001--2020
+period is exceptionally unlikely (\textless1\% probability) to be
+explained by internal variability.
+
+\href{https://www.nature.com/articles/s41467-021-24544-4}{Raghuraman (2021) Anthropogenic forcing and response yield observed positive trend in Earth's energy imbalance}
+\href{pdf/Raghuraman_2021_TEEI.pdf}{(pdf)}
+
+\emph{NBCnews}
+
+Stability in Earth's climate hinges on a delicate balance between the amount of energy the planet absorbs from the sun and the amount of energy Earth emits back into space. But that equilibrium has been thrown off in recent years --- and the imbalance is growing, according to a paper published Wednesday in the journal Nature Communications.
+
+The Princeton University researchers behind the paper found that there's a less than 1 percent probability that the changes occurred naturally.
+
+The findings undercut a key argument used by people who do not believe human activity is responsible for the bulk of climate change to explain trends in global warming, demonstrating that the planet's energy imbalance cannot be explained just by Earth's own natural variations.
+
+\href{https://www.nbcnews.com/science/environment/earths-energy-imbalance-removes-almost-doubt-human-made-climate-change-rcna1562}{nbcnews}
+
+\hypertarget{total-solar-irradiance}{%
+\section{Total Solar Irradiance}\label{total-solar-irradiance}}
+
+\emph{Climate.gov: Incoming Sunlight}
+
+\textbf{the Sun likely added at most 0.01 degrees Celsius to the 0.95--1.2 degrees Celsius of global surface warming that's occurred since pre-industrial times.}
+
+\begin{quote}
+Satellite observations through several solar cycles reveal that the difference in total average brightness between solar maxima and minima is very small, on the order of 1 Watt per square meter during strong cycles. On average, the Sun delivers 1,361 Watts of power per square meter at a distance of one astronomical unit. This amount is known as the total solar irradiance. Based on observations and models, experts estimate that the impact of this 11-year variation on global surface temperature is likely around 0.1 degrees Celsius or less.
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  The Sun's overall brightness varies on timescales from minutes to millennia, and these changes are detectable in the global temperature record.
+\item
+  During strong solar cycles, the Sun's total average brightness varies by up to 1 Watt per square meter; this variation affects global average temperature by 0.1 degrees Celsius or less.
+\item
+  Changes in the Sun's overall brightness since the pre-industrial period have been minimal, likely contributing no more than 0.01 degrees Celsius to the roughly 1 degree of warming that's occurred over the Industrial period.
+\item
+  Projected warming due to increasing greenhouse gas levels in the coming decades will overpower even a very strong Grand Solar Minimum.
+\item
+  Rising amounts of atmospheric carbon dioxide have postponed the next Milankovitch-driven ice age by at least tens of thousands of years.
+\end{itemize}
+
+\includegraphics{fig/TSI_vs_globaltemp.jpg}
+
+\emph{Figure: Yearly total solar irradiance (orange line) from 1610--2020 and the annual global temperature compared to the 20th-century average (red line) from 1880--2020. Since the middle of the 20th-century, solar activity has declined while global temperature increased rapidly. NOAA Climate.gov image, based on solar data from Coddington et al., 2016, and temperature data from NOAA NCEI.}
+
+Even if the Sun's recent quietness---the 11-year cycle minimum in 2011 was the lowest in a century---were to turn into a multi-decade stretch of extremely low activity known as a Grand Solar Minimum, it wouldn't overpower the amount of global warming projected for the coming century due to increasing greenhouse gas emissions. In fact, as long as atmospheric carbon dioxide remains above 300 parts per million, not even the next ice age, which Milankovitch theory predicts would begin 50,000 years from now, is likely to occur.
+
+\includegraphics{fig/nn_sim_tsi_satelliteera.jpg}
+
+\emph{Figure: Daily observations of total solar irradiance (orange line) since the start of the satellite era in 1978. Day-to-day, TSI may vary by as much as 0.3 percent, but average differences between maximum and minimum are on the order 0.1 percent, or around 1 Watt per square meter. NOAA Climate.gov image, based on data from LASP Interactive Solar Irradiance Data Center.}
+
+Scientists today have close to four decades of overlapping measurements of total solar irradiance and sunspots, which allow them to statistically describe how changes in sunspot numbers relate to variations in total solar irradiance. They've used that relationship to model the Sun's brightness back to the start of the sunspot record in the 1600s.
+
+\includegraphics{fig/TSI_1610-2020.jpg}
+
+\emph{Figure: Total solar irradiance estimated from sunspot observations since 1610. NOAA Climate.gov image, based on the NOAA TSI Climate Data Record (Coddington et al., 2016).}
+
+These historical reconstructions reveal that some solar cycles are more active than others, and that their timing isn't completely random. Generally, 2-3 relatively strong cycles will be preceded and followed by 2-3 relatively weak ones. These alternating strong and weak epochs tend to be grouped together over approximately 100-year periods, a pattern known as Gleissberg cycles. Over the span of the historical sunspot record, there have been three \textasciitilde100-year Gleissberg cycles: 1700-1810, 1810-1910, and 1910-2010.
+
+\includegraphics{fig/Schwabe_Gleissberg_1700-2020.jpg}
+
+\emph{Figure: The amplitude of the 11-year solar cycle (formally called the Schwabe cycle, orange) is modulated by the approximately 100-year Gleissberg cycle (charcoal), in which a number of consecutive cycles of high activity are bracketed by consecutive cycles of lower activity. The start of the Industrial Revolution in the mid-1700s coincided with a Gleissberg maximum. The relatively high activity of the mid 20th-century also coincided with a Gleissberg maximum, while the recent decades coincide with a Gleissberg minimum. NOAA Climate.gov image based on data from Wang and Lean, 2021.}
+
+In addition, the record shows that there have been periods when sunspots virtually disappear for several decades. (Other features of the 11-year solar cycle continue to occur, however.) These periods are called Grand Solar Minimums. For example, between 1645-1715, the Sun went through a 70-year quiet period known as the Maunder Minimum. Sunspots disappeared almost completely, and the solar wind was maybe half of its modern velocity. The Maunder Minimum partially overlapped a centuries-long cold spell called the Little Ice Age, which was strongest in the Northern Hemisphere between 1450­-1850.
+
+\includegraphics{fig/NH_temp_2000yrs.jpg}
+
+\emph{Figure: A 2000-year temperature history of the Northern Hemisphere outside the tropics shows a warm period that peaked around 1,000 A.D. followed by a multi-century period of cooling: the Little Ice Age. The coldest part of the Little Ice Age overlapped the very low solar activity of the Maunder Minimum, but the cold spell began well before. NOAA Climate.gov graph, based on data from Christiansen and Ljungqvist, 2012.}
+
+In contrast, the Sun was unusually active in the twentieth century, a period which solar experts call the Modern Maximum. Starting near the turn of the twentieth century, each solar cycle was increasingly active. This build up was tied to the last Gleissberg Cycle, which peaked during solar cycle 19 in 1957. Solar activity then declined in the second half of the 20th-century. The stretch of high activity drew to a definite close in the first decade of the twenty-first century with solar cycle 23, which had an unusually long and low minimum. Solar cycle 24 went on to have one of the lowest maximums of the last 70 years, and solar cycle 25 is expected to be comparable. Meanwhile, Earth's surface temperatures continued to rise rapidly.
+
+The increasing solar activity of the first half of the 20th century and the decreasing activity since then have largely canceled each other out in terms of their influence on global temperature.
+
+The modern sunspot record tells us about solar activity over the past four centuries. Indirect evidence for solar activity deeper in the past comes from the presence of cosmogenic isotopes---radioactive atoms that are generated when common isotopes of an element are struck by galactic cosmic rays.
+
+Our solar system is constantly bombarded with galactic cosmic rays, but the Sun's magnetic field shields us from most of them. When the Sun's magnetic field is strong, at solar maximum, fewer cosmic rays reach the atmosphere, creating very few cosmogenic isotopes. At solar minimum, when the Sun's magnetic field is weaker, slightly more cosmic rays reach Earth's atmosphere, generating more cosmogenic isotopes. The two most common cosmogenic isotopes are carbon-14, which can be found in tree rings, and beryllium-10, which is found in ice cores. Using fluctuations in cosmogenic isotopes, experts have reconstructed solar activity back thousands of years.
+
+\includegraphics{fig/TSI_cosmogenic_holocene_1400.png}
+
+\emph{Figure: A reconstruction of total solar irradiance over the past 9,400 years based on a combination of carbon-14 isotopes in tree rings and beryllium-10 in ice cores. The record indicates there have been at least 25 Grand Solar Minimums in the Holocene. NOAA Climate.gov image, based on data from Steinhilber et al., 2012.}
+
+These paleoclimate reconstructions reveal that the Sun has produced at least 25 grand minimums in the past 9,000 years. Some are short---just two or three decades---and others, like the Maunder Minimum, are five or more decades. They occur every 200 years or so, a period known as the de Vries cycle. Many of them were preceded by a solar cycle with an unusually long and low solar minimum, similar to the minimum of 2008.
+
+\textbf{Milankovitch cycles and ice ages}
+
+The 11-year sunspot cycle and its Gleissberg-cycle modulation cause small changes in the Sun's actual brightness---how much sunlight the Sun radiates to Earth. Earth's climate is also affected by how much sunlight reaches us due to changes in our planet's orbit and position in space relative to the Sun. Called Milankovitch cycles, these predictable orbital patterns have repeat times of tens to hundreds of thousands of years.
+
+For the past million years at least, Milankovitch cycles have coincided with 100,000-year-long ice ages punctuated by short intervals of rapid warming. Although there are pieces of the puzzle experts still don't understand, the key climate influence seems to be changes in the amount of incoming sunlight, or insolation, reaching the high latitudes of the Northern Hemisphere during the summer. The Northern Hemisphere is key to the ice ages because massive ice sheets can only grow over land, not ocean, and most of Earth's land area has been concentrated in the Northern Hemisphere for at least tens of millions of years.
+
+\includegraphics{fig/GlacialMax.jpg}
+
+\emph{Figure: Changes in Northern Hemisphere sunlight are the key to ice ages because massive ice sheets, such as the one that spread across North America and Eurasia roughly 20,000 years ago, can only grow over land, and most land area has been in the Northern Hemisphere for tens of millions of years. (High-resolution without annotations available.) Image by Climate.gov based on data from Science on a Sphere.}
+
+The most significant changes in Northern Hemisphere insolation come from three variations in Earth's orbit:
+
+\begin{verbatim}
+precession (~26,000 years): the slow rotation or “wobble” in the Earth’s axis of rotation, which changes where in the annual orbital path Northern Hemisphere summer solstice occurs;
+obliquity (~41,000 years): how tilted Earth’s axis of rotation is;
+eccentricity (~100,000 years): how far Earth’s orbit is from being a perfect circle.
+\end{verbatim}
+
+Because these cycles have different lengths, they overlap in complex rhythms, reinforcing one another at some times and offsetting one other at others. Northern Hemisphere summer insolation is maximized when tilt is extreme, eccentricity is extreme, and precession causes Northern Hemisphere summer solstice to occur near perihelion, the place in its orbit when Earth is closest to the Sun. Summer insolation is minimized when tilt is smaller, eccentricity is extreme, and Northern Hemisphere summer solstice occurs near aphelion, when Earth is farthest from the Sun.
+
+\includegraphics{fig/orbital_cycles_sunlight_ice.jpg}
+
+\emph{Figure: Rows 1-3) Milankovitch cycles over the past million years (tilt, precession, and eccentricity. (Row 4) Northern Hemisphere summer insolation. (Row 5) Global ice volume inferred from oxygen isotopes in sea floor sediments. Light gray column highlights conditions around 220,000 years ago, when overlap among the three orbital cycles brought a peak in Northern Hemisphere insolation, triggering a warming period with low ice sheet volume. NOAA Climate.gov image, based on data from Lisiecki and Raymo, 2005.}
+
+How low summer insolation must fall to trigger an ice age depends on how high atmospheric carbon dioxide levels are; the more carbon dioxide, the lower the insolation must be. Looking back over the past million years, the highest carbon dioxide level at the start of any ice age was 300 ppm, and most were far lower.
+
+At pre-industrial carbon dioxide levels, summer insolation at 65° North need only dip 0.75 standard deviations below the mean---about 15 Watts per square meter---for summers to be too cool to melt all the winter snow, a low that Milankovitch cycles predict we will next hit about 50,000 years from now. At 400 parts per million, summer insolation would need to fall twice as much---a low we will next see 125,000 years from now. At carbon dioxide levels above 560 parts per million no Milankovitch variation within the next half million years will be low enough to trigger an ice age.
+
+\href{https://www.climate.gov/news-features/understanding-climate/climate-change-incoming-sunlight}{Climate.gov: Incoming Sunlight}
+
+\emph{Danish ISAC Study}
+
+Conclusions
+
+The Sun
+- Sunspot number catches only part of solar activity
+- The Sun's magnetic field drives short term changes
+- Use therefore magnetic data for Sun-Climate studies
+- Solar output predictability is at most years ahead
+- Due to the complexity and time-varying nature of the Sun solar-climate coupling must be expected to be very complex and probably changing with time
+
+The total solar irradiance (TSI) is in a sense the most obvious solar parameter to single
+out for study when considering the Sun-climate connection. The power input received by
+the Earth from the Sun is the driver of Earth's climate system and the variations in TSI do
+correlate reasonably well with the variations seen in the climate. However, the brute
+variations in power received at Earth are not strong enough to explain the variations in
+climate that are observed.
+For TSI to be the driver of the climate variations observed some
+sort of amplification or feedback mechanism must therefore be in place.
+
+The influence of TSI on the climate is multifaceted. Variations in TSI translate to
+different heating in various layers of the atmosphere (though UV here plays the major
+role), heat absorption in the oceans with different time scales from those of the
+atmosphere, differential heating over land and oceans, etc. These primary influences from
+TSI will in turn alter such things as atmospheric circulation, water vapour content in the
+atmosphere, and cloud cover. Effects from these secondary phenomena may then feed
+back into the energy absorbed by the climate system from solar irradiation, for example
+via changes in the Albedo, possibly enhancing the effects of TSI variations.
+Due to the geographically heterogeneous nature of solar influence on climate and the
+rather complicated feedback mechanisms involved in solar forcing of the climate any
+simple explanation of TSI-climate connections is likely to fail, except in limited cases
+such as variations in sea surface temperature that seem to be at least partly explainable by
+simple energy balance considerations.
+
+\href{pdf/ISAC_2007_Solar.pdf}{Danish national Space Center (2007) Influence of Solar Activity Cucles on Earth's Climate (pdf)}
+\href{pdf/ISAC_2007_Solar_Presentation.pdf}{Presentation (pdf)}
+
 \hypertarget{spatial-shock}{%
 \section{Spatial Shock}\label{spatial-shock}}
 
@@ -877,6 +1370,54 @@ This page will track a selection of the planet's vital signs, from carbon dioxid
 \hypertarget{ipcc}{%
 \chapter{IPCC}\label{ipcc}}
 
+\begin{quote}
+The following phrase from the executive summary of Ch 10. of
+the recent IPPC-2013 assessment (after stating that humans activities
+extremely likely caused more than half of the observed GMTA increase)
+might serve for summarising the actual situation:
+``Uncertainties in forcings and in climate models' temperature responses
+to individual forcings, and difficulty in distinguishing the patterns of
+temperature response due to greenhouse gases and other anthropogenic
+forcings prevent a more precise quantification of the temperature changes
+attributable to greenhouse gases''.
+\end{quote}
+
+\begin{quote}
+Therefore `detection' and `attribution' are still regarded as key
+priorities in climate change research. IPCC defines `detection' as
+the process of demonstrating that climate has changed in some statistical
+sense, which means that the likelihood of occurrence by chance due to
+internal variability alone is small.
+\end{quote}
+
+\begin{quote}
+Besides statistical analysis of observed data, typically climate models
+are used to predict the expected responses to external forcing and then
+the consistency of this response pattern is evaluated with respect to
+different components of the climate system
+\end{quote}
+
+As already noted in the Third Assessment Report 11 ,
+`unequivocal attribution would require controlled experimentation
+with the climate system.
+Since that is not possible, in practice attribution of anthropogenic
+climate change is understood to mean
+demonstration that a detected change is
+`consistent with the estimated responses to the given combination of
+anthropogenic and natural forcing' and
+`not consistent with alternative, physically plausible explanations of
+recent climate change that exclude important
+elements of the given combination of forcings.
+Therefore attribution analysis is mainly performed through the
+application of Global Circulation Models that allow
+testing for causal relationships between anthropogenic forcing,
+natural variability and temperature evolutions.
+Pattern-based fingerprint studies provided strong scientific evidence of a
+significant human influence on global atmospheric temperature changes.
+
+\href{https://www.natur\%20e.com/articles/srep21691}{Stips (2016) On the causal structure between CO2 and global temperature}
+\href{pdf/Stips_2016_Causal_structure_CO2_temperature.pdf}{(pdf)}
+
 \hypertarget{shared-socioeconomic-pathways}{%
 \section{Shared Socioeconomic Pathways}\label{shared-socioeconomic-pathways}}
 
@@ -927,6 +1468,69 @@ For too long, weather's randomness has kept events such as these from being blam
 
 \href{https://www.ametsoc.org/ams/index.cfm/publications/bulletin-of-the-american-meteorological-society-bams/explaining-extreme-events-from-a-climate-perspective/}{Ametsoc (2021) Explaining Extreme Weather}
 \href{pdf/Ametsoc_2021_Explaining_Extreme_2019.pdf}{(pdf)}
+
+\hypertarget{attribution-studies-timeline}{%
+\section{Attribution Studies Timeline}\label{attribution-studies-timeline}}
+
+\emph{ClimateChangeNews}
+
+AR5 concluded that human influence on the climate system is ``clear.'' Today scientists say climate change is, without doubt, caused by us. A 2021 \href{https://www.nature.com/articles/s41558-020-00965-9}{study} concluded that humans have caused all of the warming observed since the preindustrial period.
+
+Since the last IPCC report, there has been an explosion of attribution studies finding that specific heatwaves, droughts, tropical cyclones and other extreme events were more likely or intense because of climate change. Recent studies have shown that extreme events such as the Siberian heat wave in 2020 would never have happened without humans pumping greenhouse gases into the air.
+
+Since AR5, attribution science has become more ``impact-oriented'', Sjoukje Philip, a climate scientist from the World Weather Attribution (WWA) group, told Climate Home News.
+That means more studies focusing on the societal impacts of extreme weather events.
+
+The increase in attribution studies is due to more precise climate models and peer-reviewed methods which allow scientists to rapidly and accurately analyse extreme events.
+Scientists are now able to carry out attribution studies within a few days of an event occurring.
+
+Half of all attribution studies focus on heatwaves.
+Heatwaves are relatively easy to attribute because they are ``very certain and the first response to climate change'' and cover a large area, which makes it easier for climate models to pick up.
+Most of the rest look at extremes of rainfall leading to drought or floods.
+Only a handful have looked at hurricanes, which are hard to model due to their complexity and limited historical data. They reached relatively weak conclusions about the scale of human influence.
+That could change as new high-resolution models are being developed.
+
+The majority of attribution studies focus on events in Europe and North America. This is because these regions have the most reliable climate data available.
+
+\textbf{Timeline of climate attribution studies}
+
+2004: First heatwave attribution study
+
+The study found that climate change had at least doubled the likelihood of the European heatwave in 2003, which killed more than 70,000 people.
+
+2011: First flooding attribution study
+
+The first study to attribute greenhouse gas emissions' contribution to flood risk in England and Wales. The scientists concluded that emissions increased the risk of floods occurring in England and Wales in autumn 2000 by more than 20\% and in two out of three cases by more than 90\%.
+
+2014: Likelihood of European heatwaves analysis
+
+The study found that summer heatwaves in Europe over the past 10-15 years were 10 times more likely due to climate change
+
+2016: Mortality study of European heatwave
+
+The first study to directly link deaths during the 2003 European heatwave to climate change. The scientists concluded that 506 of the 735 summer fatalities in Paris in 2003, and 64 of the 315 in London were a result of climate change.
+
+2017: Bangladesh flooding study
+
+World Weather Attribution analysis directly linked severe flooding in Bangladesh in 2017 to climate change.
+
+2018: Cape Town water crisis analysis
+
+The 2017 drought which led to Cape Town's water crisis was made three times more likely by climate change, according to analysis by World Weather Attribution scientists.
+
+2018: Extreme heat across Asia
+
+Extreme heat across Asia in 2016 would have been impossible without climate change, scientists concluded in 2018.
+
+2020: Siberian heatwave impossible without climate change
+
+The prolonged Siberian heatwave in 2020 would have been almost impossible without climate change, according to rapid attribution analysis by the World Weather Attribution group.
+
+2021: Australian bushfire season 30\% more likely
+
+Australia's devastating bushfire season in 2019-202 was made significantly more likely because of climate change, according to World Weather Attribution scientists. The analysis showed that climate change led to weather conditions that increased the fire risk by at least 30\%.
+
+\href{https://www.climatechangenews.com/2021/08/04/timeline-science-linking-climate-change-extreme-weather-took-off/}{ClimateChangeNews}
 
 \hypertarget{map-of-attribution-studies}{%
 \section{Map of Attribution Studies}\label{map-of-attribution-studies}}
@@ -1469,6 +2073,620 @@ They deliberately created doubt when their internal research confirmed how serio
 
 \href{https://insideclimatenews.org/news/24102019/exxon-scientists-climate-research-testify-congess-denial/}{Lavelle (2019) Former Exxon Scientists Tell Congress of Oil Giant's Climate Research Before Exxon Turned to Denial}
 
+\hypertarget{co2-vs-temperature-causality}{%
+\chapter{CO2 vs Temperature: Causality}\label{co2-vs-temperature-causality}}
+
+\hypertarget{temperature-lags-co2-during-deglaciation}{%
+\section{Temperature lags CO2 during deglaciation}\label{temperature-lags-co2-during-deglaciation}}
+
+\emph{Shakun Abstract}
+
+The covariation of carbon dioxide (CO 2 ) concentration and temperature
+in Antarctic ice-core records suggests a close
+link between CO 2 and climate during the Pleistocene ice ages.
+The role and relative importance of CO 2 in producing these
+climate changes remains unclear, however,
+in part because the ice-core deuterium record reflects local rather than
+global temperature.
+Here we construct a record of global surface temperature from 80 proxy records and show that
+temperature is correlated with and generally lags CO 2 during
+the last (that is, the most recent) deglaciation.
+Differences between the respective temperature changes of the Northern Hemisphere and
+Southern Hemisphere parallel variations in the strength of
+the Atlantic meridional overturning circulation recorded in marine sediments.
+These observations, together with transient global climate model simulations,
+support the conclusion that an antiphased hemispheric temperature response to
+ocean circulation changes superimposed on globally in-phase warming driven by increasing
+CO 2 concentrations
+is an explanation for much of the temperature change at the end of the most recent ice age.
+
+\emph{Shakun Memo}
+
+Understanding the causes of the Pleistocene ice ages has been a
+significant question in climate dynamics since they were discovered in
+the mid-nineteenth century. The identification of orbital frequencies
+in the marine \({}^{18}O/{}^{16}O\) record, a proxy for global ice volume, in the
+1970s demonstrated that glacial cycles are ultimately paced by
+astronomical forcing.
+Initial measurements of air bubbles in Antarctic ice
+cores in the 1980s revealed that greenhouse gas concentrations also
+increased and decreased over the last glacial cycle, suggesting they
+too may be part of the explanation. The ice-core record now extends
+back 800,000 yr and shows that local Antarctic temperature was
+strongly correlated with and seems to have slightly led changes in
+\(CO_2\) concentration.
+
+The implication of this relationship for understanding the role of
+\(CO_2\) in glacial cycles, however, remains unclear.
+For instance, proxy data have variously been interpreted to suggest
+that \(CO_2\) was the primary driver of the ice ages, a more modest
+feedback on warming or, perhaps, largely a consequence rather than
+cause of past climate change.
+
+Similarly, although climate models
+generally require greenhouse gases to explain globalization of the
+ice-age signal, they predict a wide range (one-third to two-thirds) in
+the contribution of greenhouse gases to ice-age cooling, with
+additional contributions from ice albedo and other effects
+
+Global temperature reconstructions and transient model simulations
+spanning the past century and millennium have been essential to
+the attribution of recent climate change, and a similar strategy would
+probably improve our understanding of glacial cycle dynamics.
+
+Here we use a network of proxy temperature records that provide broad
+spatial coverage to show that global temperature closely tracked the
+increase in \(CO_2\) concentration over the last deglaciation, and that
+variations in the Atlantic meridional overturning circulation
+(AMOC) caused a seesawing of heat between the hemispheres,
+supporting an early hypothesis that identified potentially important
+roles for these mechanisms.
+These findings, supported by transient
+simulations with a coupled ocean--atmosphere general circulation
+model, can explain the lag of \(CO_2\) behind Antarctic temperature in
+the ice-core record and are consistent with an important role for \(CO_2\)
+in driving global climate change over glacial cycles.
+
+The onset of
+deglaciation, which features about 0.3 \({}^\circ C\) of global warming before
+the initial increase in \(CO_2\) ,17.5 kyr ago.
+\(CO_2\) was not the cause of initial warming.
+
+The overall correlation and phasing of global
+temperature and the overall correlation and phasing of global
+\(CO_2\) are consistent with \(CO_2\) being an important
+driver of global warming during the deglaciation, with the centennial-
+scale lag of temperature behind \(CO_2\) being consistent with the thermal
+inertia of the climate system owing to ocean heat uptake and ice
+melting
+
+Although other mechanisms contributed to climate change during
+the ice ages, climate models suggest that their impacts were regional
+and thus cannot explain the global extent of temperature changes
+documented by our stacked record alone.
+
+The lead of Antarctic temperature over global temperature indicates
+spatial variability in the pattern of deglacial warming.
+
+Southern Hemisphere temperature probably leads \(CO_2\) ,
+consistent with the Antarctic ice-core results,
+Northern Hemisphere temperature lags \(CO_2\).
+
+Seesawing of
+heat between the hemispheres explains the contrast between the lead of
+Antarctic temperature over \(CO_2\) and the lag of global (and Northern
+Hemisphere) temperature behind \(CO_2\).
+
+Our global temperature stack and transient modelling point to \(CO_2\)
+as a key mechanism of global warming during the last deglaciation.
+Furthermore, our results support an interhemispheric seesawing of
+heat related to AMOC variability and suggest that these internal heat
+redistributions explain the lead of Antarctic temperature over \(CO_2\)
+while global temperature was in phase with or slightly lagged \(CO_2\).
+Lastly, the global proxy database suggests that parts of the northern
+mid to high latitudes were the first to warm after the LGM, which
+could have initiated the reduction in the AMOC that may have
+ultimately caused the increase in \(CO_2\) concentration.
+
+\href{https://www.researchgate.net/publication/223987444_Global_Warming_Preceded_by_Increasing_Carbon_Dioxide_Concentrations_during_the_Last_Deglaciation}{Shakun (2012) Global Warming Preceded by Increasing Carbon Dioxide Concentrations during the Last Deglaciation}
+\href{pdf/Shakun_2012_Warming_Preceded_by_CO2.pdf}{(pdf)}
+\href{https://skepticalscience.com/skakun-co2-temp-lag.html}{Review in Skeptical Scientist}
+
+\hypertarget{hen-or-egg-causality}{%
+\section{Hen-Or-Egg Causality}\label{hen-or-egg-causality}}
+
+\emph{Koutsoyiannis Abstract}
+
+It is common knowledge that increasing \(CO_2\) concentration plays a major role in
+enhancement of the greenhouse effect and contributes to global warming. The purpose of this
+study is to complement the conventional and established theory, that increased \(CO_2\) concentration
+due to human emissions causes an increase in temperature, by considering the reverse causality.
+Since increased temperature causes an increase in \(CO_2\) concentration, the relationship of atmospheric
+\(CO_2\) and temperature may qualify as belonging to the category of ``hen-or-egg'' problems, where it is
+not always clear which of two interrelated events is the cause and which the effect. We examine the
+relationship of global temperature and atmospheric carbon dioxide concentration in monthly time
+steps, covering the time interval 1980--2019 during which reliable instrumental measurements are
+available. While both causality directions exist, the results of our study support the hypothesis that
+the dominant direction is T → \(CO_2\) . Changes in \(CO_2\) follow changes in T by about six months on
+a monthly scale, or about one year on an annual scale. We attempt to interpret this mechanism by
+involving biochemical reactions as at higher temperatures, soil respiration and, hence, \(CO_2\) emissions,
+are increasing.
+
+\emph{Koutsoyiannis Memo}
+
+\includegraphics{fig/hen-or-egg.png}
+
+We develop a stochastic framework, introducing useful notions of time irreversibility and system causality while we discuss the logical and technical complications in identifying causality, which prompt us to seek just necessary, rather than sufficient, causality conditions. In the Results section, we examine the relationship of these two quantities using the modern data, available at the monthly time step. We juxtapose time series of global temperature and atmospheric CO2 concentration from several sources, covering the common time interval 1980--2019. In our methodology, it is the timing rather than the magnitude of changes that is important, being the determinant of causality. While logical, physically based arguments support the ``hen-or-egg'' hypothesis, indicating that both causality directions exist, interpretation of cross-correlations of time series of global temperature and atmospheric CO2 suggests that the dominant direction is T → CO2, i.e., the change in temperature leads and the change in CO2 concentration follows. We attempt to interpret this latter mechanism by noting the positive feedback loop---higher temperatures increase soil respiration and, hence, CO2 emissions.
+
+While we occasionally use the Granger statistical test, this is not central
+in our approach.
+Rather, we place the emphasis on time directionality in the relationship,
+which we try to identify in the simplest possible manner, i.e.,
+by \emph{finding the lag, positive or negative, which
+maximizes the cross-correlation between the two processes.}
+
+Another difference of our study, from most of the earlier ones, is our focus on changes, rather than
+current states, in the processes we investigate. This puts the technique of process differencing in
+central place in our analyses. This technique is quite natural and also powerful for studying time
+directionality. We note that differencing has also been used in a study by Humlum et al.,
+which has several similarities with our study, even though it is not posed in a formal causality context,
+as well as in the study by Kodra et al.~However, differencing has been criticized for potentially
+eliminating long-run effects and, hence, providing information only on short-run effects
+
+\textbf{Data}
+
+Our investigation of the relationship of temperature with concentration of carbon dioxide in
+the atmosphere is based on two time series of the former process and four of the latter. Specifically,
+the temperature data are of two origins, satellite and ground-based. The satellite dataset, developed
+at the University of Alabama in Huntsville (UAH), infers the temperature, T, of three broad levels
+of the atmosphere from satellite measurements of the oxygen radiance in the microwave band using
+advanced (passive) microwave sounding units on NOAA and NASA satellites {[}47,48{]}. The data are
+publicly available on the monthly scale in the forms of time series of ``anomalies'' (defined as differences
+from long-term means) for several parts of earth as well as in maps. Here, we use only the global
+average on monthly scale for the lowest level, referred to as the lower troposphere. The ground-based
+data series we use is the CRUTEM.4.6.0.0 global T2m land temperature {[}49{]}. This originates from a
+gridded dataset of historical near-surface air temperature anomalies over land. Data are available for
+each month from January 1850 to the present. The dataset is a collaborative product of the Met Office Hadley Centre and the Climatic Research Unit at the University of East Anglia. We note that both
+sources of information, UAH and CRUTEM, provide time series over the globe, land, and oceans; here,
+we deliberately use one source for the globe and one for the land.
+
+The two temperature series used in the study are depicted in Figure.
+
+\includegraphics{fig/UAH_vs_CRUTEM4.png}
+
+They are consistent with
+each other (and correlated, r = 0.8), though the CRUTEM4 series shows a larger increasing trend than
+the UAH series. The differences can be explained by three reasons: (a) the UAH series includes both
+land and sea, while the chosen CRUTEM4 series is for land only, in which the increasing trend is
+substantially higher than in sea; (b) the UAH series refers to some high altitude in the troposphere
+(see details in Koutsoyiannis {[}50{]}), while the CRUTEM4 series refers to the ground level; and (c) the
+ground-based CRUTEM4 series might be affected by urbanization (many ground stations are located
+in urban areas). In any case, the difference in the increasing trends is irrelevant for the current study,
+as the timing, rather than the magnitude, of changs is the determinant of causality.
+
+\textbf{Methods}
+
+\emph{Stochastic Framework}
+
+A recent study {[}30{]} investigated time irreversibility in hydrometeorological processes and
+developed a theoretical framework in stochastic terms. It also studied necessary conditions for
+causality, which is tightly linked to time irreversibility.
+A process that is not time-reversible is called time-asymmetric, time-irreversible, or time-directional.
+Time asymmetry of a process can be studied more conveniently (or even exclusively in a scalar
+process) through the differenced process.
+To study irreversibility in vector processes, we can use second-order moments and, in particular,
+cross-covariances among the different components of the vector.
+Time (ir)reversibility could then be characterized by studying the properties of symmetry
+or asymmetry of \(r_{x̃ ỹ}( ν, η )\) as a function of the time lag η.
+Time asymmetry is closely related to causality, which presupposes irreversibility.
+``No causal process (i.e., such that of two consecutive phases, one is always the cause of the other) can be reversible''
+In probabilistic definitions of causality, time asymmetry is determinant.
+
+Suppes {[}61{]} defines causation thus: ``An event \(B_{t'}\) {[}occurring at time t' {]}
+is a prima facie cause of the event \(A_t\) {[}occurring at time t{]}
+if and only if (i) t 0 \textless{} t, ( ii ) P\{\(B_{t'}\) \} \textgreater{} 0, (iii) P(\(A_t | B_{t'}\) ) \textgreater{} P(\(A_t\) )''.
+In addition, Granger's {[}62{]} first axiom in defining causality reads,
+``The past and present may cause the future, but the future cannot''.
+
+Consequently, in simple causal systems, in which the process component \(x_τ\)
+is the cause of \(y_τ\) (like in the clear case of rainfall and runoff, respectively),
+it is reasonable to expect \(r_{x̃ỹ}[ ν, η ] ≥ 0\) for any η ≥ 0,
+while \(r_{x̃ỹ}[ ν, η ] = 0\) for any η = 0.
+However, in ``hen-or-egg'' causal systems, this will not be the case,
+and we reasonably expect \(r_{x̃ỹ}[ ν, η ] != 0\) for any η.
+Yet, we can define a dominant direction of causality
+based on the time lag \(η_1\) maximizing cross-correlation.
+Formally, \(η_1\) is defined for a specified ν as
+
+\(η_1 : = argmax |r_{x̃ỹ} ( ν, η )|\) (over η)
+
+We can thus distinguish the following three cases:
+
+• If \(η_1 = 0\), then there is no dominant direction.
+
+• If \(η_1 > 0\), then the dominant direction is \(x_τ → y_τ\) .
+
+• If \(η_1 < 0\), then the dominant direction is \(y-τ_ → x_τ\) .
+
+It must be stressed that the above conditions are considered as necessary and not sufficient
+conditions for a causative relationship between the processes x τ and y . Following Koutsoyiannis {[}30{]}
+τ
+(where additional necessary conditions are discussed), we avoid seeking sufficient conditions, a task
+that would be too difficult or impossible due to its deep philosophical complications as well as the
+logical and technical ones.
+
+In essence, the ``Granger causality test'' studies the improvement of prediction of a
+process \(y_τ\) by considering the influence of a ``causing'' process \(x_τ\)
+
+The rejection of the null hypothesis
+is commonly interpreted in the literature with a statement that \(x_τ\) ``Granger-causes'' \(y_τ\).
+This is clearly a misstatement and, in fact, the entire test is based on correlation matrices. Thus, it again reflects correlation rather than causation.
+The rejection of the null hypothesis signifies improvement of prediction and
+this does not mean causation.
+
+Cohen {[}66{]} suggested replacing the term ``Granger causality'' with ``Granger prediction'' after
+correctly pointing out this:
+
+\begin{quote}
+Results from Granger causality analyses neither establish nor require causality.
+Granger causality results do not reveal causal interactions, although they can provide
+evidence in support of a hypothesis about causal interactions.
+\end{quote}
+
+Some have thought they can approach genuine causes and get rid of the caution ``correlation is not
+causation'' by replacing the correlation with other statistics in the mathematical description of causality.
+For example, Liang {[}44{]} uses the concept of information (or entropy) flow (or transfer) between two
+processes; this method has been called ``Liang causality'' in the already cited work he co-authors {[}43{]}.
+The usefulness of such endeavours is not questioned, yet their vanity to determine genuine causality is
+easy to infer: using any quantity
+related to entropy (equivalently, information), is virtually identical to using correlation.
+The information flow turns out to be the correlation coefficient multiplied by a constant.
+In other words, the big philosophical
+problem of causality cannot be resolved by technical tricks.
+Thus, using any quantity related to entropy (equivalently, information),
+is virtually identical to using correlation.
+
+We assert that both causality directions exist, and we are looking for
+the dominant one under the current climate conditions (those manifest in the datasets we use)
+instead of trying to make assertions of an exclusive causality direction.
+
+\emph{Conclusion}
+
+In brief, all above confirm the results of our methodology that the dominant direction of causalityis T → \protect\hyperlink{co2}{CO2}.
+
+\emph{Physical Interpretation}
+
+The omnipresence of positive lags on both monthly and annual time scales and the confirmation
+by Granger tests reduce the likelihood that our results are statistical artefacts. Still, our results require
+physical interpretation which we seek in the natural process of soil respiration.
+Soil respiration, R s , defined to be the flux of microbially and plant-respired CO 2 , clearly increases
+with temperature. It is known to have increased in the recent years {[}74,75{]}. Observational data of R s
+(e.g., {[}76,77{]}; see also {[}78{]}) show that the process intensity increases with temperature. Rate of chemical
+reactions, metabolic rate, as well as microorganism activity, generally increase with temperature.
+This has been known for more than 70 years (Pomeroy and Bowlus {[}79{]}) and is routinely used in
+engineering design.
+The Figure 6.1 of the latest report of the IPCC {[}75{]} provides a quantification of the mass balance
+of the carbon cycle in the atmosphere that is representative of recent years. The soil respiration,
+assumed to be the sum of respiration (plants) and decay (microbes), is 113.7 Gt C/year (IPCC gives
+a value of 118.7 including fire, which along with biomass burning, is estimated to be 5 Gt C/year by
+Green and Byrne {[}80{]}).
+We can expect that sea respiration would also have increased. Moreover, outgassing from
+the oceans must also have increased as the solubility of CO 2 in water decreases with increasing
+temperature {[}14,81{]}. In addition, photosynthesis must have increased, as in the 21st century the Earth
+has been greening, mostly due to CO 2 fertilization effects {[}82{]} and human land-use management {[}83{]}.
+Specifically, satellite data show a net increase in leaf area of 2.3\% per decade {[}83{]}. The sums of carbon
+outflows from the atmosphere (terrestrial and maritime photosynthesis as well as maritime absorption)
+amount to 203 Gt C/year. The carbon inflows to the atmosphere amount to 207.4 Gt C/year and include
+natural terrestrial processes (respiration, decay, fire, freshwater outgassing as well as volcanism and
+weathering), natural maritime processes (respiration) as well as anthropogenic processes. The latter
+comprise human CO 2 emissions related to fossil fuels and cement production as well as land-use
+change, and amount to 7.7 and 1.1 Gt C/year, respectively. The change in carbon fluxes due to natural
+processes is likely to exceed the change due to anthropogenic CO 2 emissions, even though the latter
+are generally regarded as responsible for the imbalance of carbon in the atmosphere.
+
+The results of the study support the hypothesis that both causality directions exist, with T → CO 2
+being the dominant, despite the fact that CO 2 → T prevails in public, as well as in scientific, perception.
+Indeed, our results show that changes in CO 2 follow changes in T by about six months on a monthly
+scale, or about one year on an annual scale.
+The opposite causality direction opens a nurturing interpretation question. We attempted to
+interpret this mechanism by noting that the increase in soil respiration, reflecting the fact that the
+intensity of biochemical process increases with temperature, leads to increasing natural CO 2 emission.
+Thus, the synchrony of rising temperature and CO 2 creates a positive feedback loop.
+
+\href{https://www.mdpi.com/2413-4155/2/4/83}{Koutsoyiannis (2020) Atmospheric Temperature and CO2 : Hen-Or-Egg Causality?}
+\href{pdf/Koutsoyiannis_2020_Hen-Or-Egg_Causality.pdf}{(pdf)}
+
+*Reviewer comments to Koutsoyannis (Connolly)**
+
+On your proposed mechanism for T→CO2
+
+In Section 6, you briefly postulate some of the mechanisms by which increasing T could cause increasing CO2.
+
+I agree with you that increasing global temperatures should lead to increasing atmospheric CO2 from increased soil respiration. Indeed, in a recent paper - ÓhAiseadha et al.~(2020), we briefly pointed out that this leads to the surprising fact that the net night-time soil warming caused by wind farms is probably leading to an increase in biological CO2 emissions which may well be counteracting some (or all) of the reduction in anthropogenic CO2 emissions the wind farms are hoped to cause.
+
+You might find some of the references we cite in Section 4.2.4 of ÓhAiseadha et al.~(2020) relevant for your arguments.
+
+However, I would suggest that there are other mechanisms by which global temperatures could alter atmospheric CO2 concentrations -- and broadly they typically are of the same sign, i.e., more warming leading to increased atmospheric CO2 concentrations.
+
+For instance, I would also note that the solubility of CO2 in water decreases with increasing temperature. So, it is plausible that increasing temperature could also cause increasing CO2 through outgassing from the oceans. This is something we are considering for a manuscript that we are working on. However, we are still evaluating this hypothesis, as we are realising there are several unresolved issues associated with the transfer of CO2 across the surface ocean/air boundary.
+
+Nonetheless, the transfer of CO2 back and forth between the surface oceans and the atmosphere is an important component of the annual CO2 fluxes. Therefore, changes in average SST may also be contributing to changes in atmospheric CO2.
+
+Also, we still haven't published this formally, but our current best explanation for the high seasonal variability of the Barrow (and other Arctic CO2 monitoring stations, e.g., Alert, Canada) is that it is probably related to the seasonality of sea ice. That is, when the oceans are covered by sea ice, no gaseous exchange can occur, but once the sea ice melts in the Arctic summer, CO2 can be exchanged. And because the sea surface temperature is relatively cold, the CO2 solubility is relatively high, i.e., CO2 enters the oceans.
+
+If this hypothesis is correct, then it suggests that changes in average sea ice cover from changing global temperatures might also alter atmospheric CO2.
+
+These proposed mechanisms are less well grounded in the literature than the soil respiration mechanism. However, I suggest that you should at least consider the possibility of other mechanisms.
+
+\href{https://www.mdpi.com/2413-4155/2/4/77/review_report}{Connolly}
+
+\hypertarget{causal-structure-by-information-flow-analysis}{%
+\subsection{Causal Structure by Information Flow Analysis}\label{causal-structure-by-information-flow-analysis}}
+
+\emph{Stips Abstract}
+
+We use a newly developed technique that is based on
+the information flow concept to investigate the
+causal structure between the global radiative forcing and
+the annual global mean surface temperature anomalies (GMTA) since 1850.
+Our study unambiguously shows one-way causality between the total
+Greenhouse Gases and GMTA.
+Specifically, it is confirmed that the former, especially \(CO_2\) ,
+are the main causal drivers of the recent warming.
+A significant but smaller information flow comes from aerosol
+direct and indirect forcing, and on short time periods, volcanic forcings.
+In contrast the causality contribution from natural forcings (solar irradiance
+and volcanic forcing) to the long term trend is not significant.
+The spatial explicit analysis reveals that the anthropogenic forcing fingerprint
+is significantly regionally varying in both hemispheres.
+On paleoclimate time scales, however, the cause-effect direction is reversed:
+temperature changes cause subsequent \(CO_2\) / \(CH_4\) changes.
+
+\emph{Stips Memo}
+
+In this study, we use a recently developed mathematical
+method, which is capable of quantitatively evaluating the drive and feedback causal relation between time
+series, to address the importance of the different forcing components on climate in a quantitative but model
+independent way. This new method is based on the information flow (IF) concept.
+
+The whole new formalism is derived from first principles,
+rather than as an empirically defined ansatz,
+with the property of causality guaranteed in proven theorems.
+This is in contrast to other causality analyses, say that based on
+Granger causality or convergent cross mapping (CCM).
+The resulting formula is concise in form, involving only the common
+statistics, namely sample covariances.
+It also allows an explicit discrimination between correlation and causality:
+causation implies correlation, but not vice versa
+Causality is measured as the
+time rate of information flowing from one time series to another.
+
+A nonzero IF, or information transfer as it may appear in the literature,
+from an event to another logically tells the strength of the
+causality from the former to the latter, and a vanishing causality must entail a zero flow.
+Transfer entropy and Granger causality, the two most extensively studied formalisms
+of IF and causality analysis respectively, turn out to be equivalent up to a factor of 2.
+In causality analysis, a principle (actually the only quantitatively stated fact)
+that must be verified is that,
+when the evolution of a dynamical event (say A) is independent of another (say B),
+then the causality from B to A is nil.
+It has long been found that Granger causality and transfer entropy
+fail to verify this principle in many applications, giving rise to spurious causalities.
+
+\textbf{Results}
+
+We use this technique to analyse the recently measured global mean surface air
+temperature anomalies (GMTA) and various reconstructed external forcings covering
+the period from 1850 to 2005 (156 years).
+To introduce the method we calculate the information flow (IF) in nat
+(natural unit of information) per unit time {[}nat/ut{]}
+from the 156 years annual time series of global \(CO_2\) concentration to GMTA
+as 0.348 ± 0.112 nat/ut and − 0.006 ± 0.003 nat/ut in the reverse direction.
+Obviously, the former is significantly different from zero, while the latter,
+in comparison to the former, is negligible.
+This result unambiguously shows a one-way causality in the sense that the
+recent \(CO_2\) increase is causing the temperature increase, but not the other way around.
+
+\textbf{Conclusions}
+
+Using the IF concept we were able to confirm the inherent one-way causality between
+human activities and global warming, as during the last 150 years the increasing
+anthropogenic radiative forcing is driving the increasing global temperature,
+a result that cannot be inferred from traditional time delayed correlation or
+ordinary least square regression analysis.
+Natural forcing (solar forcing and volcanic activities) contributes only marginally to
+the global temperature dynamics during the last 150 years.
+Human influence, especially via \(CO_2\) radiative forcing,
+has been detected to be significant since about the 1960s.
+This provides an independent statistical confirmation of
+the results from process based modelling studies.
+
+On very long time scales (800,000 years) the IF is only significant in
+the direction from air temperature to \(CO_2\) .
+This supports the idea that the feedback of GHGs to temperature changes
+seems to be much slower than the fast response of
+temperature to changes in GHGs.
+
+The spatial explicit analysis strongly indicates that the increasing anthropogenic
+forcing is causing very differing effects regionally with some regions in
+the southern hemisphere showing large IF values.
+Regions of significant IF do coincide with regions having stronger than average
+recent warming trends.
+
+\href{https://www.nature.com/articles/srep21691}{Stips (2016) On the causal structure between CO2 and global temperature}
+\href{pdf/Stips_2016_Causal_structure_CO2_temperature.pdf}{(pdf)}
+
+(See also rsts/Causation: Liang)
+
+\hypertarget{the-1940s-co2-plateau}{%
+\section{The 1940s CO2 Plateau}\label{the-1940s-co2-plateau}}
+
+\emph{Bastos Abstract}
+
+The high-resolution CO 2 record from Law Dome
+ice core reveals that atmospheric CO 2 concentration stalled
+during the 1940s (so-called CO 2 plateau). Since the fossil-
+fuel emissions did not decrease during the period, this
+stalling implies the persistence of a strong sink, perhaps sus-
+tained for as long as a decade or more. Double-deconvolution
+analyses have attributed this sink to the ocean, conceivably
+as a response to the very strong El Niño event in 1940--
+1942. However, this explanation is questionable, as recent
+ocean CO 2 data indicate that the range of variability in the
+ocean sink has been rather modest in recent decades, and
+El Niño events have generally led to higher growth rates of
+atmospheric CO 2 due to the offsetting terrestrial response.
+Here, we use the most up-to-date information on the differ-
+ent terms of the carbon budget: fossil-fuel emissions, four
+estimates of land-use change (LUC) emissions, ocean uptake
+from two different reconstructions, and the terrestrial sink
+modelled by the TRENDY project to identify the most likely
+causes of the 1940s plateau. We find that they greatly over-
+estimate atmospheric CO 2 growth rate during the plateau pe-
+riod, as well as in the 1960s, in spite of giving a plausible
+explanation for most of the 20th century carbon budget, es-
+pecially from 1970 onwards. The mismatch between recon-
+structions and observations during the CO 2 plateau epoch of
+1940--1950 ranges between 0.9 and 2.0 Pg C yr −1 , depend-
+ing on the LUC dataset considered. This mismatch may be
+explained by (i) decadal variability in the ocean carbon sink
+not accounted for in the reconstructions we used, (ii) a further
+terrestrial sink currently missing in the estimates by land-
+surface models, or (iii) LUC processes not included in the
+current datasets. Ocean carbon models from CMIP5 indi-
+cate that natural variability in the ocean carbon sink could
+explain an additional 0.5 Pg C yr −1 uptake, but it is unlikely
+to be higher. The impact of the 1940--1942 El Niño on the
+observed stabilization of atmospheric CO 2 cannot be con-
+firmed nor discarded, as TRENDY models do not repro-
+duce the expected concurrent strong decrease in terrestrial
+uptake. Nevertheless, this would further increase the mis-
+match between observed and modelled CO 2 growth rate dur-
+ing the CO 2 plateau epoch. Tests performed using the OS-
+CAR (v2.2) model indicate that changes in land use not cor-
+rectly accounted for during the period (coinciding with dras-
+tic socioeconomic changes during the Second World War)
+could contribute to the additional sink required. Thus, the
+previously proposed ocean hypothesis for the 1940s plateau
+cannot be confirmed by independent data. Further efforts are
+required to reduce uncertainty in the different terms of the
+carbon budget during the first half of the 20th century and to
+better understand the long-term variability of the ocean and
+terrestrial CO 2 sinks.
+
+\emph{Bastos Memo}
+
+\includegraphics{fig/Law_Dome_CO2_1900-2000.png}
+
+\emph{Figure: Atmospheric CO 2 concentration in the Law Dome ice
+core and firn record from Rubino et al.~(2013) and respective un-
+certainties (markers and whiskers) as well as the spline fit applied
+to the data following Enting et al.~(2006), which attenuates by 50 \%
+variations of ca. 23 years. The period corresponding to the plateau
+is highlighted between vertical grey lines. The blue markers cor-
+respond to samples from Law Dome and red markers from South
+Pole; different symbols indicate the different ice cores (big mark-
+ers) and firn samples (dots).}
+
+Persistent El Niño sequences in
+1895--1898 and 1911--1916 as well as the 1940s coincided
+with small decreases in the CO 2 growth rate.
+
+The very strong El Niño event that
+lasted from 1940 until 1942 (Brönnimann et al., 2004) may
+have been responsible for reduced upwelling of carbon-rich
+waters in the Eastern Pacific, causing an abnormal increase
+of the global ocean sink. However, this hypothesis remains
+controversial and, moreover, in spite of the high quality of
+the Law Dome δ 13 C record, the scatter and uncertainty in the
+data are relatively high and they affect how well it is possible
+to partition the biospheric and oceanic fluxes. Errors in the
+δ 13 C data may lead to spurious and highly correlated terres-
+trial and oceanic fluxes.
+
+Rafelski et al.~(2009), using a single deconvolution of the
+CO 2 record and a simple land-surface model, pointed to an
+increased terrestrial sink during the 1940s. This sink was re-
+lated to change in temperature. Single deconvolutions do not
+use the δ 13 C information and assume time-invariant ocean re-
+sponse. When terrestrial uptake is used to explain the 1940s
+plateau they produce a peak in δ 13 C that appears to be incon-
+sistent with the ice-core δ 13 C measurements, although the
+differences are not large compared to the measurement un-
+certainties.
+
+Even if the unusually long 1940--1942 El
+Niño did induce strong oceanic uptake, it is not clear that
+it should have led to a decrease in CO 2 growth rate, as El
+Niño periods in recent decades have usually been associ-
+ated with a net increase in atmospheric CO 2 growth rate.
+The occurrence of El Niño leads to reduced outgassing of CO 2 in the
+tropical Pacific due to the slow-down of vertical upwelling
+of carbon and nutrient-rich subsurface waters, driven by
+weaker trade winds.
+
+However, the magnitude of the El Niño/Southern Oscillation (ENSO) impact
+on oceanic uptake differs significantly between studies, with
+approaches based on \(δ^{13}\)C analysis pointing to anomalies of
+1.5--2.5 Pg C yr −1 (Keeling et al., 1995; Joos et al., 1999;
+Trudinger et al., 2002a), while atmospheric CO 2 -based meth-
+ods point to anomalies of only 0.1--0.5 Pg C yr −1.
+
+Furthermore, the enhancement of the global ocean sink during an El Niño event
+is usually offset by a much larger terrestrial CO 2 release due
+to the response of land ecosystems to widespread drought
+conditions in the tropics and increased fire emissions.
+
+Here, we evaluate whether it is possible to reproduce the
+stabilization in atmospheric CO 2 during the 1940s using
+model-based records of sources and sinks for the 20th cen-
+tury and identify possible mechanisms to explain the plateau.
+We first compare the atmospheric CO 2 growth rate recon-
+structed using these datasets with the ice-core record to test
+their ability to capture the plateau. Additionally, we evalu-
+ate whether the ocean response to the 1940--1942 El Niño
+may explain the atmospheric CO 2 stabilization. Finally, we
+analyse the response of the land sink to this event using
+land-surface process models and, given that land-use data are
+highly uncertain, test the possible contribution of LUC to ex-
+plain the additional sink required to match observations.
+
+\emph{Bastos Conclusion}
+
+Although the oceans are likely to
+have contributed, they cannot by themselves provide the
+complete explanation of the 1940s plateau. A strong terres-
+trial sink is also required to match the observed stalling in
+atmospheric CO 2 during the period.
+
+In the case of the terrestrial sink, other
+processes currently not included in the models or in the LUC
+reconstructions may have contributed to the plateau. The ef-
+fects of fire occurrence, changes in nutrient availability and
+the devastating socioeconomic consequences of the Second
+World War are examples of processes currently not well rep-
+resented in the models.
+
+\href{https://bg.copernicus.org/articles/13/4877/2016/}{Bastos (2016) Re-evaluating the 1940s CO2 plateau}
+\href{pdf/Bastos_2016_Revealutaing_1940s_CO2_plateau.pdf}{(pdf)}
+
+\hypertarget{co2-isotopes}{%
+\chapter{CO2 Isotopes}\label{co2-isotopes}}
+
+\emph{NOAA}
+
+Carbon-14 (or \({}^{14}C\)) is also known as radiocarbon, because it is the only carbon isotope that is radioactive. It is perhaps most famous for its use in radiocarbon dating of archeological artifacts ranging from mummies to cave drawings, and it plays a crucial role in studying fossil fuel carbon dioxide emissions as well.
+
+Fossil fuels are, well, fossils, and are millions of years old. Because of this, all of the radiocarbon initially present has decayed away, leaving no \({}^{14}C\) in this ancient organic matter. All other atmospheric carbon dioxide comes from young sources--namely land-use changes (for example, cutting down a forest in order to create a farm) and exchange with the ocean and terrestrial biosphere. This makes \({}^{14}C\) an ideal tracer of carbon dioxide coming from the combustion of fossil fuels. Scientists can use \({}^{14}C\) measurements to determine how much \({}^{14}C\)O2 has been diluted with \({}^{14}C\)-free CO2 in air samples, and from this can calculate what proportion of the carbon dioxide in the sample comes from fossil fuels.
+
+Unlike \({}^{14}C\), the amount of \({}^{13}C\) or \({}^{12}C\) in an artifact does not change over time since both \({}^{13}C\) and \({}^{12}C\) are stable isotopes. In other words, they do not decay. Because they are stable isotopes, a \({}^{13}C\) atom will always remain a \({}^{13}C\) atom, and the same is true for \({}^{12}C\).
+
+Recall that there is much, much more \({}^{12}C\) than \({}^{13}C\) in the world --almost 99\% of all carbon atoms are \({}^{12}C\). Even so, different carbon pools have different ratios of \({}^{13}C\) and \({}^{12}C\) -- called isotopic fingerprints. The differences are small - one carbon pool may have 98.8\% \({}^{12}C\) while another may have 99.2\% \({}^{12}C\) - but modern machines, called isotope ratio mass spectrometers, can detect these differences quite easily. Pools with relatively more \({}^{13}C\) (less \({}^{12}C\)) are called ``heavy'' and those with less \({}^{13}C\) are called ``light''.
+
+Let's look at the four main carbon pools with which climate scientists are concerned: the atmosphere, the terrestrial biosphere (land plants, animals, and soils), fossil fuels, and the ocean. The atmosphere has a certain ratio of \({}^{13}C\) to \({}^{12}C\). This ratio is affected by the isotopic fingerprint of the source of new carbon dioxide to the atmosphere. Some sources of carbon dioxide are ``heavy'' while others are ``light''. The ratio in the atmosphere is also affected by the isotopic fingerprint of carbon dioxide sinks. Do these sinks take in a lot of \({}^{13}C\) or very little relative to the amount of \({}^{12}C\) they take up from the atmosphere?
+
+\href{https://gml.noaa.gov/education/isotopes/stable.html}{NOAA Stable Carbon and thee Carbon Cycle}
+
 \hypertarget{decoupling}{%
 \chapter{Decoupling}\label{decoupling}}
 
@@ -1526,6 +2744,45 @@ Temperatures have increased over virtually the entire planet since the mid-19th 
 When looking at the changes relative to the global average, it is clear the Arctic and land areas are warming faster than the ocean.
 
 \includegraphics{fig/World_Temp_Change_Speed.jpeg}
+
+\hypertarget{water-vapor}{%
+\chapter{Water Vapor}\label{water-vapor}}
+
+\emph{SkepticalScience}
+
+The amount of water vapor in the atmosphere exists in direct relation to the temperature. If you increase the temperature, more water evaporates and becomes vapor, and vice versa. So when something else causes a temperature increase (such as extra CO2 from fossil fuels), more water evaporates. Then, since water vapor is a greenhouse gas, this additional water vapor causes the temperature to go up even further---a positive feedback.
+
+How much does water vapor amplify CO2 warming? Studies show that water vapor feedback roughly doubles the amount of warming caused by CO2. So if there is a 1°C change caused by CO2, the water vapor will cause the temperature to go up another 1°C. When other feedback loops are included, the total warming from a potential 1°C change caused by CO2 is, in reality, as much as 3°C.
+
+The other factor to consider is that water is evaporated from the land and sea and falls as rain or snow all the time. Thus the amount held in the atmosphere as water vapour varies greatly in just hours and days as result of the prevailing weather in any location. So even though water vapour is the greatest greenhouse gas, it is relatively short-lived. On the other hand, CO2 is removed from the air by natural geological-scale processes and these take a long time to work. Consequently CO2 stays in our atmosphere for years and even centuries. A small additional amount has a much more long-term effect.
+
+Generally it is held that the WV condenses out within a period of 14days.
+
+As atmospheric CO2 levels rise relentlessly week on week, month on month, year on year, atmospheric water vapour reaches a rapid equilibration according to its vapour pressure in relation to the atmospheric presure and temperature.
+
+Water vapour isn't 10x more effective a GC than CO2. Despite the fact that the water vapour concentration of the atmosphere is 5 times that of CO2 (around 0.3\% by mass for water vapour cf around 0.06\% by mass for CO2), the contribution of CO2 to the greenhouse effect is at least 10\% (and more like 25-30\% with the water vapour feedback).
+
+Atmospheric CO2 doesn't fall out of the atmosphere. As we pump CO2 into the atmosphere it accumulates day by day, month by month, year by year. That can't happen with water vapor.
+
+Atmospheric CO2 concentrations rise cumulatively (and very very quickly now).
+The water vapour that we pump into the atmosphere is a tiny supplement to the natural evaporative/precipitation cycle, and since this comes straight out of the lower atmosphere within a week or two it can (a) have only a very small effect and (b) caanot be cumulative.
+
+Man can't ``add'' water vapour to the atmosphere. The atmospheric water vapour levels are essentially ``defined'' by the atmospheric temperature and pressure.
+What happens to all of that water (e.g the vast amount from natural evaporation)?. It all comes straight out as precipitation. What stays in the atmosphere is what the atmosphere can support in relation to the atmospheric temperature and pressure. In fact the research indicates that the atmosphere tends to maintain a relatively constant relative humidity.
+
+\href{https://skepticalscience.com/water-vapor-greenhouse-gas.htm}{SkepticalScience}
+
+\emph{ACS}
+
+It's true that water vapor is the largest contributor to the Earth's greenhouse effect. On average, it probably accounts for about 60\% of the warming effect. However, water vapor does not control the Earth's temperature, but is instead controlled by the temperature. This is because the temperature of the surrounding atmosphere limits the maximum amount of water vapor the atmosphere can contain. If a volume of air contains its maximum amount of water vapor and the temperature is decreased, some of the water vapor will condense to form liquid water. This is why clouds form as warm air containing water vapor rises and cools at higher altitudes where the water condenses to the tiny droplets that make up clouds.
+
+The greenhouse effect that has maintained the Earth's temperature at a level warm enough for human civilization to develop over the past several millennia is controlled by non-condensable gases, mainly carbon dioxide, CO2, with smaller contributions from methane, CH4, nitrous oxide, N2O, and ozone, O3. Since the middle of the 20th century, small amounts of man-made gases, mostly chlorine- and fluorine-containing solvents and refrigerants, have been added to the mix. Because these gases are not condensable at atmospheric temperatures and pressures, the atmosphere can pack in much more of these gases . Thus, CO2 (as well as CH4, N2O, and O3) has been building up in the atmosphere since the Industrial Revolution when we began burning large amounts of fossil fuel.
+
+If there had been no increase in the amounts of non-condensable greenhouse gases, the amount of water vapor in the atmosphere would not have changed with all other variables remaining the same. The addition of the non-condensable gases causes the temperature to increase and this leads to an increase in water vapor that further increases the temperature. This is an example of a positive feedback effect. The warming due to increasing non-condensable gases causes more water vapor to enter the atmosphere, which adds to the effect of the non-condensables.
+
+There is also a possibility that adding more water vapor to the atmosphere could produce a negative feedback effect. This could happen if more water vapor leads to more cloud formation. Clouds reflect sunlight and reduce the amount of energy that reaches the Earth's surface to warm it. If the amount of solar warming decreases, then the temperature of the Earth would decrease. In that case, the effect of adding more water vapor would be cooling rather than warming. But cloud cover does mean more condensed water in the atmosphere, making for a stronger greenhouse effect than non-condensed water vapor alone -- it is warmer on a cloudy winter day than on a clear one. Thus the possible positive and negative feedbacks associated with increased water vapor and cloud formation can cancel one another out and complicate matters. The actual balance between them is an active area of climate science research.
+
+\href{https://www.acs.org/content/acs/en/climatescience/climatesciencenarratives/its-water-vapor-not-the-co2.html}{ACS}
 
 \hypertarget{part-elements}{%
 \part{Elements}\label{part-elements}}
@@ -1752,6 +3009,11 @@ conversion factor of 2.12 PgC per ppm (Prather et al., 2012).}
 \hypertarget{methane}{%
 \subsection{Methane}\label{methane}}
 
+The last mass extinction of life on earth, where 95\% of species disappeared,
+was due to methane-induced rapid warming of the atmosphere (Lee, 2014; Brand et al, 2016).
+
+\href{pdf/\%20Bendell_2020_Deep_Adaptation.pdf}{Bendell (2018) Deep Adaption: A Map for Navigating Climate Tradegy (pdf)}
+
 \includegraphics{fig/Methane_by_Source.jpeg}
 
 Methane, the largest component of natural gas, is sometimes called a ``short-lived climate pollutant'' because it remains in the atmosphere for far less time than carbon dioxide, which can remain in the atmosphere for hundreds of years. But methane is also a climate ``super-pollutant,'' 86 times more potent than carbon dioxide at warming the atmosphere over a 20-year period.
@@ -1852,6 +3114,31 @@ Frustratingly for the theory's backers, a test voyage this year by the Universit
 
 Guardian{]}(\url{https://www.theguardian.com/environment/2021/jun/23/cloud-spraying-and-hurricane-slaying-could-geoengineering-fix-the-climate-crisis})
 
+\hypertarget{aerosols}{%
+\section{Aerosols}\label{aerosols}}
+
+\emph{Hansen}
+
+The global warming acceleration is due to the one huge climate forcing that we have chosen not to measure: the forcing caused by imposed changes of atmospheric aerosols.
+
+It's a shame that we are not measuring the aerosol climate forcing to take advantage of this vast geophysical experiment to improve our understanding. The human-made aerosol forcing is almost as large as the CO2 forcing, but it is of the opposite sign, i.e., aerosols cause cooling.
+
+Aerosols cause cooling by reflecting sunlight to space, thus by itself an increase of aerosols causes a temporary energy imbalance -- more energy going out than coming in. Earth restores energy balance by cooling off, thus reducing heat radiation to space.
+
+The aerosol climate forcing is complex, as the largest part of their effect seems to be via their role as cloud condensation nuclei. Added condensation nuclei tend to make the average cloud particle smaller; that tends to make brighter, longer-lived clouds, but it's a complicated story.
+
+We have so far only felt a fraction of the eventual warming due to the presumed decrease of aerosols of the past several years.
+
+in the absence of adequate aerosol measurements -- let's use Earth's measured energy imbalance to estimate the impact of aerosol reductions on global warming. Earth's energy imbalance is measured to a good accuracy via precise monitoring of the rising global ocean temperature because the ocean is the repository for about 90 percent of the excess energy. Von Schuckmann et al.~(2020){[}4{]} report that the average imbalance over the period 1971-2018 was 0.47 ±0.1 W/m2, but in period 2010-2018 the imbalance was 0.87 ±0.1 W/m2.
+
+Additional information on the energy imbalance is provided by combining the absolute calibration provided by measuring the change in the ocean heat content with the spatial and temporal information provided by satellite-borne radiometers. The CERES (Clouds and the Earth's Radiant Energy System) instruments{[}5{]} measure outgoing radiation -- both reflected sunlight and emitted terrestrial heat radiation. CERES cannot measure the tiny imbalance between the incoming and outgoing fluxes of radiation, but the stability of its sensors is sufficient to infer valuable information about the planet's energy imbalance.
+
+Specifically, the CERES data -- in addition to having temporal variation of Earth's energy imbalance consistent with the ocean data of von Schuckmann et al.~-- show that most of the increased imbalance since 2015 is due to an increase of absorbed solar energy, i.e., a decrease in Earth's reflectivity. That is consistent with the expectation that the largest effect of aerosols on Earth's radiation balance and climate is via their effect on clouds.
+
+We can only infer that Earth's energy imbalance -- which was less than or about half a watt per square meter during 1971-2015 -- has approximately doubled to about 1 W/m2 since 2015. This increased energy imbalance is the cause of global warming acceleration. We should expect the global warming rate for the quarter of a century 2015-2040 to be about double the 0.18°C/decade rate during 1970-2015.
+
+\href{https://mailchi.mp/caa/july-temperature-update-faustian-payment-comes-due?e=96d59a909f}{Hansen (2021) July 2021 temp Update}
+
 \hypertarget{ozone-layer}{%
 \section{Ozone Layer}\label{ozone-layer}}
 
@@ -1936,6 +3223,19 @@ Even if fuel changes reduce soot emissions, researchers estimate contrail produc
 
 \href{https://twitter.com/KenCaldeira/status/1394648353594515460/photo/1}{Kaldeira (twitter thread)}
 
+\hypertarget{clouds}{%
+\section{Clouds}\label{clouds}}
+
+\emph{Ceppi Significance}
+
+A key challenge of our time is to accurately estimate future global warming in response to a doubling of atmospheric carbon dioxide---a number known as the climate sensitivity. This number is highly uncertain, mainly because it remains unclear how clouds will change with warming. Such changes in clouds could strongly amplify or dampen global warming, providing a climate feedback. Here, we perform a statistical learning analysis that provides a global observational constraint on the future cloud response. This constraint supports that cloud feedback will amplify global warming, making it very unlikely that climate sensitivity is smaller than 2 °C.
+
+\emph{Ceppi Abstract}
+
+Global warming drives changes in Earth's cloud cover, which, in turn, may amplify or dampen climate change. This ``cloud feedback'' is the single most important cause of uncertainty in Equilibrium Climate Sensitivity (ECS)---the equilibrium global warming following a doubling of atmospheric carbon dioxide. Using data from Earth observations and climate model simulations, we here develop a statistical learning analysis of how clouds respond to changes in the environment. We show that global cloud feedback is dominated by the sensitivity of clouds to surface temperature and tropospheric stability. Considering changes in just these two factors, we are able to constrain global cloud feedback to 0.43 ± 0.35 W⋅m−2⋅K−1 (90\% confidence), implying a robustly amplifying effect of clouds on global warming and only a 0.5\% chance of ECS below 2 K. We thus anticipate that our approach will enable tighter constraints on climate change projections, including its manifold socioeconomic and ecological impacts.
+
+\href{https://www.pnas.org/content/118/30/e2026290118}{Ceppi (2021) Observational evidence that cloud feedback amplifies global warming}
+
 \hypertarget{attributing-emissions}{%
 \section{Attributing Emissions}\label{attributing-emissions}}
 
@@ -1990,6 +3290,30 @@ Climate breakdown is colonial in character and ultimately requires an anti-colon
 \includegraphics{fig/CO2_Emissions_Global_North_South.jpeg}
 \caption{Fig. by \citet{AndrewFanning}}
 \end{figure}
+
+\hypertarget{concrete-cement}{%
+\subsection{Concrete / Cement}\label{concrete-cement}}
+
+\emph{CanaryMedia}
+
+Concrete is everywhere, and it accounts for 7 to 8 percent of global carbon emissions.
+
+Quick facts about clean concrete for people who don't work with concrete
+
+\begin{itemize}
+\tightlist
+\item
+  Cement is the most carbon-intensive component in concrete. One easy way to lower carbon impact is to stop the common industrial practice of chucking extra cement in the mix. Apparently, this is widespread and results in more cement in the finished product than what the engineers actually asked for.
+\item
+  Governments are the biggest purchasers of concrete (think highways, roads, bridges). If they start demanding carbon accounting or giving preference to lower-carbon concrete suppliers, it would have an outsize influence on the industry. A bill now up before California's legislature would do just that.
+\item
+  Another bill in California would cut carbon from concrete by 40 percent by the end of 2035. This one has support from Democrats, Republicans, industry and environmental groups. Crucially, it includes a ``border adjustment mechanism,'' which means the carbon limits apply to imported concrete. That ensures a level playing field for concrete suppliers if the law goes into effect.
+\end{itemize}
+
+(Canary Media Newsletter by Julian Spector
+1 July 2021 (No Link))
+
+\href{https://www.canarymedia.com/articles/california-considers-ambitious-bills-to-rein-in-carbon-emissions-from-concrete/}{CanryMedia}
 
 \hypertarget{forests}{%
 \chapter{Forests}\label{forests}}
@@ -2225,6 +3549,15 @@ Once in motion, the impacts from such dramatic ice loss would unfurl over centur
 
 \href{https://www.theguardian.com/environment/2021/may/05/antarctica-ice-sheet-melting-global-heating-sea-level-rise-study}{Milman (Guardian)}
 
+\hypertarget{arctic-sea-ice}{%
+\section{Arctic Sea Ice}\label{arctic-sea-ice}}
+
+ARCTIC SEA ICE AT RECORD LOW for this time of year. This is an enormous source of amplifying feedback. Losing the remaining Arctic sea ice and its reflection of solar energy back to space would be equivalent to another one trillion tons of CO2.
+
+\includegraphics{fig/Arctic_Sea_Ice_2107715.jpeg}
+
+\href{https://twitter.com/PCarterClimate/status/1416264975522295809/photo/1}{Peter Carter (tweet)}
+
 \hypertarget{ocean}{%
 \chapter{Ocean}\label{ocean}}
 
@@ -2412,6 +3745,29 @@ Now industrial activity is pushing on atmospheric CO2 directly. The question is 
 
 \href{https://www.realclimate.org/index.php/archives/2007/11/is-the-ocean-carbon-sink-sinking/}{RealClimate}
 
+\hypertarget{fungus-fast-track-carbon}{%
+\subsection{Fungus fast track carbon}\label{fungus-fast-track-carbon}}
+
+\emph{Gartwaite}
+
+New research focused on interactions among microbes in water suggests fungal microparasites play a bigger than expected role in aquatic food webs and the global carbon cycle.
+
+New research shows a crucial piece has been missing from the conventional explanation for what happens between this first ``fixing'' of CO2 into phytoplankton and its eventual release to the atmosphere or descent to depths where it no longer contributes to global warming. The missing piece? Fungus.
+
+``Basically, carbon moves up the food chain in aquatic environments differently than we commonly think it does,'' said Anne Dekas, an assistant professor of Earth system science at Stanford University. Dekas is the senior author of a
+\href{https://doi.org/10.1073/pnas.2102225118}{paper}
+published June 1 in Proceedings of the National Academy of Sciences that quantifies how much carbon goes into parasitic fungi that attack microalgae.
+
+Researchers until now have predicted that most carbon fixed into colonies of hard-shelled, single-celled algae known as diatoms then funnels directly into bacteria -- or dissolves like tea in the surrounding water, where it's largely taken up by other bacteria.
+
+Conventional thinking assumes carbon escapes from this microbial loop mainly through larger organisms that graze on the bacteria or diatoms, or through the CO2 that returns to the atmosphere as the microbes breathe.
+
+This journey is important in the context of climate change. ``For carbon sequestration to occur, carbon from CO2 needs to go up the food chain into big enough pieces of biomass that it can sink down into the bottom of the ocean,'' Dekas said. ``That's how it's really removed from the atmosphere. If it just cycles for long periods in the surface of the ocean, it can be released back to the air as CO2.''
+
+It turns out fungus creates an underappreciated express lane for carbon, ``shunting'' as much as 20 percent of the carbon fixed by diatoms out of the microbial loop and into the fungal parasite. ``Instead of going through this merry-go-round, where the carbon could eventually go back to the atmosphere, you have a more direct route to the higher levels in the food web,'' Dekas said.
+
+\href{https://earth.stanford.edu/news/fungus-creates-fast-track-carbon\#gs.5hnti5}{Garthwaite (2021) Fungus creates a fast track for carbon}
+
 \hypertarget{sea-level-rise}{%
 \section{Sea Level Rise}\label{sea-level-rise}}
 
@@ -2506,6 +3862,33 @@ The Atlantic Meridional Overturning Circulation (AMOC)---one of Earth's major oc
 
 \href{https://www.theguardian.com/commentisfree/2021/feb/26/atlantic-currents-climate-oceans-next-century}{The Guardian (Commentary)}
 
+\textbf{Gulf Stream Collapse}
+
+\emph{Guardian}
+
+Climate scientists have detected warning signs of the collapse of the Gulf Stream, one of the planet's main potential tipping points.
+
+The research found ``an almost complete loss of stability over the last century'' of the currents that researchers call the Atlantic meridional overturning circulation (AMOC). The currents are already at their slowest point in at least 1,600 years, but the new analysis shows they may be nearing a shutdown.
+
+\includegraphics{fig/north_atlantic_circulation.png}
+
+\emph{Figure: North Atlantic Circulation. Blue - Cold Deep Water, Red - Warm Surface Water}
+
+\href{https://www.theguardian.com/environment/2021/aug/05/climate-crisis-scientists-spot-warning-signs-of-gulf-stream-collapse}{Guardian}
+
+\emph{Thornally Abstract}
+
+The Atlantic meridional overturning circulation (AMOC) is a system of ocean currents that has an essential role in Earth's climate, redistributing heat and influencing the carbon cycle. The AMOC has been shown to be weakening in recent years; this decline may reflect decadal-scale variability in convection in the Labrador Sea, but short observational datasets preclude a longer-term perspective on the modern state and variability of Labrador Sea convection and the AMOC1. Here we provide several lines of palaeo-oceanographic evidence that Labrador Sea deep convection and the AMOC have been anomalously weak over the past 150 years or so (since the end of the Little Ice Age, LIA, approximately ad 1850) compared with the preceding 1,500 years. Our palaeoclimate reconstructions indicate that the transition occurred either as a predominantly abrupt shift towards the end of the LIA, or as a more gradual, continued decline over the past 150 years; this ambiguity probably arises from non-AMOC influences on the various proxies or from the different sensitivities of these proxies to individual components of the AMOC. We suggest that enhanced freshwater fluxes from the Arctic and Nordic seas towards the end of the LIA---sourced from melting glaciers and thickened sea ice that developed earlier in the LIA---weakened Labrador Sea convection and the AMOC. The lack of a subsequent recovery may have resulted from hysteresis or from twentieth-century melting of the Greenland Ice Sheet. Our results suggest that recent decadal variability in Labrador Sea convection and the AMOC has occurred during an atypical, weak background state. Future work should aim to constrain the roles of internal climate variability and early anthropogenic forcing in the AMOC weakening described here.
+
+\href{https://www.nature.com/articles/s41586-018-0007-4}{Thornally (2018) Anomalously weak Labrador Sea convection and Atlantic overturning during the past 150 years (PayWall)}
+
+\emph{Caesar Abstract}
+
+The Atlantic meridional overturning circulation (AMOC)---a system of ocean currents in the North Atlantic---has a major impact on climate, yet its evolution during the industrial era is poorly known owing to a lack of direct current measurements. Here we provide evidence for a weakening of the AMOC by about 3 ± 1 sverdrups (around 15 per cent) since the mid-twentieth century. This weakening is revealed by a characteristic spatial and seasonal sea-surface temperature `fingerprint'---consisting of a pattern of cooling in the subpolar Atlantic Ocean and warming in the Gulf Stream region---and is calibrated through an ensemble of model simulations from the CMIP5 project. We find this fingerprint both in a high-resolution climate model in response to increasing atmospheric carbon dioxide concentrations, and in the temperature trends observed since the late nineteenth century. The pattern can be explained by a slowdown in the AMOC and reduced northward heat transport, as well as an associated northward shift of the Gulf Stream. Comparisons with recent direct measurements from the RAPID project and several other studies provide a consistent depiction of record-low AMOC values in recent years.
+
+\href{https://www.nature.com/articles/s41586-018-0006-5}{Caesar (2018) Observed fingerprint of a weakening Atlantic Ocean overturning circulation (PayWall)}
+\href{https://www.nature.com/articles/s41586-018-0006-5.epdf?author_access_token=d9GwXXnkYQw6itiGny0ZW9RgN0jAjWel9jnR3ZoTv0OdzeJ18XkImxSDnyYEEsE8cCDHkcmVSlMgRd2VzekBpzVfe728uOBU7B1e8unrLGpKyeWhlTvQKe6JHGdYV8iLm4nND7KgW4aTVEUH8xo0AA\%3D\%3D}{SharedIt}
+
 \hypertarget{the-rise-and-fall-of-amoc}{%
 \subsection{The Rise and Fall of AMOC}\label{the-rise-and-fall-of-amoc}}
 
@@ -2565,6 +3948,72 @@ However, most scientists \href{https://www.carbonbrief.org/guest-post-could-the-
 Nonetheless, there is broad agreement that the climatic consequences of a potential shutdown of this vital ocean circulation are so enormous that they obligate us to improve our understanding of the Nordic Seas.
 
 \href{https://eos.org/science-updates/rethinking-oceanic-overturning-in-the-nordic-seas\#.YHvKO1RSYTk.twitter}{Chafik (2021) Rethinking Oceanic Overturning in Nordic Seas}
+
+\emph{Stefan}
+
+(Referring to Caesar (above))
+
+The Atlantic overturning circulation (sometimes popularly dubbed the Gulf Stream System) has weakened significantly since the late 19th Century, with most of the decline happening since the mid-20th Century.
+
+The prime observational finding, is a long-term cooling trend in the subpolar Atlantic -- the only region in the world which has cooled while the rest of the planet has warmed.
+
+\includegraphics{fig/North_Atlantic_CoolinG_AR5-Fig-SPM1.jpg}
+
+\emph{Figure: Observed temperature trends since the beginning of the 20th Century}
+
+What explains this cold blob?
+
+If the ocean temperature in any region changes, this can only be due to a change in heat supply or loss. That can either be a change in heat flow via ocean currents or through the sea surface. Thus the subpolar Atlantic can either have cooled because the ocean currents are bringing less heat into this region, or alternatively because more heat is being lost to the atmosphere.
+
+Weather dominates the short-term fluctuations, but the ocean currents dominate the long-term development because of the longer response time scale and ``memory'' of the ocean.
+
+There is a significant correlation of the NAO with subpolar Atlantic surface temperatures. But on the longer time scales of interest to us (for 20-year smoothed data), changes in the sea surface temperature lead the NAO changes by three years. We conclude that changes in sea surface temperatures cause the changes in NAO and not vice versa.
+
+In summer, the effect of heat flow through the sea surface should dominate, in winter the effect of ocean currents.
+That is because the well-mixed surface layer of the ocean is thin, so only the uppermost part of the ocean heat transport gets to affect the surface temperature. But the thin surface layer still feels the full brunt of atmospheric changes, and even stronger than in winter, because the thermal inertia of the thin summer surface layer is small.
+
+The cooling in the ``cold blob'' is most pronounced in winter.
+That suggests the `cold blob' is driven from the ocean and not the atmosphere.
+
+AMOC is the dominant mechanism of heat transport into the high-latitude Atlantic.
+Across the different models, differences in the amount of AMOC slowdown nearly completely explain the differences in subpolar Atlantic temperatures.
+
+We have the conclusion by Kanzow et al.~from hydrographic sections that the AMOC has weakened by \textasciitilde{} 10\% since the 1950s (see below). And the Nitrogen-15 data of Sherwood et al.~indicating a water mass change that matches what is predicted by the CM2.6 model for an AMOC slowdown. And the subsurface Atlantic temperature proxy data published recently by Thornalley et al.~Plus there is work suggesting a weakening open-ocean convection. And finally, our time evolution of the AMOC that we proposed based on our AMOC index, i.e.~based on the temperatures in the cold blob region, for the past decades matches evidence from ocean reanalysis and the RAPID project. Some of these other data are shown together with our AMOC index below.
+
+\includegraphics{fig/AMOC-estimates.png}
+
+\emph{Figure: Time evolution of the Atlantic overturning circulation reconstructed from different data types since 1700. The scales on the left and right indicate the units of the different data types. The lighter blue curve was shifted to the right by 12 years since Thornalley found the best correlation with temperature with this lag. Our index is the dark blue line starting in 1870. Graph: Levke Caesar.}
+
+Measuring the AMOC at a particular latitude in principle requires measuring a cross-section across the entire Atlantic, from surface to bottom. There are only two data sets that aspire to measure AMOC changes in this way. First, the RAPID project which has deployed 226 moored measuring instruments at 26.5 ° North for that purpose since 2004. It shows a downward trend since then, which closely matches what we find with our temperature-based AMOC index. Second is the work by Kanzow et al.~(2010) using results of five research expeditions across the Atlantic between 1957 and 2004, correcting an earlier paper by Bryden et al.~for seasonal effects and finding a roughly 10\% decline over this period (in terms of the linear trend of these five data points).
+
+Some other measurements cover parts of the overturning circulation, and generally for short periods only. For 1994-2013, Rossby et al.~(2013) -- at the Oleander line between 32° and 40° North -- found a decrease in the upper 2000m transport of the Gulf Stream by 0.8 Sverdrup (a Sverdrup is a flow of a million cubic meters per second).
+
+It is important to realize that the AMOC is not the same as the Gulf Stream. The latter, as measured by Rossby, has a volume flow of \textasciitilde90 Sverdrup, while the AMOC has a volume flow of only 15-20 Sverdrup. While the upper northward branch of the AMOC does flow via the Gulf Stream, it thus only contributes about one fifth to the Gulf Stream flow. Any change in Gulf Stream strength could thus be due to a change in the other 80\% of Gulf Stream flow, which are wind-driven. The AMOC does however provide the major northward heat transport which affects the northern Atlantic climate, because its return flow is cold and deep. Most of the Gulf Stream flow, in contrast, returns toward the south near the sea surface at a similar temperature as it flowed north, thus leaving little heat behind in the north.
+
+One interesting question for further research is how the AMOC in the Atlantic is linked to the exchange with the Nordic Seas across a line between Greenland, Iceland and Scotland. In our 2015 paper we showed a model result suggesting an anti-correlation of these overflows with the AMOC, and our new paper suggests a similar thing: a warm anomaly off Norway coinciding with the cold anomaly in the subpolar Atlantic, both in the high-resolution CM2.6 model and the observations.
+
+Cold meltwater from Greenland flowing in? You can work that out from a simple heat budget calculation. The amount is far too small to matter for the large-scale sea surface temperature, but enough to matter for sea surface salinity.
+
+\href{https://www.realclimate.org/index.php/archives/2018/05/if-you-doubt-that-the-amoc-has-weakened-read-this/}{Stefan (2018) If you doubt that the AMOC has weakened, read this}
+
+\emph{PIK}
+
+Because ongoing direct AMOC measurements only started in 2004, the researchers applied an indirect approach, using so-called proxy data, to find out more about the long-term perspective of its decline. Proxy data, as witnesses of the past, consist of information gathered from natural environmental archives such as tree rings, ice cores, ocean sediments, and corals, as well as from historical data, for instance from ship logs.
+``We used a combination of three different types of data to obtain information about the ocean currents: temperature patterns in the Atlantic Ocean, subsurface water mass properties and deep-sea sediment grain sizes, dating back from 100 to ca. 1600 years. While the individual proxy data is imperfect in representing the AMOC evolution, the combination of them revealed a robust picture of the overturning circulation
+
+{[}{]}(fig/PIK\_Gulf\_Stream.jpeg
+
+An AMOC slowdown has long been predicted by climate models as a response to global warming caused by greenhouse gases -- according to a number of studies, this is likely the reason for the observed weakening. The Atlantic overturning is driven by what the scientists call deep convection, triggered by the differences in the density of the ocean water: Warm and salty water moves from the south to the north where it cools down and thus gets denser. When it is heavy enough the water sinks to deeper ocean layers and flows back to the south. Global warming disturbs this mechanism: Increased rainfall and enhanced melting of the Greenland Ice Sheet add fresh water to the surface ocean. This reduces the salinity and thus the density of the water, inhibiting the sinking and thus weakening the flow of the AMOC.
+Its weakening has also been linked to a unique substantial cooling of the northern Atlantic over the past hundred years. This so-called `cold blob' was predicted by climate models as a result of a weakening AMOC, which transports less heat into this region.
+
+The northward surface flow of the AMOC leads to a deflection of water masses to the right, away from the US east coast. This is due to Earth's rotation that diverts moving objects such as currents to the right in the northern hemisphere and to the left in the southern hemisphere. As the current slows down, this effect weakens and more water can pile up at the US east coast, leading to an enhanced sea level rise.
+
+In Europe, a further slowdown of the AMOC could imply more extreme weather events like a change of the winter storm track coming off the Atlantic, possibly intensifying them. Other studies found possible consequences being extreme heat waves or a decrease in summer rainfall.
+
+If we continue to drive global warming, the Gulf Stream System will weaken further -- by 34 to 45 percent by 2100 according to the latest generation of climate models.
+This could bring us dangerously close to the tipping point at which the flow becomes unstable.
+
+\href{https://www.pik-potsdam.de/en/news/latest-news/gulf-stream-system-at-its-weakest-in-over-a-millennium}{PIK}
 
 \hypertarget{whale-mitigation}{%
 \section{Whale Mitigation}\label{whale-mitigation}}
@@ -2773,6 +4222,15 @@ have led to the recent decline in large-scale land acquisitions.
 
 \href{https://www.nature.com/articles/s41467-021-22702-2}{Winkler (2021) Global land use changes are four times greater than previously estimated}
 \href{pdf/Winkler_2021_LUC_4_times_greater.pdf}{(pdf)}
+
+\hypertarget{climate-effect-of-land-use-change}{%
+\subsection{Climate effect of Land Use Change}\label{climate-effect-of-land-use-change}}
+
+\emph{Kalnay Abstract}
+
+The most important anthropogenic influences on climate are the emission of greenhouse gases1 and changes in land use, such as urbanization and agriculture. But it has been difficult to separate these two influences because both tend to increase the daily mean surface temperature. The impact of urbanization has been estimated by comparing observations in cities with those in surrounding rural areas, but the results differ significantly depending on whether population data or satellite measurements of night light are used to classify urban and rural areas. Here we use the difference between trends in observed surface temperatures in the continental United States and the corresponding trends in a reconstruction of surface temperatures determined from a reanalysis of global weather over the past 50 years, which is insensitive to surface observations, to estimate the impact of land-use changes on surface warming. Our results suggest that half of the observed decrease in diurnal temperature range is due to urban and other land-use changes. Moreover, our estimate of 0.27 °C mean surface warming per century due to land-use changes is at least twice as high as previous estimates based on urbanization alone.
+
+\href{https://www.nature.com/articles/nature01675}{Kalnay (2003) Impact of urbanization and land-use change on climate}\href{pdf/Kalnay_2003_Impact_of_Urbanization_and_LUC_on_Climate.pdf}{(pdf)}
 
 \hypertarget{part-policy}{%
 \part{Policy}\label{part-policy}}
@@ -3164,7 +4622,7 @@ With carbon budgets increasingly constrained we cannot expect
 CSS to make a meaningful contribution to 2030 climate targets.
 
 \hypertarget{css-will-not-work-as-planned-and-is-a-dangerous-distraction}{%
-\subsection{CSS will not work as planned and is a dangerous distraction}\label{css-will-not-work-as-planned-and-is-a-dangerous-distraction}}
+\section{CSS will not work as planned and is a dangerous distraction}\label{css-will-not-work-as-planned-and-is-a-dangerous-distraction}}
 
 Instead of financing a technology they can neither develop in time
 nor make to work as claimed,
@@ -3244,6 +4702,47 @@ And it is often forgotten that trees and the land in general already soak up and
 
 \href{https://www.youtube.com/watch?v=24ESlXSa1sU\&feature=emb_imp_woyt}{Youtube: BECCS Explainer}
 
+\hypertarget{cdr---mitigation-deterrence}{%
+\section{CDR - Mitigation Deterrence}\label{cdr---mitigation-deterrence}}
+
+\emph{Grant Abstract}
+
+\emph{Carbon Dioxide Removal} (CDR) features heavily in low-carbon scenarios, where it often substitutes
+for emission reductions in both the near-term and long-term, enabling temperature targets to be
+met at lower cost. There are major concerns around the scale of CDR deployment in many
+low-carbon scenarios, and the risk that anticipated future CDR could dilute incentives to reduce
+emissions now, a phenomenon known as mitigation deterrence. Here we conduct an in-depth
+analysis into the relationship between emissions reduction and emissions removal in a global
+integrated assessment model. We explore the impact of CDR on low-carbon scenarios, illustrating
+how the pathway for the 2020s is highly sensitive to assumptions around CDR availability. Using
+stochastic optimisation, we demonstrate that accounting for uncertainty in future CDR
+deployment provides a strong rationale to increase rates of mitigation in the 2020s. A 20\% chance
+of CDR deployment failure requires additional emissions reduction in 2030 of 3--17 GtCO 2 .
+Finally, we introduce new scenarios which demonstrate the risks of mitigation deterrence and the
+benefits of formally separating CDR and emissions reduction as climate strategies. Continual
+mitigation deterrence across the time-horizon leads to the temperature goals being breached by
+0.2--0.3 ◦ C. If CDR is treated as additional to emissions reduction, up to an additional
+700--800 GtCO 2 can be removed from the atmosphere by 2100, reducing end-of-century warming
+by up to 0.5 ◦ C. This could put sub-1.5 ◦ C targets within reach but requires that CDR is additional
+to, rather than replaces, emission reductions.
+
+\emph{Grant Memo}
+
+In almost all modelled scenarios, the role of CDR is
+limited to facilitating greater fossil fuel consumption.
+
+Near-term emission reductions
+should not be substituted for uncertain future con-
+tributions to decarbonisation. Low-carbon scenarios
+must not dilute the pressure for systemic change or
+lead decision makers to underestimate the poten-
+tial for action now.
+
+\href{https://iopscience.iop.org/article/10.1088/1748-9326/ac0749}{Grant (2021) Confronting mitigation deterrence in low-carbon scenarios}
+\href{pdf/Grant_2021_Mitigation_Deterrence.pdf}{(pdf)}
+
+\href{https://energypost.eu/what-if-carbon-capture-fails-modelling-the-consequences-and-solutions/}{energypost.eu (2021) What if Carbon Capture fails? Modelling the consequences and solutions}
+
 \hypertarget{sai-stratospheric-aerosol-injection}{%
 \chapter{SAI Stratospheric Aerosol Injection}\label{sai-stratospheric-aerosol-injection}}
 
@@ -3285,6 +4784,80 @@ These results and meteorological measurements would then be integrated into glob
 
 \hypertarget{cap-and-trade}{%
 \chapter{Cap and Trade}\label{cap-and-trade}}
+
+\emph{Tooze Memo}
+
+Carbon pricing is the economists' preferred weapon to address the climate crisis. Two methods are proposed: (1) tax or (2) ``cap and trade''.
+
+Carbon taxes curb emissions by raising their price. The logic is simple and the problems are obvious. Taxes are unpopular. And you have to make sure to pick the right rate. If you do manage to get acceptance and get the tax right, the effect can be powerful. It is especially effective if you can fix an escalating tax rate that provides an incentive to long-term investment in emissions saving. In the UK, an adjustable tax was introduced in 2013 to establish a rising minimum price floor for carbon emissions from power generation. The foreseeable escalation of costs accelerated the rapid end of coal-burning in the UK.
+
+\includegraphics{fig/cap_and_trade_UK.png}
+
+Cap and trade systems are more complex. The authorities issue permits for a given amount of pollution. These are auctioned off to the highest bidder and a market is created in which polluters can trade permits amongst themselves. Rather than imposing a tax the government creates a kind of currency - emissions certificates - and a market for those certificates. To many economists since the 1980s, this has looked like the best solution. Rather than imposing taxes it creates an asset and allows a market mechanism to determine who is willing to pay to continue polluting. The absolute level of pollution is capped and can be progressively adjusted downwards. It is, however, hedged with problems.
+
+Above all if the aim of the game in adopting cap and trade is to avoid the painful politics of taxation, cap and trade more often than not proves to be a dead end. Rather than deciding on the tax rate you have to decide on the quantity of permits. If you dodge that question and issue them for free, the system becomes an absurd and counterproductive shell game. It discredits the entire model.
+
+Europe has long taxed energy. In the 1990s after the first major climate conferences, the EU attempted to agree on a carbon tax, but couldn't get the deal done. At the urging of American NGOs and key European corporate leaders, the EU opted for a cap and trade system. In political terms, a cap and system that is not a tax has the advantage that the rules of the EU do not require unanimity. Launched in 2005, the EU's Emissions Trading System was, until China began to roll out its system in 2021, the largest in the world. But, for most of its existence to date, the EU's Emissions Trading System (ETS) was a sad joke. Far too many permits were handed out free by national governments. Prices were prone to crashing. When they did not, polluters could earn a subsidy by selling their free certificates to other polluters. The amount of revenue collected was derisory.
+
+However, things have begun to change. Brussels now runs the EU ETS with a much firmer hand. The supply of certificates has tightened. In electricity generation all permits are auctioned and prices have surged to an appreciable 50 euros per ton of emissions. This will end coal-fired power generation whether the Poles like it or not.
+
+The US, by contrast, has never taxed energy heavily. In the 1990s Clinton's effort to pass a carbon tax failed. In 2009-2010 Congressional opposition defeated the Obama administration's somewhat lack luster effort at cap and trade. Al Gore's Inconvenient Truth may have been a global hit, but even with elaborate preparation there simply were not the votes. As a result, the Green New Deal proposed by the climate left dropped any mention of carbon pricing in favor of investment and regulation. The Biden administration has continued in that vein. Robinson Meyer of The Atlantic recently published an obituary for carbon taxes in the US.
+
+The two approaches could and should coexist side by side. But a serious push towards decarbonization, however you do it, involves up-front costs. To avoid outsourcing and undercutting from imported high-carbon competition, national efforts have to be shielded by carbon border adjustments - tariffs on high carbon imports-
+
+The contribution which most comprehensively sums up the critique of carbon pricing that is prevalent in the US today is Danny Cullenward and David G. Victor's timely book,
+\href{https://www.amazon.com/s?k=cullenward+victor\&ref=nb_sb_noss}{Making Climate Policy Work}. Their sophisticated argument, based in political science and political economy, deserves a hearing on both sides of the Atlantic.
+
+Cullenward is an economist, lawyer and activist attached to (carbon)plan noted for critical work on carbon offset schemes. Victor (UC San Diego) is an IPCC veteran and a well-known critic of ``top down'' efforts at carbon regulation. He champions the kind of ``bottom up'' model of climate policy that triumphed in Paris in 2015.
+
+Rather than seeking to distribute an overall global carbon budget from the top down, which triggers an acrimonious zero-sum distributional battle, the Paris agreement adopted a more minimal approach. All that national governments adhering to the Paris agreement are required to do, is to state their best offer. There is no requirement to achieve consistency and no hard enforcement mechanism. It was this ``light touch'' model that enabled a truly comprehensive agreement to be stitched together.
+
+Rather than attempting a perfect and comprehensive market solution, they propose that we should focus on devising a set of proposals for industrial policy and regulation to address each of the five major areas of pollution: power generation, industry, transport, buildings and agriculture.
+
+Conceptually, this preference for ad hoc ``bottom up'' solutions is influenced by Victor's collaboration with Chuck Sabel and the project of experimental governance that Sabel has been developing with his long-time writing partner Jonathan Zeitlin. Rather than grand schematics like a global carbon budget or a universal carbon price they focus on the need to break down big problems into smaller more manageable challenges that can be addressed by pragmatic and adaptive experimentation.
+
+The knock on the ``bottom up'' approach is that it does not produce an adequate overall package to address the global crisis. The knock on experimental governance is that it offers a sugar-coated account of the operation of power. The result is that Cullenward and Victor's approach is liable to be dismissed as inadequately forceful and comprehensive.
+
+The Paris agreement was the first attempt to get a comprehensive deal. But that does not mean that the work is done. Rather the opposite. The first round of inadequate national commitments was simply the starting point. The point of the Paris agreement is not the initial deal, but the iterative process it sets in motion
+
+The spirit of the Paris deal was not to argue over a finished scheme, but to generate collective movement in the right direction.
+
+Contrary to the suggestion that this iterative and experimental approach to governance is naive about power, it was chosen precisely out of an acute awareness of the limits that the existing distribution of power and influence impose on any possible agreement.
+
+\emph{Read Cullenward and Victor between the lines and it reads like Machiavelli - as disillusioned, realistic, situated advice to a climate prince.}
+Their critique of carbon pricing, starts precisely from where the locus of decision-making is. They seek to be realistic about what might motivate action and what might serve as a check. For that reason they actually favor carbon taxation as a simple and direct means of shifting resource allocations. Their criticism is directed towards cap and trade and the fantasy of markets.
+
+Their book is a powerful critique of the neoliberal ideology that has sustained the carbon market idea in the North Atlantic.
+
+The idea of carbon trading as an idea is favored by ``academic and policy elites'', Cullenward and Victor argue. They may be well-intentioned but in practice their support for cap and trade serves to uphold the disastrous status quo.
+
+They describe cap and trade carbon markets as ``Potemkin markets'' - arrangements that look like markets but in fact fail to exercise any meaningful discipline.
+
+The idea of comprehensive carbon pricing is a dangerous fantasy, a mirage - a shimmering, promising illusion on the far horizon that lures desperate traveler to their doom.
+
+There is a certain sort of economist that cannot resist a cute idea, a gimmick, a clever incentive scheme, a device, a mechanism. Cap and trade is that kind of idea.
+
+Carbon market proposals fail to work systematically because interest groups manipulate them. They also fail because the very idea is a simplistic fantasy.
+
+\begin{quote}
+One is reminded of Karl Polanyi's famous critique of 19th-century classical economics not as a realistic description of the world, but as a draconian project of remaking that world in its simplified image.
+\end{quote}
+
+There is, in fact, no such thing as ``the'' market. What there are are distinct sectors each with its own specific logic, each with its particular pattern of fossil fuel use. Rather than attempting to create a single overarching carbon price, what we need, to drive decarbonization are a series of precise interventions, each following the logic of a particular sector.
+
+\emph{EU ETS}
+
+Cullenward and Victor are duly critical of the failed early stages of the EU's ETS. They also alert to the risks of extending the carbon pricing model to new areas - motor vehicles and domestic fuels - as the Commission proposes. But they recognize that in the EU, carbon pricing has a unique and propitious political backdrop. They also recognize the institutional learning that is owed to the decade-long engagement by the EU's institutions. Measures such as the Market Stability Reserve introduced in 2019, which drain excess certificates from the system, exercise a steadying upward pressure on prices. The system can be made to work much better.
+
+\emph{Deep Note}
+
+What is exposed in the debates about decarbonization is ultimately the question of what actually drives the accumulation of capital, what makes the economy go, what the productive machinery actually is.
+
+\href{https://adamtooze.substack.com/p/adam-tooze-chartbook-31-the-mirage}{Tooze (2021) The Mirage of Carbon Markets?}
+
+\href{https://www.boell.de/de/2021/02/03/was-von-co2-preisen-zu-erwarten-ist-und-was-nicht}{Böll Stiftung (2021) Was von CO2-Preisen zu erwarten ist -- und was nicht}
+
+\href{pdf/Boell_Pricing_Carbon.pdf}{Böll Stiftung (2020) Report 'Pricing carbon An important instrument of ambitious climate policy (pdf)}
 
 \hypertarget{fee-and-dividend}{%
 \chapter{Fee and dividend}\label{fee-and-dividend}}
@@ -3913,6 +5486,56 @@ but they may also impose higher, short-term adjustment costs.
 \href{https://www.carbonpricingleadership.org/report-of-the-highlevel-commission-on-carbon-prices}{Stern Stiglitz (2017) Commision Report}
 \href{pdf/Stern_Stiglitz_2017_Commision_Report.pdf}{(pdf)}
 
+\hypertarget{mcc---mortality-cost-of-carbon}{%
+\section{MCC - Mortality Cost of Carbon}\label{mcc---mortality-cost-of-carbon}}
+
+\emph{Bressler Abstract}
+
+Many studies project that climate change can cause a significant number of excess deaths.
+Yet, in integrated assessment models (IAMs) that determine the social cost of carbon (SCC)
+and prescribe optimal climate policy, human mortality impacts are limited and not updated to
+the latest scientific understanding. This study extends the DICE-2016 IAM to explicitly
+include temperature-related mortality impacts by estimating a climate-mortality damage
+function. We introduce a metric, the mortality cost of carbon (MCC), that estimates the
+number of deaths caused by the emissions of one additional metric ton of CO2. In the
+baseline emissions scenario, the 2020 MCC is 2.26 × 10 ‒4 {[}low to high estimate −1.71× 10 ‒4
+to 6.78 × 10 ‒4 {]} excess deaths per metric ton of 2020 emissions. This implies that adding
+4,434 metric tons of carbon dioxide in 2020---equivalent to the lifetime emissions of 3.5
+average Americans---causes one excess death globally in expectation between 2020-2100.
+Incorporating mortality costs increases the 2020 SCC from \$37 to \$258 {[}−\$69 to \$545{]} per
+metric ton in the baseline emissions scenario. Optimal climate policy changes from gradual
+emissions reductions starting in 2050 to full decarbonization by 2050 when mortality is
+considered.
+
+\emph{Bressler Memo}
+
+IAMs do not represent the latest scientific understanding of climate impacts. Although substantial advances in climate impact research have been made in recent years, IAMs are still omitting a significant portion of likely damages
+
+A wide variety of climate damages---sea level rise, extreme weather, the direct effects of heat on productivity, agricultural impacts, and many more---must be monetized and summarized into a single number, and the relative contribution of these damages is often unclear
+
+The magnitude of climate damages is sensitive to subjective choices around the monetization of non-market damages, and, since damages occur over long timescales, the discount rate at which future damage is converted into present value
+
+In this study, we create an extension to DICE-2016 called DICE-EMR (Dynamic Integrated Climate-Economy Model with an Endogenous Mortality Response). We construct an additional reduced-form mortality damage function that projects the effect of climate change on the mortality rate using estimates from studies chosen from an interdisciplinary systematic research synthesis.
+
+We use DICE-EMR to produce a new metric that avoids some of the limitations of the SCC: the mortality cost of carbon (MCC). The 2020 MCC is the number of expected temperature-related excess deaths globally from 2020 to 2100 caused by the emission of one additional metric ton of carbon-dioxide-equivalent emissions in 2020. We find that in the DICE baseline scenario that results in 4.1 °C warming above preindustrial temperatures by 2100, the 2020 MCC is 2.26 × 10−4 lives per metric ton in the central estimate, which implies that adding 4,434 metric tons of carbon dioxide in 2020---equivalent to the lifetime emissions of 3.5 average Americans---causes one excess death globally in expectation between 2020 and 2100. We also update the SCC and the optimal climate policy from DICE-2016 in DICE-EMR. After incorporating mortality costs in DICE-EMR, the 2020 SCC increases over sevenfold to \$258 per metric ton in the central estimate in the baseline emissions scenario, and optimal climate policy changes from gradual emissions reductions starting in 2050 to full decarbonization by 2050.
+
+\href{https://www.nature.com/articles/s41467-021-24487-w}{Bressler (2021) The mortality cost of carbon}
+\href{pdf/Bressler_2021_Mortality_Costs_of_Carbon.pdf}{(pdf)}
+
+\emph{Guardian}
+
+The lifestyles of around three average Americans will create enough planet-heating emissions to kill one person, and the emissions from a single coal-fired power plant is likely to result in more than 900 deaths, according to the first analysis to calculate the mortal cost of carbon emissions.
+
+The new research builds upon what is known as the ``social cost of carbon'', a monetary figure placed upon the damage caused by each ton of carbon dioxide emissions, by assigning an expected death toll from the emissions that cause the climate crisis.
+
+The analysis draws upon several public health studies to conclude that for every 4,434 metric tons of CO2 pumped into the atmosphere beyond the 2020 rate of emissions, one person globally will die prematurely from the increased temperature. This additional CO2 is equivalent to the current lifetime emissions of 3.5 Americans.
+
+Adding a further 4m metric tons above last year's level, produced by the average US coal plant, will cost 904 lives worldwide by the end of the century, the research found. On a grander scale, eliminating planet-heating emissions by 2050 would save an expected 74 million lives around the world this century.
+
+The figures for expected deaths from the release of emissions aren't definitive and may well be ``a vast underestimate'' as they only account for heat-related mortality rather than deaths from flooding, storms, crop failures and other impacts that flow from the climate crisis, according to Daniel Bressler of Columbia University's Earth Institute, who wrote the paper.
+
+\href{https://www.theguardian.com/environment/2021/jul/29/carbon-emissions-americans-social-cost}{Guardian}
+
 \hypertarget{geoengineering}{%
 \chapter{Geoengineering}\label{geoengineering}}
 
@@ -4056,8 +5679,8 @@ Europe's recent summer droughts have had devastating ecological and economic con
 \hypertarget{rainfall}{%
 \chapter{Rainfall}\label{rainfall}}
 
-\hypertarget{decreased-gloabel-precipitation-area}{%
-\section{Decreased Gloabel Precipitation Area}\label{decreased-gloabel-precipitation-area}}
+\hypertarget{decreased-globel-precipitation-area}{%
+\section{Decreased Globel Precipitation Area}\label{decreased-globel-precipitation-area}}
 
 \emph{Benestad}
 
@@ -4078,6 +5701,22 @@ The study of the precipitation area AP is both scientifically interesting and im
 A regression analysis suggested that the daily precipitation area diminishes with the global mean temperature, and used with global climate model simulations, crude projections for the future suggested a decrease in daily precipitation area by 28\% by 2100. For monthly accumulated precipitation, however, the area appears to experience an increase over time, as the area of monthly precipitation is influenced by migratory phenomena and the area is estimated for amounts that are aggregated over longer time scales.
 
 \href{https://iopscience.iop.org/article/10.1088/1748-9326/aab375}{Benestad}
+
+\hypertarget{quasi-stationary-rainstorms}{%
+\section{Quasi-stationary Rainstorms}\label{quasi-stationary-rainstorms}}
+
+\emph{Kahraman Abstract}
+
+Under climate change, increases in precipitation extremes are expected due to higher atmospheric moisture. However, the total precipitation in an event also depends on the condensation rate, precipitation efficiency, and duration. Here, a new approach following an ``ingredients-based methodology'' from severe weather forecasting identifies important aspects of the heavy precipitation response to climate change, relevant from an impacts perspective and hitherto largely neglected. Using 2.2 km climate simulations, we show that a future increase in precipitation extremes across Europe occurs, not only because of higher moisture and updraft velocities, but also due to slower storm movement, increasing local duration. Environments with extreme precipitation potential are 7× more frequent than today by 2100, while the figure for quasi-stationary ones is 11× (14× for land). We find that a future reduction in storm speeds, possibly through Arctic Amplification, could enhance event accumulations and flood risk beyond expectations from studies focusing on precipitation rates.
+
+\emph{Kahraman Plain language Summary}
+
+Intense rainstorms are expected to be more frequent due to global warming, because warmer air can hold more moisture. Here, using very detailed climate simulations (with a 2.2 km grid), we show that the storms producing intense rain across Europe might move slower with climate change, increasing the duration of local exposure to these extremes. Our results suggest such slow-moving storms may be 14× more frequent across land by the end of the century. Currently, almost-stationary intense rainstorms are uncommon in Europe and happen rarely over parts of the Mediterranean Sea, but in future are expected to occur across the continent, including in the north. The main reason seems to be a reduced temperature difference between the poles and tropics, which weakens upper-level winds in the autumn, when these short-duration rainfall extremes most occur. This slower storm movement acts to increase rainfall amounts accumulated locally, enhancing the risk of flash floods across Europe beyond what was previously expected.
+
+\href{https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020GL092361}{Kahraman (2021) Quasi-Stationary Intense Rainstorms Spread Across Europe Under Climate Change}
+\href{pdf/Kahraman_2021_Quasistationary_Rainstorms.pdf}{(pdf)}
+
+\href{https://forskning.no/klima-vaer-og-vind/klimaendringer-vil-fore-til-mer-intenst-regnvaer-som-beveger-seg-sakte-over-europa/1892814}{Forskning.no}
 
 \hypertarget{landslides}{%
 \section{Landslides}\label{landslides}}
@@ -4246,6 +5885,18 @@ Last week's updates to the U.S. Environmental Protection Agency's Climate Indica
 
 \href{https://insideclimatenews.org/news/16052021/extreme-heat-risks-climate-change/}{Inside}
 
+\emph{Mann on US Heat Dome 2021}
+
+he science is clear on how human-caused climate change is already affecting heat waves: Global warming has caused them to be hotter, larger, longer and more frequent. What were once very rare events are becoming more common.
+
+Heat waves now occur three times as often as they did in the 1960s --- on average at least six times a year in the United States in the 2010s. Record-breaking hot months are occurring five times more often than would be expected without global warming. And heat waves have become larger, affecting 25 percent more land area in the Northern Hemisphere than they did in 1980; including ocean areas, heat waves grew 50 percent.
+
+Extreme heat is the deadliest form of extreme weather in the United States, causing more deaths on average than hurricanes and floods combined over the past 30 years. Recent research projects that heat stress will triple in the Pacific Northwest by 2100
+
+The heat wave afflicting the Pacific Northwest is characterized by what is known as an omega block pattern, because of the shape the sharply curving jet stream makes, like the Greek letter omega (Ω). This omega curve is part of a pattern of pronounced north-south wiggles made by the jet stream as it traverses the Northern Hemisphere. It is an example of a phenomenon known as wave resonance, which scientists (including one of us) have shown is \href{https://news.psu.edu/story/545128/2018/10/31/research/controlling-future-summer-weather-extremes-still-within-our-grasp}{increasingly favored} by the considerable warming of the Arctic.
+
+\href{https://www.nytimes.com/2021/06/29/opinion/heat-dome-climate-change.html}{Mann (2021) US heat Dome}
+
 \hypertarget{covid}{%
 \section{COVID}\label{covid}}
 
@@ -4315,6 +5966,16 @@ impairing energy flux through food chains,
 with negative implications for larger consumers and the functioning of entire ecosystems.
 
 \href{https://www.nature.com/articles/s41586-021-03352-2.epdf?sharing_token=en8G_PplC0NZ0bhBexd-sNRgN0jAjWel9jnR3ZoTv0Ocz1xjDcPWe-XYsQ6aAwENGLYkqI0ZtDZNzNTVzQDqzZn-V1IKe1zVtdJyDa_OeTOMHVBxxTmAVAdf8C0XWZFeT5VbXvvLwC4vezF-pqJafKF8PZc0_EjTPOG1MccecjM\%3D}{Barneche (2020) Warming impairs trophic transfer}
+
+\hypertarget{societal-collapse}{%
+\chapter{Societal Collapse}\label{societal-collapse}}
+
+\hypertarget{deep-adaptation}{%
+\section{Deep Adaptation}\label{deep-adaptation}}
+
+(More unde `Actions')
+
+\href{pdf/\%20Bendell_2020_Deep_Adaptation.pdf}{Bendell (2018) Deep Adaption: A Map for Navigating Climate Tradegy (pdf)}
 
 \hypertarget{climate-controvercies}{%
 \chapter{Climate Controvercies}\label{climate-controvercies}}
@@ -4543,6 +6204,36 @@ greater environmental sustainability and socio-
 economic solidarity and equity.
 
 \href{pdf/Lahsen_2021_Sustainability_Obstruction.pdf}{Lahsen (2021) Sustainability Transformation Obstruction (pdf)}
+
+\hypertarget{deep-adaptation-1}{%
+\section{Deep Adaptation}\label{deep-adaptation-1}}
+
+\emph{Bendell Abstarct}
+
+Abstract
+The purpose of this conceptual paper is to provide readers with an opportunity to reassess
+their work and life in the face of what I believe to be an inevitable near-term societal collapse
+due to climate change.
+The approach of the paper is to analyse recent studies on climate change and its implications
+for our ecosystems, economies and societies, as provided by academic journals and
+publications direct from research institutes.
+That synthesis leads to my conclusion there will be a near-term collapse in society with serious
+ramifications for the lives of readers. The paper does not prove the inevitability of such
+collapse, which would involve further discussion of social, economic, political and cultural
+factors, but it proves that such a topic is of urgent importance. The paper reviews some of the
+reasons why collapse-denial may exist, in particular, in the professions of sustainability
+research and practice, therefore leading to these arguments having been absent from these
+fields until now.
+The paper offers a new meta-framing of the implications for research, organisational practice,
+personal development and public policy, called the Deep Adaptation Agenda. Its key aspects
+of resilience, relinquishment, restoration and reconciliation are explained. This agenda does
+not seek to build on existing scholarship on ``climate adaptation'' as it is premised on the view
+that societal collapse is now likely, inevitable or already unfolding.
+The author believes this is one of the first papers in the sustainability management field to
+conclude that climate-induced near-term societal collapse should now be a central concern for
+everyone, and therefore to invite scholars to explore the implications.
+
+\href{pdf/Bendell_2020_Deep_Adaptation.pdf}{Bendell (2018) Deep Adaption: A Map for Navigating Climate Tradegy (pdf)}
 
 \hypertarget{academic-failure}{%
 \chapter{Academic Failure}\label{academic-failure}}
@@ -5152,6 +6843,70 @@ mitigation thus seems primed to become increasingly existential.
 \href{https://www.cambridge.org/core/journals/international-organization/article/asset-revaluation-and-the-existential-politics-of-climate-change/0963988860A37F6988E73738EA93E0A1\#}{Colgan (2020) Asset Revaluation and the Existential Politics of Climate Change}
 \href{pdf/Colgan_2020_Asset_Climate_Politics.pdf}{(pdf)}
 
+\hypertarget{climate-clubs}{%
+\section{Climate Clubs}\label{climate-clubs}}
+
+\emph{Falkner Abstract}
+
+The idea of a stringent climate club, once the reserve of academic debates, is quickly
+gaining ground in international policy circles. This reﬂects dissatisfaction with the
+multilateral UNFCCC process, but also hope that a minilateral club could increase
+climate policy ambition, reinvigorate the Paris Agreement process, and make
+future emissions pledges stick. With the Biden Presidency renewing the US
+commitment toward climate action and the European Green Deal proposal for
+carbon border tariﬀs, some are advocating the creation of a transatlantic climate
+club. What could a club approach hope to achieve, and what do we know about
+its political feasibility and desirability? In this article, we seek conceptual
+clariﬁcation by establishing a typology of diﬀerent club models; we inject a greater
+sense of political realism into current debates on the feasibility of these models;
+and we consider their legitimacy in the context of international climate cooperation.
+
+\textbf{Key policy insights}
+
+\begin{itemize}
+\tightlist
+\item
+  Knowledge gaps and confusion regarding the nature of climate clubs hold back
+  debates about what intergovernmental clubs can contribute to international
+  climate policy.
+\item
+  Club design matters: existing club models vary in terms of the proposed size,
+  purpose, operational principles, legal strength, and relationship to the UNFCCC.
+\item
+  Clubs focused on normative commitments face low barriers to establishment.
+  They lack legal strength but can help raise policy ambition.
+\item
+  Clubs aimed at negotiating targets and measures can increase bargaining
+  efficiency, but struggle to deal with equity and distributional conﬂicts.
+\item
+  Clubs seeking to change incentives via club beneﬁts and sanctions face the
+  highest hurdles to implementation. Their promise to tackle free-riding remains
+  untested and diﬃcult to achieve.
+\item
+  Climate clubs face an international legitimacy deﬁcit. Any club proposal needs to
+  consider how to add to, and not distract from, the multilateral climate regime.
+\end{itemize}
+
+\emph{Falkner Memo}
+
+We propose three ideal types of climate clubs (for similar categorizations:
+(a) normative clubs, consisting of countries that make a normative commitment to certain climate policy objectives;
+(b) bargaining clubs, which facilitate more effective negotiation of climate mitigation targets, measures and rules among significant powers; and
+(c) transformational clubs, with legally binding membership rules, tangible club benefits and sanctioning mechanisms that seek to change the incentive structure of a select group of members.
+
+Clubs can be small or large in size. Due to more or less demanding entry rules, they would tend to start out as small minilateral forums, but can grow into larger multilateral bodies, as is the case with the GATT/WTO trade regime. In the climate field, where the United Nations Framework Convention on Climate Change (UNFCCC) serves as the central multilateral regime with near-universal membership, most clubs are smaller and often minilateral in nature. Unlike ad-hoc coalitions in multilateral negotiations or one-off gatherings of state representatives, clubs are permanent creations, whether formally or informally constituted, that are built around a common purpose and with rules governing membership.
+
+A \emph{normative club} brings together countries that share a normative commitment to achieving certain objectives. The key membership criterion is adherence to the shared climate policy ambition.
+
+The main purpose of a \emph{bargaining club} is to facilitate more efficient negotiations of common objectives, targets and policies, especially among powerful or significant players in a given issue area. The key membership criterion is significant international status, power and relevant capabilities.
+Rather than rally like-minded actors behind an ambitious normative commitment, a bargaining club seeks to promote compromise-seeking among relevant players, including those with diverging normative ambition. The minilateral form is the main reason for their greater bargaining efficiency.
+Bargaining clubs can serve as an alternative to multilateral forums when they achieve deeper levels of cooperation.
+
+\emph{Transformational clubs} are the most demanding type of climate clubs. They comprise countries that share a common purpose but also seek to change members' incentive structure. In doing so, they seek to overcome the free-riding problem and enhance compliance with ambitious climate targets. This works in two principal ways: by creating club benefits that are available only to members (e.g.~preferential trading, access to technology and finance), and by sanctioning members that are non-compliant.
+
+\href{https://www.tandfonline.com/doi/full/10.1080/14693062.2021.1967717}{Falkner (2021) Climate clubs: politically feasible and desirable?}
+\href{pdf/Falkner_2021_Climate_Clubs.pdf}{(pdf)}
+
 \hypertarget{part-appendices}{%
 \part{Appendices}\label{part-appendices}}
 
@@ -5260,6 +7015,35 @@ I 1959 dukket for første gang ordet «drivhuseffekt» opp i en norsk avis. Men 
 
 \hypertarget{news}{%
 \chapter{NEWS}\label{news}}
+
+\hypertarget{orca-turned-on---iceland}{%
+\section{210909 ORCA turned on - Iceland}\label{orca-turned-on---iceland}}
+
+The world's largest plant designed to suck carbon dioxide out of the air and turn it into rock has started running, the companies behind the project said on Wednesday.
+
+The plant, named Orca after the Icelandic word ``orka'' meaning ``energy'', consists of four units, each made up of two metal boxes that look like shipping containers.
+
+Constructed by Switzerland's Climeworks and Iceland's Carbfix, when operating at capacity the plant will draw 4,000 tonnes of carbon dioxide out of the air every year, according to the companies.
+The climate crisis requires a new culture and politics, not just new tech
+Peter Sutoris
+Read more
+
+According to the US Environmental Protection Agency, that equates to the emissions from about 870 cars. The plant cost between US\$10 and 15m to build, Bloomberg reported.
+
+To collect the carbon dioxide, the plant uses fans to draw air into a collector, which has a filter material inside.
+
+Once the filter material is filled with CO2, the collector is closed and the temperature is raised to release the CO2 from the material, after which the highly concentrated gas can be collected.
+
+The CO2 is then mixed with the water before being injected at a depth of 1,000 metres into the nearby basalt rock where it is mineralised.
+
+\href{https://www.theguardian.com/environment/2021/sep/09/worlds-biggest-plant-to-turn-carbon-dioxide-into-rock-opens-in-iceland-orca}{Guardian}
+
+\hypertarget{arctic-sea-ice-at-record-low}{%
+\section{210715 Arctic Sea Ice at Record Low}\label{arctic-sea-ice-at-record-low}}
+
+ARCTIC SEA ICE AT RECORD LOW for this time of year. This is an enormous source of amplifying feedback. Losing the remaining Arctic sea ice and its reflection of solar energy back to space would be equivalent to another one trillion tons of CO2.
+
+\href{https://twitter.com/PCarterClimate/status/1416264975522295809/photo/1}{Peter Carter (twitter)}
 
 \hypertarget{dutch-court-against-shell}{%
 \section{210526 Dutch Court against Shell}\label{dutch-court-against-shell}}
