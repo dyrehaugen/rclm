@@ -1,6 +1,7 @@
 climate-change
 neo-liberal-climate-change
 climate-models
+university-of-chicago
 mental-picture-of-greenhouse-effect
 political-iams
 dice-climate-model
@@ -99,6 +100,7 @@ sea-level-rise-from-antarctica
 arctic-sea-ice
 ocean
 ocean-temperature
+deep-ocean-heat-content
 ocean-atmosphere-carbon-balance
 fungus-fast-track-carbon
 sea-level-rise
@@ -160,6 +162,7 @@ agricultural-productivity
 human-health
 morbidity-and-mortality
 humid-heat-bulbs
+urban-heat-exposure
 covid
 metabolism
 societal-collapse
@@ -193,10 +196,12 @@ outreach
 climate-politics
 asset-revaluation---existential-politics
 climate-clubs
+climate-debt
 about
 history
 links
 news
+microsoft-co2-removal
 orca-turned-on---iceland
 arctic-sea-ice-at-record-low
 dutch-court-against-shell
