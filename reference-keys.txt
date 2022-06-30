@@ -4,6 +4,7 @@ climate-models
 university-of-chicago
 mental-picture-of-greenhouse-effect
 political-iams
+coupled-climate-social-models
 dice-climate-model
 the-failure-of-dice-economics
 e3me-ftt-genie
@@ -75,6 +76,7 @@ water-vapor
 albedo
 atmosphere
 emissions
+anual-greenhouse-gas-index-aggi
 co2
 measurement-of-co2
 antropogenic-co2
@@ -128,6 +130,7 @@ the-rise-and-fall-of-amoc
 rethinking-amoc
 whale-mitigation
 antarcticas-role
+failing-phytoplankton-failing-oxygen
 permafrost
 soil
 soil-depth
