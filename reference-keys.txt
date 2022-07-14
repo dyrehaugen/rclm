@@ -29,6 +29,7 @@ climate-system
 convection
 earth-energy-imbalance-eei
 energy-imbalance-trend-teei
+jet-stream
 total-solar-irradiance
 spatial-shock
 coastal-flooding
@@ -90,6 +91,7 @@ cut-methane-now
 spotting-methane-from-space
 methane-reservoir-laptev-sea
 methane-hydrates
+methane-emission-rates
 methane-other
 aerosols
 ozone-layer
