@@ -139,6 +139,7 @@ soil-depth
 peatland
 land-use-change-luc
 climate-effect-of-land-use-change
+fertilizers
 adaptation
 lagging-mitigation-lagging-adaptation
 mobilization-for-adaptation
