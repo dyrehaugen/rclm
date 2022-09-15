@@ -140,6 +140,7 @@ peatland
 land-use-change-luc
 climate-effect-of-land-use-change
 fertilizers
+regenerative-agriculture
 adaptation
 lagging-mitigation-lagging-adaptation
 mobilization-for-adaptation
