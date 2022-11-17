@@ -12,6 +12,7 @@ ez-climate-model
 fair-climate-model
 gcam
 global-calculator
+modtran
 monash-climate-model
 page
 bern-simple-climate-model-bernscm
@@ -193,6 +194,7 @@ humid-heat-bulbs
 urban-heat-exposure
 covid
 metabolism
+melting-glacier-viral-spillovers
 societal-collapse
 deep-adaptation
 climate-controvercies
