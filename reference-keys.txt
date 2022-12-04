@@ -30,6 +30,7 @@ climate-system
 convection
 earth-energy-imbalance-eei
 energy-imbalance-trend-teei
+hurricanes
 jet-stream
 total-solar-irradiance
 spatial-shock
@@ -175,6 +176,7 @@ stern-stiglitz-alternative-approach
 stern-stiglitz-carbon-pricing-commission
 mcc---mortality-cost-of-carbon
 geoengineering
+a-desparate-idea
 solar-geoengineering
 ocean-geoengineering
 fair-shares
